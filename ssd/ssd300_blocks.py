@@ -1,6 +1,33 @@
 import tensorflow as tf
 from utils import custom_layers
 slim = tf.contrib.slim
+from ssd.ssd_common import SSDParams
+
+
+params = SSDParams(model_name='ssd300',
+                   img_shape=(300, 300),
+                   num_classes=21,
+                   no_annotation_label=21,
+                   feature_layers=['block7', 'block8', 'block9', 'block10', 'block11'],
+                   feature_shapes=[(38, 38), (19, 19), (10, 10), (5, 5), (3, 3), (1, 1)],
+                   anchor_size_bounds=[0.15, 0.90],
+                   anchor_sizes=[(21., 45.),
+                                 (45., 99.),
+                                 (99., 153.),
+                                 (153., 207.),
+                                 (207., 261.),
+                                 (261., 315.)],
+                   anchor_ratios=[[2, .5],
+                                  [2, .5, 3, 1. / 3],
+                                  [2, .5, 3, 1. / 3],
+                                  [2, .5, 3, 1. / 3],
+                                  [2, .5],
+                                  [2, .5]],
+                   anchor_steps=[8, 16, 32, 64, 100, 300],
+                   anchor_offset=0.5,
+                   normalizations=[20, -1, -1, -1, -1, -1],
+                   prior_scaling=[0.1, 0.1, 0.2, 0.2]
+                   )
 
 
 def ssd300(net, end_points):
