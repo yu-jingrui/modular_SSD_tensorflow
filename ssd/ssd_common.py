@@ -431,7 +431,7 @@ def tf_ssd_bboxes_select_all_classes(predictions_net, localizations_net,
         return classes, scores, bboxes
 
 
-def __tensor_shape(x, rank=3):
+def tensor_shape(x, rank=3):
     """Returns the dimensions of a tensor.
     Args:
       image: A N-D Tensor of shape.
