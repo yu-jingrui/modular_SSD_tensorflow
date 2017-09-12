@@ -18,6 +18,9 @@ import numpy as np
 import tensorflow as tf
 import tf_extended as tfe
 
+slim = tf.contrib.slim
+from utils import custom_layers
+
 
 # =========================================================================== #
 # TensorFlow implementation of boxes SSD encoding / decoding.
@@ -73,7 +76,7 @@ def tf_ssd_bboxes_encode_layer(labels,
         # Volumes.
         inter_vol = h * w
         union_vol = vol_anchors - inter_vol \
-            + (bbox[2] - bbox[0]) * (bbox[3] - bbox[1])
+                    + (bbox[2] - bbox[0]) * (bbox[3] - bbox[1])
         jaccard = tf.div(inter_vol, union_vol)
         return jaccard
 
@@ -131,8 +134,9 @@ def tf_ssd_bboxes_encode_layer(labels,
         # Replace scores by -1.
         feat_scores = tf.where(mask, -tf.cast(mask, dtype), feat_scores)
 
-        return [i+1, feat_labels, feat_scores,
+        return [i + 1, feat_labels, feat_scores,
                 feat_ymin, feat_xmin, feat_ymax, feat_xmax]
+
     # Main loop definition.
     i = 0
     [i, feat_labels, feat_scores,
@@ -408,3 +412,125 @@ def tf_ssd_bboxes_select_all_classes(predictions_net, localizations_net,
         bboxes = tf.concat(l_bboxes, axis=1)
         return classes, scores, bboxes
 
+
+def __tensor_shape(x, rank=3):
+    """Returns the dimensions of a tensor.
+    Args:
+      image: A N-D Tensor of shape.
+    Returns:
+      A list of dimensions. Dimensions that are statically known are python
+        integers,otherwise they are integer scalar tensors.
+    """
+    if x.get_shape().is_fully_defined():
+        return x.get_shape().as_list()
+    else:
+        static_shape = x.get_shape().with_rank(rank).as_list()
+        dynamic_shape = tf.unstack(tf.shape(x), rank)
+        return [s if s is not None else d
+                for s, d in zip(static_shape, dynamic_shape)]
+
+
+def ssd_multibox_layer(inputs,
+                       num_classes,
+                       sizes,
+                       ratios=[1],
+                       normalization=-1,
+                       bn_normalization=False):
+    """Construct a multibox layer, return a class and localization predictions.
+    """
+    net = inputs
+    if normalization > 0:
+        net = custom_layers.l2_normalization(net, scaling=True)
+    # Number of anchors.
+    num_anchors = len(sizes) + len(ratios)
+
+    # Location.
+    num_loc_pred = num_anchors * 4
+    loc_pred = slim.conv2d(net, num_loc_pred, [3, 3], activation_fn=None,
+                           scope='conv_loc')
+    loc_pred = custom_layers.channel_to_last(loc_pred)
+    loc_pred = tf.reshape(loc_pred,
+                          __tensor_shape(loc_pred, 4)[:-1] + [num_anchors, 4])
+    # Class prediction.
+    num_cls_pred = num_anchors * num_classes
+    cls_pred = slim.conv2d(net, num_cls_pred, [3, 3], activation_fn=None,
+                           scope='conv_cls')
+    cls_pred = custom_layers.channel_to_last(cls_pred)
+    cls_pred = tf.reshape(cls_pred,
+                          __tensor_shape(cls_pred, 4)[:-1] + [num_anchors, num_classes])
+    return cls_pred, loc_pred
+
+
+def __anchor_one_layer(img_shape,
+                       feat_shape,
+                       sizes,
+                       ratios,
+                       step,
+                       offset=0.5,
+                       dtype=np.float32):
+    """Computer SSD default anchor boxes for one feature layer.
+
+    Determine the relative position grid of the centers, and the relative
+    width and height.
+
+    Arguments:
+      feat_shape: Feature shape, used for computing relative position grids;
+      size: Absolute reference sizes;
+      ratios: Ratios to use on these features;
+      img_shape: Image shape, used for computing height, width relatively to the
+        former;
+      offset: Grid offset.
+
+    Return:
+      y, x, h, w: Relative x and y grids, and height and width.
+    """
+    # Compute the position grid: simple way.
+    y, x = np.mgrid[0:feat_shape[0], 0:feat_shape[1]]
+    y = (y.astype(dtype) + offset) * step / img_shape[0]
+    x = (x.astype(dtype) + offset) * step / img_shape[1]
+
+    # Expand dims to support easy broadcasting.
+    y = np.expand_dims(y, axis=-1)
+    x = np.expand_dims(x, axis=-1)
+
+    # Compute relative height and width.
+    # Tries to follow the original implementation of SSD for the order.
+    num_anchors = len(sizes) + len(ratios)
+    h = np.zeros((num_anchors,), dtype=dtype)
+    w = np.zeros((num_anchors,), dtype=dtype)
+    # Add first anchor boxes with ratio=1.
+    h[0] = sizes[0] / img_shape[0]
+    w[0] = sizes[0] / img_shape[1]
+    di = 1
+    if len(sizes) > 1:
+        h[1] = math.sqrt(sizes[0] * sizes[1]) / img_shape[0]
+        w[1] = math.sqrt(sizes[0] * sizes[1]) / img_shape[1]
+        di += 1
+    for i, r in enumerate(ratios):
+        h[i + di] = sizes[0] / img_shape[0] / math.sqrt(r)
+        w[i + di] = sizes[0] / img_shape[1] * math.sqrt(r)
+    return y, x, h, w
+
+
+def __feature_shapes_from_net(predictions, default_shapes=None):
+    """Try to obtain the feature shapes from the prediction layers. The latter
+        can be either a Tensor or Numpy ndarray.
+
+        Return:
+          list of feature shapes. Default values if predictions shape not fully
+          determined.
+        """
+    feature_shapes = []
+    for l in predictions:
+        # Get the shape, from either a np array or a tensor.
+        if isinstance(l, np.ndarray):
+            shape = l.shape
+        else:
+            shape = l.get_shape().as_list()
+        shape = shape[1:4]
+        # Problem: undetermined shape...
+        if None in shape:
+            return default_shapes
+        else:
+            feature_shapes.append(shape)
+    return feature_shapes

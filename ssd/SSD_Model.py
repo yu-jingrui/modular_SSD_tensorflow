@@ -28,7 +28,7 @@ ssd300_params = SSDParams(model_name='ssd300',
                           img_shape=(300, 300),
                           num_classes=21,
                           no_annotation_label=21,
-                          feature_layers=['block4', 'block7', 'block8', 'block9', 'block10', 'block11'],
+                          feature_layers=['block7', 'block8', 'block9', 'block10', 'block11'],
                           feature_shapes=[(38, 38), (19, 19), (10, 10), (5, 5), (3, 3), (1, 1)],
                           anchor_size_bounds=[0.15, 0.90],
                           anchor_sizes=[(21., 45.),
@@ -53,7 +53,7 @@ ssd512_params = SSDParams(model_name='ssd512',
                           img_shape=(512, 512),
                           num_classes=21,
                           no_annotation_label=21,
-                          feature_layers=['block4', 'block7', 'block8', 'block9', 'block10', 'block11', 'block12'],
+                          feature_layers=['block7', 'block8', 'block9', 'block10', 'block11', 'block12'],
                           feature_shapes=[(64, 64), (32, 32), (16, 16), (8, 8), (4, 4), (2, 2), (1, 1)],
                           anchor_size_bounds=[0.10, 0.90],
                           anchor_sizes=[(20.48, 51.2),
@@ -96,6 +96,24 @@ class SSD_Model(model_name):
                                      custom_layers.channel_to_last],
                                     data_format=data_format) as scope:
                     return scope
+
+    def detected_bboxes(self, predictions, localisations,
+                        select_threshold=None, nms_threshold=0.5,
+                        clipping_bbox=None, top_k=400, keep_top_k=200):
+        """Get the detected bounding boxes from the SSD network output.
+        """
+        # Select top_k bboxes from predictions, and clip
+        rscores, rbboxes = ssd_common.tf_ssd_bboxes_select(predictions, localisations,
+                                                           select_threshold=select_threshold,
+                                                           num_classes=self.params.num_classes)
+        rscores, rbboxes = tfe.bboxes_sort(rscores, rbboxes, top_k=top_k)
+        # Apply NMS algorithm.
+        rscores, rbboxes = tfe.bboxes_nms_batch(rscores, rbboxes,
+                                                nms_threshold=nms_threshold,
+                                                keep_top_k=keep_top_k)
+        if clipping_bbox is not None:
+            rbboxes = tfe.bboxes_clip(clipping_bbox, rbboxes)
+        return rscores, rbboxes
 
     def losses(self, logits, localisations,
                gclasses, glocalisations, gscores,
@@ -216,3 +234,19 @@ class SSD_Model(model_name):
             #     tf.summary.scalar("var_h", p_variance[3])
 
             return total_loss
+
+    # ==================================================================== #
+    def anchors(self):
+        """Compute anchor boxes for all feature layers.
+        """
+        layers_anchors = []
+        for i, s in enumerate(self.params.feature_shapes):
+            anchor_bboxes = ssd_common.__anchor_one_layer(self.params.img_shape,
+                                                            s,
+                                                            self.params.anchor_sizes[i],
+                                                            self.params.anchor_ratios[i],
+                                                            self.params.anchor_steps[i],
+                                                            offset=self.params.anchor_offset,
+                                                            dtype=tf.float32)
+            layers_anchors.append(anchor_bboxes)
+        return layers_anchors
