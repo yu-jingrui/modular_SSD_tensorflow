@@ -25,7 +25,7 @@ class SSDModel:
         :param model_name: name of the SSD model to use: ssd300 or ssd500
         """
         if feature_extractor not in nf.networks_map:
-            raise ValueError('Feature extractor unknown: %s.', feature_extractor)
+            raise ValueError('Feature extractor unknown: %s.' % feature_extractor)
         if model_name not in ['ssd300', 'ssd512']:
             raise ValueError('Choose model between ssd300 and ssd512.')
 
