@@ -6,8 +6,7 @@ import math
 import tf_extended as tfe
 from utils import custom_layers
 from ssd import ssd_utils
-from ssd import ssd300_blocks
-from ssd import ssd512_blocks
+from ssd import ssd_blocks
 from nets import nets_factory as nf
 
 slim = tf.contrib.slim
@@ -31,13 +30,14 @@ class SSDModel:
             raise ValueError('Choose model between ssd300 and ssd512.')
 
         if model_name == 'ssd300':
-            self.params = ssd300_blocks.params
-            self.__ssd_blocks = ssd300_blocks.ssd300
+            self.params = ssd_blocks.ssd300_params
+            self.__ssd_blocks = ssd_blocks.ssd300
         else:
-            self.params = ssd512_blocks.params
-            self.__ssd_blocks = ssd512_blocks.ssd512
+            self.params = ssd_blocks.ssd512_params
+            self.__ssd_blocks = ssd_blocks.ssd512
         self.__feature_extractor = nf.get_network_fn(feature_extractor, self.params.num_classes)
 
+    # TODO: construct the whole SSD network
     def get_model(self, inputs, weight_decay=0.0005, is_training=False):
         """
 

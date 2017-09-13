@@ -1,11 +1,34 @@
+"""
+This file contains methods and functions used by SSDModel.
+These are not directly needed for training and evaluation.
+"""
+
 import tensorflow as tf
 import numpy as np
 import math
-
+from collections import namedtuple
 from utils import custom_layers
 from ssd import ssd_utils
 
 slim = tf.contrib.slim
+
+
+# =========================================================================== #
+# Definition of the parameter structure
+# =========================================================================== #
+SSDParams = namedtuple('SSDParameters', ['model_name',
+                                         'img_shape',
+                                         'num_classes',
+                                         'no_annotation_label',
+                                         'feature_layers',
+                                         'feature_shapes',
+                                         'anchor_size_bounds',
+                                         'anchor_sizes',
+                                         'anchor_ratios',
+                                         'anchor_steps',
+                                         'anchor_offset',
+                                         'normalizations',
+                                         'prior_scaling'])
 
 
 def tensor_shape(x, rank=3):

@@ -17,27 +17,9 @@
 import numpy as np
 import tensorflow as tf
 import tf_extended as tfe
-from collections import namedtuple
 
 slim = tf.contrib.slim
 from utils import custom_layers
-
-# =========================================================================== #
-# Definition of the parameter structure
-# =========================================================================== #
-SSDParams = namedtuple('SSDParameters', ['model_name',
-                                         'img_shape',
-                                         'num_classes',
-                                         'no_annotation_label',
-                                         'feature_layers',
-                                         'feature_shapes',
-                                         'anchor_size_bounds',
-                                         'anchor_sizes',
-                                         'anchor_ratios',
-                                         'anchor_steps',
-                                         'anchor_offset',
-                                         'normalizations',
-                                         'prior_scaling'])
 
 
 # =========================================================================== #
