@@ -18,7 +18,7 @@ class SSDModel:
     """
 
     # ============================= PUBLIC METHODS ============================== #
-    def __init__(self, feature_extractor, model_name):
+    def __init__(self, feature_extractor, model_name, fe_is_training=False, is_training=False):
         """
         Initialize an instance of the SSDModel
         :param feature_extractor: name of the feature extractor (backbone)
@@ -36,8 +36,10 @@ class SSDModel:
             self.params = ssd_blocks.ssd512_params
             self.__ssd_blocks = ssd_blocks.ssd512
 
-        self.__feature_extractor = nf.get_network_fn(feature_extractor, self.params.num_classes)
-
+        self.__feature_extractor = nf.get_network_fn(feature_extractor, self.params.num_classes,
+                                                     weight_decay=0.0005, is_training=fe_is_training)
+        self.params.feature_layers.insert(0, ssd_blocks.feature_layer[feature_extractor])
+        self.is_training = is_training
         # all of the computed anchors for this model,
         # format: layer_number, numpy array format for x / y / w / h
         self.np__anchors = None
@@ -45,7 +47,7 @@ class SSDModel:
         self.np_anchors_minmax = None
 
     # TODO: construct the whole SSD network
-    def get_model(self, inputs, weight_decay=0.0005, is_training=False):
+    def get_model(self, inputs):
         """
 
         :param inputs:
@@ -53,21 +55,16 @@ class SSDModel:
         :param is_training:
         :return:
         """
-
-        arg_scope = ssd_utils.arg_scope(weight_decay=weight_decay)
-        net, end_points = self.__feature_extractor(inputs,
-                                                   num_classes=self.params.num_classes,
-                                                   is_training=is_training,
-                                                   scope=arg_scope)
+        net, end_points = self.__feature_extractor(inputs)
         keep_prob = 0.8
         with slim.arg_scope([slim.conv2d],
                             activation_fn=None):
             with slim.arg_scope([slim.batch_norm],
                                 activation_fn=tf.nn.relu,
-                                is_training=is_training,
+                                is_training=self.is_training,
                                 updates_collections=None):
                 with slim.arg_scope([slim.dropout],
-                                    is_training=is_training,
+                                    is_training=self.is_training,
                                     keep_prob=keep_prob):
                     with tf.variable_scope(self.params.model_name):
                         net, end_points = self.__ssd_blocks(net, end_points)

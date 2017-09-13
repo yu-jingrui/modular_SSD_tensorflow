@@ -254,7 +254,8 @@ def inception_resnet_v2_base(inputs,
         net = tf.concat(
             [tower_conv_1, tower_conv1_1, tower_conv2_2, tower_pool], 3)
 
-      if add_and_check_final('Mixed_7a', net): return net, end_points
+      if add_and_check_final('Mixed_7a', net):
+        return net, end_points
 
       # TODO(alemi): register intermediate endpoints
       net = slim.repeat(net, 9, block8, scale=0.20)

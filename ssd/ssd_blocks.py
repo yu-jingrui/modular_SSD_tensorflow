@@ -1,14 +1,14 @@
 import tensorflow as tf
 from utils import custom_layers
 from ssd.ssd_utils import SSDParams
-slim = tf.contrib.slim
 
+slim = tf.contrib.slim
 
 ssd300_params = SSDParams(model_name='ssd300',
                           img_shape=(300, 300),
                           num_classes=21,
                           no_annotation_label=21,
-                          feature_layers=['block7', 'block8', 'block9', 'block10', 'block11'],
+                          feature_layers=['ssd_block7', 'ssd_block8', 'ssd_block9', 'ssd_block10', 'ssd_block11'],
                           feature_shapes=[(38, 38), (19, 19), (10, 10), (5, 5), (3, 3), (1, 1)],
                           anchor_size_bounds=[0.15, 0.90],
                           anchor_sizes=[(21., 45.),
@@ -34,7 +34,7 @@ ssd512_params = SSDParams(model_name='ssd512',
                           img_shape=(512, 512),
                           num_classes=21,
                           no_annotation_label=21,
-                          feature_layers=['block7', 'block8', 'block9', 'block10', 'block11', 'block12'],
+                          feature_layers=['ssd_block7', 'ssd_block8', 'ssd_block9', 'ssd_block10', 'ssd_block11', 'ssd_block12'],
                           feature_shapes=[(64, 64), (32, 32), (16, 16), (8, 8), (4, 4), (2, 2), (1, 1)],
                           anchor_size_bounds=[0.10, 0.90],
                           anchor_sizes=[(20.48, 51.2),
@@ -58,6 +58,34 @@ ssd512_params = SSDParams(model_name='ssd512',
                           )
 
 
+# TODO: find appropriate end_point for use in SSD for all nets.
+feature_layer = {'alexnet_v2': '',
+                 'cifarnet': '',
+                 'overfeat': '',
+                 'vgg_a': 'conv5',
+                 'vgg_16': 'conv5',
+                 'vgg_19': 'conv5',
+                 'inception_v1': '',
+                 'inception_v2': '',
+                 'inception_v3': '',
+                 'inception_v4': '',
+                 'inception_resnet_v2': '',
+                 'lenet': '',
+                 'resnet_v1_50': '',
+                 'resnet_v1_101': '',
+                 'resnet_v1_152': '',
+                 'resnet_v1_200': '',
+                 'resnet_v2_50': '',
+                 'resnet_v2_101': '',
+                 'resnet_v2_152': '',
+                 'resnet_v2_200': '',
+                 'mobilenet_v1': '',
+                 'mobilenet_v1_075': '',
+                 'mobilenet_v1_050': '',
+                 'mobilenet_v1_025': '',
+                 }
+
+
 def ssd300(net, end_points):
     """
     Implementation of the SSD300 network.
@@ -77,16 +105,16 @@ def ssd300(net, end_points):
     net = slim.conv2d(net, 1024, [3, 3], rate=6, scope='conv6')
     net = slim.batch_norm(net)
     net = custom_layers.dropout_with_noise(net)
-    end_points['block6'] = net
+    end_points['ssd_block6'] = net
 
     # block 7: 1x1 conv
     net = slim.conv2d(net, 1024, [1, 1], scope='conv7')
     net = slim.batch_norm(net)
     net = custom_layers.dropout_with_noise(net)
-    end_points['block7'] = net
+    end_points['ssd_block7'] = net
 
     # block 8/9/10/11: 1x1 and 3x3 convolutions with stride 2 (except lasts)
-    end_point = 'block8'
+    end_point = 'ssd_block8'
     with tf.variable_scope(end_point):
         net = slim.conv2d(net, 256, [1, 1], scope='conv1x1')
         net = slim.batch_norm(net)
@@ -97,7 +125,7 @@ def ssd300(net, end_points):
         net = custom_layers.dropout_with_noise(net)
     end_points[end_point] = net
 
-    end_point = 'block9'
+    end_point = 'ssd_block9'
     with tf.variable_scope(end_point):
         net = slim.conv2d(net, 128, [1, 1], scope='conv1x1')
         net = slim.batch_norm(net)
@@ -108,7 +136,7 @@ def ssd300(net, end_points):
         net = custom_layers.dropout_with_noise(net)
     end_points[end_point] = net
 
-    end_point = 'block10'
+    end_point = 'ssd_block10'
     with tf.variable_scope(end_point):
         net = slim.conv2d(net, 128, [1, 1], scope='conv1x1')
         net = slim.batch_norm(net)
@@ -119,7 +147,7 @@ def ssd300(net, end_points):
         net = custom_layers.dropout_with_noise(net)
     end_points[end_point] = net
 
-    end_point = 'block11'
+    end_point = 'ssd_block11'
     with tf.variable_scope(end_point):
         net = slim.conv2d(net, 128, [1, 1], scope='conv1x1')
         net = slim.batch_norm(net)
@@ -144,15 +172,15 @@ def ssd512(net, end_points):
     # Block 6: 3x3 conv
     net = slim.conv2d(net, 1024, [3, 3], rate=6, scope='conv6')
     net = slim.batch_norm(net)
-    end_points['block6'] = net
+    end_points['ssd_block6'] = net
 
     # Block 7: 1x1 conv
     net = slim.conv2d(net, 1024, [1, 1], scope='conv7')
     net = slim.batch_norm(net)
-    end_points['block7'] = net
+    end_points['ssd_block7'] = net
 
     # Block 8/9/10/11/12: 1x1 and 3x3 convolutions stride 2 (except last).
-    end_point = 'block8'
+    end_point = 'ssd_block8'
     with tf.variable_scope(end_point):
         net = slim.conv2d(net, 256, [1, 1], scope='conv1x1')
         net = slim.batch_norm(net)
@@ -161,7 +189,7 @@ def ssd512(net, end_points):
         net = slim.batch_norm(net)
     end_points[end_point] = net
 
-    end_point = 'block9'
+    end_point = 'ssd_block9'
     with tf.variable_scope(end_point):
         net = slim.conv2d(net, 128, [1, 1], scope='conv1x1')
         net = slim.batch_norm(net)
@@ -170,7 +198,7 @@ def ssd512(net, end_points):
         net = slim.batch_norm(net)
     end_points[end_point] = net
 
-    end_point = 'block10'
+    end_point = 'ssd_block10'
     with tf.variable_scope(end_point):
         net = slim.conv2d(net, 128, [1, 1], scope='conv1x1')
         net = slim.batch_norm(net)
@@ -179,14 +207,14 @@ def ssd512(net, end_points):
         net = slim.batch_norm(net)
     end_points[end_point] = net
 
-    end_point = 'block11'
+    end_point = 'ssd_block11'
     with tf.variable_scope(end_point):
         net = slim.conv2d(net, 128, [1, 1], scope='conv1x1')
         net = custom_layers.pad2d(net, pad=(1, 1))
         net = slim.conv2d(net, 256, [3, 3], stride=2, scope='conv3x3', padding='VALID')
     end_points[end_point] = net
 
-    end_point = 'block12'
+    end_point = 'ssd_block12'
     with tf.variable_scope(end_point):
         net = slim.conv2d(net, 128, [1, 1], scope='conv1x1')
         net = slim.batch_norm(net)
