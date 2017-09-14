@@ -55,6 +55,7 @@ class SSDModel:
         :param is_training:
         :return:
         """
+        # TODO: big problem! network_fn returns the function that builds the whole network with fc layers!
         net, end_points = self.__feature_extractor(inputs)
         keep_prob = 0.8
         with slim.arg_scope([slim.conv2d],

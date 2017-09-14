@@ -63,7 +63,7 @@ feature_layer = {'alexnet_v2': '',
                  'cifarnet': '',
                  'overfeat': '',
                  'vgg_a': 'conv5',
-                 'vgg_16': 'conv5',
+                 'vgg_16': 'vgg_16/conv5/conv5_3',
                  'vgg_19': 'conv5',
                  'inception_v1': '',
                  'inception_v2': '',
@@ -83,6 +83,7 @@ feature_layer = {'alexnet_v2': '',
                  'mobilenet_v1_075': '',
                  'mobilenet_v1_050': '',
                  'mobilenet_v1_025': '',
+                 'xception': 'block14'
                  }
 
 
@@ -131,7 +132,7 @@ def ssd300(net, end_points):
         net = slim.batch_norm(net)
         net = custom_layers.dropout_with_noise(net)
         net = custom_layers.pad2d(net, pad=(1, 1))
-        net = slim.conv2d(net, 256, stride=2, scope='conv3x3', padding='VALID')
+        net = slim.conv2d(net, 256, [3, 3], stride=2, scope='conv3x3', padding='VALID')
         net = slim.batch_norm(net)
         net = custom_layers.dropout_with_noise(net)
     end_points[end_point] = net
@@ -142,7 +143,7 @@ def ssd300(net, end_points):
         net = slim.batch_norm(net)
         net = custom_layers.dropout_with_noise(net)
         net = custom_layers.pad2d(net, pad=(1, 1))
-        net = slim.conv2d(net, 256, scope='conv3x3', padding='VALID')
+        net = slim.conv2d(net, 256, [3, 3], scope='conv3x3', padding='VALID')
         net = slim.batch_norm(net)
         net = custom_layers.dropout_with_noise(net)
     end_points[end_point] = net
@@ -153,7 +154,7 @@ def ssd300(net, end_points):
         net = slim.batch_norm(net)
         net = custom_layers.dropout_with_noise(net)
         net = custom_layers.pad2d(net, pad=(1, 1))
-        net = slim.conv2d(net, 256, scope='conv3x3', padding='VALID')
+        net = slim.conv2d(net, 256, [3, 3], scope='conv3x3', padding='VALID')
         net = slim.batch_norm(net)
         net = custom_layers.dropout_with_noise(net)
     end_points[end_point] = net

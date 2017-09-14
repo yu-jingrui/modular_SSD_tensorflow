@@ -29,6 +29,8 @@ from tensorflow.python.ops import variable_scope
 from tensorflow.python.ops import array_ops
 from tensorflow.python.ops import math_ops
 
+slim = tf.contrib.slim
+
 
 def abs_smooth(x):
     """Smoothed absolute function. Useful to compute an L1 smooth error.

@@ -9,6 +9,7 @@ import math
 from collections import namedtuple
 from utils import custom_layers
 import tf_extended as tfe
+import ssd
 
 slim = tf.contrib.slim
 

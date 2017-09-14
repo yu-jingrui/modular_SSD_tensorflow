@@ -133,7 +133,7 @@ def vgg_16(inputs,
            num_classes=1000,
            is_training=True,
            dropout_keep_prob=0.5,
-           spatial_squeeze=True,
+           spatial_squeeze=False,
            scope='vgg_16',
            fc_conv_padding='VALID'):
   """Oxford Net VGG 16-Layers version D Example.
