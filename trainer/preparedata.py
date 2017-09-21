@@ -1,49 +1,51 @@
-from datasets import pascalvoc_datasets
 import tensorflow as tf
-import matplotlib.pyplot as plt
 import tensorflow.contrib.slim as slim
-# from nets import nets_factory
-from preprocessing import preprocessing_factory
-import numpy as np
-import cv2
-from utility import visualization
-from nets.ssd import g_ssd_model
-from preprocessing.ssd_vgg_preprocessing import np_image_unwhitened
+
 from preprocessing.ssd_vgg_preprocessing import preprocess_for_train
 from preprocessing.ssd_vgg_preprocessing import preprocess_for_eval
-import tf_utils
-import math
+from preprocessing import pascalvoc_datasets
+from utils import tf_utils
 
 
 class PrepareData:
-    def __init__(self):
+    # ============================= PUBLIC METHODS ============================== #
+    def __init__(self, batch_size, labels_offset, matched_thresholds, ssd_model):
+        self.batch_size = batch_size
+        self.labels_offset = labels_offset
+        self.matched_thresholds = matched_thresholds
+        self.g_ssd = ssd_model
 
-        self.batch_size = 32
-        self.labels_offset = 0
+    def get_voc_2007_train_data(self, is_training_data=True):
+        #  data_sources = "../data/voc/tfrecords/voc_train_2007*.tfrecord"
+        data_sources = '/home/yjin/data/SSDfinetune_tf/voc_2007_train*.tfrecord'
+        num_samples = pascalvoc_datasets.DATASET_SIZE['2007_train']
+        return self._get_images_labels_bboxes(data_sources, num_samples, is_training_data)
 
-        self.matched_thresholds = 0.5  # threshold for anchor matching strategy
+    def get_voc_2012_train_data(self,is_training_data=True):
+        data_sources = "../data/voc/tfrecords/voc_train_2012*.tfrecord"
+        num_samples = pascalvoc_datasets.DATASET_SIZE['2012_train']
+        return self._get_images_labels_bboxes(data_sources, num_samples, is_training_data)
 
-        return
+    def get_voc_2007_2012_train_data(self,is_training_data=True):
+        data_sources = "../data/voc/tfrecords/voc_train*.tfrecord"
+        num_samples = pascalvoc_datasets.DATASET_SIZE['2007_train'] + pascalvoc_datasets.DATASET_SIZE['2012_train']
+        return self._get_images_labels_bboxes(data_sources, num_samples, is_training_data)
 
-    def __preprocess_data(self, image, labels, bboxes):
-        out_shape = g_ssd_model.img_shape
-        if self.is_training_data:
-            image, labels, bboxes = preprocess_for_train(image, labels, bboxes, out_shape=out_shape)
-        else:
-            image, labels, bboxes, _ = preprocess_for_eval(image, labels, bboxes, out_shape=out_shape)
-        return image, labels, bboxes
+    def get_voc_2007_test_data(self):
+        data_sources = "../data/voc/tfrecords/voc_test_2007*.tfrecord"
+        num_samples = pascalvoc_datasets.DATASET_SIZE['2007_test']
+        return self._get_images_labels_bboxes(data_sources, num_samples, False)
 
-    def __get_images_labels_bboxes(self, data_sources, num_samples, is_training_data):
-
+    # =========================== PRIVATE METHODS ============================ #
+    def _get_images_labels_bboxes(self, data_sources, num_samples, is_training_data):
         self.dataset = pascalvoc_datasets.get_dataset_info(data_sources, num_samples)
         self.is_training_data = is_training_data
         if self.is_training_data:
-
             shuffle = True
             # make sure most samples can be fetched in one epoch
             self.num_readers = 2
         else:
-            # make sure data is fetchd in sequence
+            # make sure data is fetched in sequence
             shuffle = False
             self.num_readers = 1
 
@@ -63,18 +65,25 @@ class PrepareData:
         glabels -= self.labels_offset
 
         # Pre-processing image, labels and bboxes.
-        image, glabels, gbboxes = self.__preprocess_data(image, glabels, gbboxes)
+        image, glabels, gbboxes = self._preprocess_data(image, glabels, gbboxes)
 
         # Assign groundtruth information for all default/anchor boxes
-        #         gclasses, glocalisations, gscores = g_ssd_model.tf_ssd_bboxes_encode(glabels, gbboxes)
-        gclasses, glocalisations, gscores = g_ssd_model.match_achors(glabels, gbboxes,
-                                                                     matching_threshold=self.matched_thresholds)
+        gclasses, glocalisations, gscores = self.g_ssd.match_achors(glabels, gbboxes,
+                                                                    matching_threshold=self.matched_thresholds)
 
-        return self.__batching_data(image, glabels, format, filename, gbboxes, gdifficults, gclasses, glocalisations,
-                                    gscores)
+        return self._batching_data(image, glabels, format, filename,
+                                   gbboxes, gdifficults, gclasses, glocalisations, gscores)
 
-    def __batching_data(self, image, glabels, format, filename, gbboxes, gdifficults, gclasses, glocalisations,
-                        gscores):
+    def _preprocess_data(self, image, labels, bboxes):
+        out_shape = self.g_ssd.img_shape
+        if self.is_training_data:
+            image, labels, bboxes = preprocess_for_train(image, labels, bboxes, out_shape=out_shape)
+        else:
+            image, labels, bboxes, _ = preprocess_for_eval(image, labels, bboxes, out_shape=out_shape)
+        return image, labels, bboxes
+
+    def _batching_data(self, image, glabels, format, filename,
+                       gbboxes, gdifficults, gclasses, glocalisations, gscores):
 
         # we will want to batch original glabels and gbboxes
         # this information is still useful even if they are padded after dequeuing
@@ -100,132 +109,3 @@ class PrepareData:
         # convert it back to the list in list format which allows us to easily use later on
         batch = tf_utils.reshape_list(batch, batch_shape)
         return batch
-
-    def __disp_image(self, img, classes, bboxes):
-        bvalid = (classes != 0)
-        classes = classes[bvalid]
-        bboxes = bboxes[bvalid]
-        scores = np.full(classes.shape, 1.0)
-        visualization.plt_bboxes(img, classes, scores, bboxes, title='Ground Truth')
-        return
-
-    def __disp_matched_anchors(self, img, target_labels_data, target_localizations_data, target_scores_data):
-        found_matched = False
-        all_anchors = g_ssd_model.get_allanchors()
-        for i, target_score_data in enumerate(target_scores_data):
-
-            num_pos = (target_labels_data[i] != 0).sum()
-            if (num_pos == 0):
-                continue
-            print('Found  {} matched default boxes in layer {}'.format(num_pos, g_ssd_model.feat_layers[i]))
-            #             pos_sample_inds = ((target_labels_data[i] != 0) & (target_score_data <=self.matched_thresholds)).nonzero()
-            pos_sample_inds = (target_labels_data[i] != 0).nonzero()
-
-            classes = target_labels_data[i][pos_sample_inds]
-            scores = target_scores_data[i][pos_sample_inds]
-            print("matched scores :{}".format(scores))
-            print("matched labels: {}".format(classes))
-            bboxes_default = g_ssd_model.get_allanchors(minmaxformat=True)[i][pos_sample_inds]
-
-            bboxes_gt = g_ssd_model.decode_bboxes_layer(target_localizations_data[i][pos_sample_inds],
-                                                        all_anchors[i][pos_sample_inds])
-
-            #             print("default box minimum, {} gt box minimum, {}".format(bboxes_default.min(), bboxes_gt.min()))
-
-            marks_default = np.full(classes.shape, True)
-            marks_gt = np.full(classes.shape, False)
-            scores_gt = np.full(scores.shape, 1.0)
-
-            bboxes = bboxes_default
-            neg_marks = marks_default
-            add_gt = True
-            if add_gt:
-                bboxes = np.vstack([bboxes_default, bboxes_gt])
-                neg_marks = np.hstack([marks_default, marks_gt])
-                classes = np.tile(classes, 2)
-                scores = np.hstack([scores, scores_gt])
-
-            title = "Default boxes: Layer {}".format(g_ssd_model.feat_layers[i])
-            visualization.plt_bboxes(img, classes, scores, bboxes, neg_marks=neg_marks, title=title)
-            found_matched = True
-
-        return found_matched
-
-    def get_voc_2007_train_data(self, is_training_data=True):
-        #  data_sources = "../data/voc/tfrecords/voc_train_2007*.tfrecord"
-        data_sources = '/home/yjin/data/SSDfinetune_tf/voc_2007_train*.tfrecord'
-        num_samples = pascalvoc_datasets.DATASET_SIZE['2007_train']
-        return self.__get_images_labels_bboxes(data_sources, num_samples, is_training_data)
-
-    """    
-    def get_voc_2012_train_data(self,is_training_data=True):
-        data_sources = "../data/voc/tfrecords/voc_train_2012*.tfrecord"
-        num_samples = pascalvoc_datasets.DATASET_SIZE['2012_train']
-
-        return self.__get_images_labels_bboxes(data_sources, num_samples, is_training_data)
-
-    def get_voc_2007_2012_train_data(self,is_training_data=True):
-        data_sources = "../data/voc/tfrecords/voc_train*.tfrecord"
-        num_samples = pascalvoc_datasets.DATASET_SIZE['2007_train'] + pascalvoc_datasets.DATASET_SIZE['2012_train']
-
-        return self.__get_images_labels_bboxes(data_sources, num_samples, is_training_data)
-    def get_voc_2007_test_data(self):
-        data_sources = "../data/voc/tfrecords/voc_test_2007*.tfrecord"
-        num_samples = pascalvoc_datasets.DATASET_SIZE['2007_test']
-
-        return self.__get_images_labels_bboxes(data_sources, num_samples, False)
-    """
-
-    def iterate_file_name(self, batch_data):
-
-        num_batches = 1 * math.ceil(self.dataset.num_samples / float(self.batch_size))
-        all_files = []
-        with tf.Session('') as sess:
-            init = tf.global_variables_initializer()
-            sess.run(init)
-            with slim.queues.QueueRunners(sess):
-                for i in range(num_batches):
-                    image, filename, glabels, gbboxes, gdifficults, gclasses, glocalisations, gscores = sess.run(
-                        list(batch_data))
-                    print(filename)
-                    all_files.append(filename)
-                all_files = np.concatenate(all_files)
-
-                all_files_unique = np.unique(all_files)
-                print(len(all_files_unique))
-
-        return
-
-    def check_match_statistics(self, filename, gclasses, gscores):
-        # flatten the array into Batch_num x bbox_num
-        gt_anchor_labels = []
-        gt_anchor_scores = []
-        for i in range(len(gclasses)):
-            gt_anchor_labels.append(np.reshape(gclasses[i], [self.batch_size, -1]))
-            gt_anchor_scores.append(np.reshape(gscores[i], [self.batch_size, -1]))
-        gt_anchor_labels = np.concatenate(gt_anchor_labels, axis=1)
-        gt_anchor_scores = np.concatenate(gt_anchor_scores, axis=1)
-
-        # find out missed match
-        inds = (gt_anchor_scores <= self.matched_thresholds) & (gt_anchor_labels != 0)
-
-        real_inds = inds.nonzero()
-
-        print("missed match: {}".format(filename[real_inds[0]]))
-        print("missed match scores: {}".format(gt_anchor_scores[real_inds]))
-        print("missed match labels: {}".format(gt_anchor_labels[real_inds]))
-        return
-
-    def run(self):
-
-        with tf.Graph().as_default():
-            batch_data = self.get_voc_2007_train_data(is_training_data=True)
-            #  batch_data = self.get_voc_2007_test_data()
-            #  batch_data = self.get_voc_2012_train_data()
-            #  batch_data = self.get_voc_2007_2012_train_data(is_training_data = True)
-            return self.iterate_file_name(batch_data)
-
-
-if __name__ == "__main__":
-    obj = PrepareData()
-    obj.run
