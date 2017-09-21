@@ -152,10 +152,9 @@ class PrepareData:
         return found_matched
 
     def get_voc_2007_train_data(self, is_training_data=True):
-        #        data_sources = "../data/voc/tfrecords/voc_train_2007*.tfrecord"
+        #  data_sources = "../data/voc/tfrecords/voc_train_2007*.tfrecord"
         data_sources = '/home/yjin/data/SSDfinetune_tf/voc_2007_train*.tfrecord'
         num_samples = pascalvoc_datasets.DATASET_SIZE['2007_train']
-
         return self.__get_images_labels_bboxes(data_sources, num_samples, is_training_data)
 
     """    
@@ -221,68 +220,12 @@ class PrepareData:
 
         with tf.Graph().as_default():
             batch_data = self.get_voc_2007_train_data(is_training_data=True)
-            #            batch_data = self.get_voc_2007_test_data()
-            #            batch_data = self.get_voc_2012_train_data()
-            #            batch_data = self.get_voc_2007_2012_train_data(is_training_data = True)
-
-
+            #  batch_data = self.get_voc_2007_test_data()
+            #  batch_data = self.get_voc_2012_train_data()
+            #  batch_data = self.get_voc_2007_2012_train_data(is_training_data = True)
             return self.iterate_file_name(batch_data)
-
-            with tf.Session('') as sess:
-                init = tf.global_variables_initializer()
-                sess.run(init)
-                with slim.queues.QueueRunners(sess):
-                    while True:
-
-                        image, filename, glabels, gbboxes, gdifficults, gclasses, glocalisations, gscores = sess.run(
-                            list(batch_data))
-
-                        #                         print("min: {}, max: {}".format(gbboxes.min(), gbboxes.max()))
-                        #                         return
-
-                        #                         print(glabels)
-                        #                         print("number of zero label patch {}".format((glabels.sum(axis=1)  == 0).sum()))
-                        #                         return
-
-                        #
-
-
-                        print(filename)
-                        selected_file = b'000050'
-                        picked_inds = None
-                        # selet the first image in the batch
-                        if selected_file is None:
-                            picked_inds = 0
-                        else:
-                            picked_inds = (selected_file == filename).nonzero()
-                            if len(picked_inds[0]) == 0:
-                                picked_inds = None
-                            else:
-                                picked_inds = picked_inds[0][0]
-
-                        if picked_inds is None:
-                            continue
-
-                        self.check_match_statistics(filename, gclasses, gscores)
-                        target_labels_data = [item[picked_inds] for item in gclasses]
-                        target_localizations_data = [item[picked_inds] for item in glocalisations]
-                        target_scores_data = [item[picked_inds] for item in gscores]
-                        image_data = image[picked_inds]
-                        print("picked file {}".format(filename[picked_inds]))
-
-                        image_data = np_image_unwhitened(image_data)
-                        self.__disp_image(image_data, glabels[picked_inds], gbboxes[picked_inds])
-                        found_matched = self.__disp_matched_anchors(image_data, target_labels_data,
-                                                                    target_localizations_data, target_scores_data)
-                        plt.show()
-                        break;
-                        # exit the batch data testing right after a successful match have been found
-                        #                         if found_matched:
-                        # this could be a potential issue to be solved since sometime not all grouth truth bboxes are encoded.
-
-        return
 
 
 if __name__ == "__main__":
     obj = PrepareData()
-    obj.run()
+    obj.run

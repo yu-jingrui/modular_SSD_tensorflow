@@ -27,22 +27,22 @@ class SSDModel:
         if feature_extractor not in nf.networks_map:
             raise ValueError('Feature extractor unknown: %s.' % feature_extractor)
         if model_name not in ['ssd300', 'ssd512']:
-            raise ValueError('Choose model between ssd300 and ssd512.')
+            raise ValueError('Model unknown. Choose model between ssd300 and ssd512.')
 
         if model_name == 'ssd300':
             self.params = ssd_blocks.ssd300_params
-            self.__ssd_blocks = ssd_blocks.ssd300
+            self._ssd_blocks = ssd_blocks.ssd300
         else:
             self.params = ssd_blocks.ssd512_params
-            self.__ssd_blocks = ssd_blocks.ssd512
+            self._ssd_blocks = ssd_blocks.ssd512
 
-        self.__feature_extractor = nf.get_network_fn(feature_extractor, self.params.num_classes,
+        self._feature_extractor = nf.get_network_fn(feature_extractor, self.params.num_classes,
                                                      weight_decay=0.0005, is_training=fe_is_training)
         self.params.feature_layers.insert(0, ssd_blocks.feature_layer[feature_extractor])
         self.is_training = is_training
         # all of the computed anchors for this model,
         # format: layer_number, numpy array format for x / y / w / h
-        self.np__anchors = None
+        self.np_anchors = None
         # format: layer number, numpy format for ymin,xmin,ymax,xmax
         self.np_anchors_minmax = None
 
@@ -56,7 +56,7 @@ class SSDModel:
         :return:
         """
         # TODO: big problem! network_fn returns the function that builds the whole network with fc layers!
-        net, end_points = self.__feature_extractor(inputs)
+        net, end_points = self._feature_extractor(inputs)
         keep_prob = 0.8
         with slim.arg_scope([slim.conv2d],
                             activation_fn=None):
@@ -68,7 +68,7 @@ class SSDModel:
                                     is_training=self.is_training,
                                     keep_prob=keep_prob):
                     with tf.variable_scope(self.params.model_name):
-                        net, end_points = self.__ssd_blocks(net, end_points)
+                        net, end_points = self._ssd_blocks(net, end_points)
 
         # Prediction and localisations layers.
         predictions = []
@@ -105,10 +105,9 @@ class SSDModel:
     def get_all_anchors(self, minmaxformat=False):
         #         print("minmaxformat {}".format(minmaxformat))
 
-        if self.np__anchors is None:
-
+        if self.np_anchors is None:
             anchors = self.get_anchors_all_layers()
-            self.np__anchors = []
+            self.np_anchors = []
             self.np_anchors_minmax = []
             for _, anchors_layer in enumerate(anchors):
                 yref, xref, href, wref = anchors_layer
@@ -132,14 +131,13 @@ class SSDModel:
                     [cx[..., np.newaxis], cy[..., np.newaxis], w[..., np.newaxis], h[..., np.newaxis]], axis=-1)
 
                 # append achors for this layer
-                self.np__anchors.append(temp_achors)
+                self.np_anchors.append(temp_achors)
         if minmaxformat:
             return self.np_anchors_minmax
         else:
-            return self.np__anchors
+            return self.np_anchors
 
     def match_achors(self, gt_labels, gt_bboxes, matching_threshold=0.5):
-
         anchors = self.get_all_anchors(minmaxformat=True)
         # flattent the anchors
         temp_anchors = []
@@ -248,7 +246,6 @@ class SSDModel:
         all_anchors = self.get_all_anchors()
         for i in range(len(localizations)):
             decoded_bboxes.append(self.decode_bboxes_layer(localizations[i], all_anchors[i]))
-
         return decoded_bboxes
 
     def decode_bboxes_all_layers_tf(self, feat_localizations):
@@ -258,7 +255,8 @@ class SSDModel:
           numpy array NlayersxNx4: ymin, xmin, ymax, xmax
         """
         anchors = self.get_anchors_all_layers()
-        return ssd_utils.bboxes_decode(feat_localizations, anchors, prior_scaling=self.params.prior_scaling)
+        bboxes = ssd_utils.bboxes_decode(feat_localizations, anchors, prior_scaling=self.params.prior_scaling)
+        return bboxes
 
     def bboxes_encode(self, labels, bboxes, dtype=tf.float32, scope='ssd_bboxes_encode'):
         # tf_ssd_bboxes_encode
