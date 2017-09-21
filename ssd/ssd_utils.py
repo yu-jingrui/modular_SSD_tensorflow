@@ -312,7 +312,7 @@ def bboxes_encode_layer(labels,
     return feat_labels, feat_localizations, feat_scores
 
 
-def __bboxes_decode_layer(feat_localizations,
+def _bboxes_decode_layer(feat_localizations,
                                anchors_layer,
                                prior_scaling=[0.1, 0.1, 0.2, 0.2]):
     """Compute the relative bounding boxes from the layer features and
@@ -359,14 +359,14 @@ def bboxes_decode(feat_localizations,
         bboxes = []
         for i, anchors_layer in enumerate(anchors):
             bboxes.append(
-                __bboxes_decode_layer(feat_localizations[i], anchors_layer, prior_scaling))
+                _bboxes_decode_layer(feat_localizations[i], anchors_layer, prior_scaling))
         return bboxes
 
 
 # =========================================================================== #
 # bbox - ground truth box matching
 # =========================================================================== #
-def __match_no_miss(gt_anchor_labels, gt_anchor_bboxes, gt_anchor_scores, jaccard, gt_labels, gt_bboxes, num_anchors):
+def _match_no_miss(gt_anchor_labels, gt_anchor_bboxes, gt_anchor_scores, jaccard, gt_labels, gt_bboxes, num_anchors):
     # make sure every ground truth box can be matched to at least one anchor box
     max_inds = tf.cast(tf.argmax(jaccard, axis=1), tf.int32)
 
@@ -430,7 +430,7 @@ def match_with_labels(gt_anchor_labels, gt_anchor_bboxes, gt_anchor_scores, jacc
     use_no_miss = True
     if use_no_miss:
         gt_anchor_labels, gt_anchor_bboxes, gt_anchor_scores = \
-            __match_no_miss(gt_anchor_labels, gt_anchor_bboxes, gt_anchor_scores,
+            _match_no_miss(gt_anchor_labels, gt_anchor_bboxes, gt_anchor_scores,
                             jaccard, gt_labels, gt_bboxes, num_anchors)
 
     return gt_anchor_labels, gt_anchor_bboxes, gt_anchor_scores
@@ -439,7 +439,7 @@ def match_with_labels(gt_anchor_labels, gt_anchor_bboxes, gt_anchor_scores, jacc
 # =========================================================================== #
 # SSD boxes selection.
 # =========================================================================== #
-def __bboxes_select_layer(predictions_layer, localizations_layer,
+def _bboxes_select_layer(predictions_layer, localizations_layer,
                         select_threshold=None,
                         num_classes=21,
                         ignore_class=0,
@@ -501,7 +501,7 @@ def bboxes_select(predictions_net, localizations_net,
         l_scores = []
         l_bboxes = []
         for i in range(len(predictions_net)):
-            scores, bboxes = __bboxes_select_layer(predictions_net[i],
+            scores, bboxes = _bboxes_select_layer(predictions_net[i],
                                                  localizations_net[i],
                                                  select_threshold,
                                                  num_classes,

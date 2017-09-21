@@ -197,7 +197,7 @@ class SSDModel:
         gt_anchor_bboxes = tf.stack([feat_cx, feat_cy, feat_w, feat_h], axis=-1)
 
         gt_anchor_labels, gt_anchor_bboxes, gt_anchor_scores = \
-            self.__convert2layers(gt_anchor_labels, gt_anchor_bboxes, gt_anchor_scores)
+            self._convert2layers(gt_anchor_labels, gt_anchor_bboxes, gt_anchor_scores)
 
         return gt_anchor_labels, gt_anchor_bboxes, gt_anchor_scores
 
@@ -296,7 +296,7 @@ class SSDModel:
             return target_labels, target_localizations, target_scores
 
     # =========================== PRIVATE METHODS ============================ #
-    def __convert2layers(self, gclasses, glocalisations, gscores):
+    def _convert2layers(self, gclasses, glocalisations, gscores):
         gt_anchor_labels = []
         gt_anchor_bboxes = []
         gt_anchor_scores = []
