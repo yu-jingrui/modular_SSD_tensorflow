@@ -9,7 +9,7 @@ from utils import tf_utils
 
 class PrepareData:
     # ============================= PUBLIC METHODS ============================== #
-    def __init__(self, batch_size, labels_offset, matched_thresholds, ssd_model):
+    def __init__(self, ssd_model, batch_size, labels_offset, matched_thresholds):
         self.batch_size = batch_size
         self.labels_offset = labels_offset
         self.matched_thresholds = matched_thresholds

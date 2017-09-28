@@ -20,7 +20,7 @@ from ssd import ssdmodel
 class Trainer:
 
     # ============================= PUBLIC METHODS ============================== #
-    def __init__(self, ssd_model, data_preparer, data_postprocessor):
+    def __init__(self, ssd_model, data_preparer, data_postprocessor, params):
         self.num_epochs_per_decay = 2.0
         self.learning_rate_decay_type = 'exponential'
         self.learning_rate_decay_factor = 0.1
