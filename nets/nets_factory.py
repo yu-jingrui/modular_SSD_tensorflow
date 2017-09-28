@@ -90,7 +90,7 @@ arg_scopes_map = {'alexnet_v2': alexnet.alexnet_v2_arg_scope,
                   }
 
 
-def get_network_fn(name, num_classes, weight_decay=0.0, is_training=False):
+def get_network_fn(name, num_classes, weight_decay=0.0, is_training=True):
     """Returns a network_fn such as `logits, end_points = network_fn(images)`.
 
     Args:
@@ -132,7 +132,7 @@ base_networks_map = {'inception_resnet_v2':inception.inception_resnet_v2_base,
                     }
 
 
-def get_base_network_fn(name, num_classes, weight_decay=0.0, is_training=False):
+def get_base_network_fn(name, num_classes, weight_decay=0.0, is_training=True):
     """Returns a base_network_fn such as 'net, end_points = base_network_fn(images)'.
 
     Args:

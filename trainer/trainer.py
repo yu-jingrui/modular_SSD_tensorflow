@@ -15,21 +15,13 @@ from tensorflow.python.platform import tf_logging as logging
 from tensorflow.python.training import saver as tf_saver
 
 from ssd import ssdmodel
+from trainer import train_params
 
 
 class Trainer:
 
     # ============================= PUBLIC METHODS ============================== #
     def __init__(self, ssd_model, data_preparer, data_postprocessor, params):
-        self.num_epochs_per_decay = 2.0
-        self.learning_rate_decay_type = 'exponential'
-        self.learning_rate_decay_factor = 0.1
-        self.end_learning_rate = 0.0001
-        self.learning_rate = 0.01
-
-        # Optimizer
-        self.optimizer = 'rmsprop'
-        self.weight_decay = 0.0005
         self.adadelta_rho = 0.95
         self.opt_epsilon = 1.0
         self.adagrad_initial_accumulator_value = 0.1
@@ -40,38 +32,33 @@ class Trainer:
         self.ftrl_l1 = 0.0
         self.ftrl_l2 = 0.0
         self.momentum = 0.9
-
         self.rmsprop_decay = 0.9
         self.rmsprop_momentum = 0.9
-
-        self.train_dir = './logs'
-        self.max_number_of_steps = None
-        self.log_every_n_steps = None
-
-        self.checkpoint_path = None
-        self.checkpoint_exclude_scopes = None
-        self.ignore_missing_vars = False
-
-        self.batch_size = 32
-
-        self.save_interval_secs = 60 * 60  # one hour
-        self.save_summaries_secs = 60
-
-        self.label_smoothing = 0
 
         self.g_prepare = data_preparer
         self.g_post = data_postprocessor
         self.g_ssd = ssd_model
-        self.trainable_scopes = self.g_ssd.model_name
-        self.fine_tune_vgg16 = False
 
-        if self.fine_tune_vgg16:
-            self.train_dir = './logs/finetune'
-            self.checkpoint_path = './logs'
-            self.checkpoint_exclude_scopes = None
-            self.trainable_scopes = '{},vgg16'.format(g_ssd.model_name)
-            self.max_number_of_steps = 900000
-            self.learning_rate = 0.01
+        if isinstance(params, train_params.TrainerParames):
+            self.fine_tune_fe = params.fine_tune_fe
+            self.train_dir = params.train_dir
+            self.checkpoint_path = params.checkpoint_path
+            self.checkpoint_exluce_scopes = params.checkpoint_exlude_scopes
+            self.trainable_scopes = params.trainable_scopes
+            self.learning_rate = params.learning_rate
+            self.learning_rate_decay_type = params.learning_rate_decay_type
+            self.max_number_of_steps = params.max_number_of_steps
+            self.optimizer = params.optimizer
+            self.weight_decay = params.weight_decay
+            self.batch_size = params.batch_size
+            self.log_every_n_steps = params.log_every_n_steps
+            self.save_interval_secs = params.save_interval_secs
+            self.save_summaries_secs = params.save_summaries_secs
+            self.label_smoothing = params.label_smoothing
+            self.ignore_missing_vars = params.ignore_missing_vars
+        else:
+            raise ValueError('Parameters are not complete.')
+
 
     def start_training(self):
         tf.logging.set_verbosity(tf.logging.INFO)
@@ -304,7 +291,7 @@ class Trainer:
 
         variables_to_restore = []
         all_variables = slim.get_model_variables()
-        if self.fine_tune_vgg16:
+        if self.fine_tune_fe:
             global_step = slim.get_or_create_global_step()
             all_variables.append(global_step)
         for var in all_variables:

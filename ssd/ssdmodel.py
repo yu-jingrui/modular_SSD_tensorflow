@@ -18,16 +18,16 @@ class SSDModel:
     """
 
     # ============================= PUBLIC METHODS ============================== #
-    def __init__(self, feature_extractor, model_name, fe_is_training=False, is_training=False):
+    def __init__(self, feature_extractor, model_name, fe_is_training=True, is_training=True):
         """
         Initialize an instance of the SSDModel
         :param feature_extractor: name of the feature extractor (backbone)
         :param model_name: name of the SSD model to use: ssd300 or ssd500
         """
         if feature_extractor not in nf.networks_map:
-            raise ValueError('Feature extractor unknown: %s.' % feature_extractor)
+            raise ValueError('Feature extractor %s unknown.' % feature_extractor)
         if model_name not in ['ssd300', 'ssd512']:
-            raise ValueError('Model unknown. Choose model between ssd300 and ssd512.')
+            raise ValueError('Model %s unknown. Choose model between ssd300 and ssd512.' % model_name)
 
         if model_name == 'ssd300':
             self.params = ssd_blocks.ssd300_params
@@ -36,8 +36,8 @@ class SSDModel:
             self.params = ssd_blocks.ssd512_params
             self._ssd_blocks = ssd_blocks.ssd512
 
-        self._feature_extractor = nf.get_network_fn(feature_extractor, self.params.num_classes,
-                                                     weight_decay=0.0005, is_training=fe_is_training)
+        self._feature_extractor = nf.get_base_network_fn(feature_extractor, self.params.num_classes,
+                                                         weight_decay=0.0005, is_training=fe_is_training)
         self.params.feature_layers.insert(0, ssd_blocks.feature_layer[feature_extractor])
         self.is_training = is_training
         # all of the computed anchors for this model,
