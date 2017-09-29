@@ -75,7 +75,7 @@ class PrepareData:
                                    gbboxes, gdifficults, gclasses, glocalisations, gscores)
 
     def _preprocess_data(self, image, labels, bboxes):
-        out_shape = self.g_ssd.img_shape
+        out_shape = self.g_ssd.params.img_shape
         if self.is_training_data:
             image, labels, bboxes = preprocess_for_train(image, labels, bboxes, out_shape=out_shape)
         else:

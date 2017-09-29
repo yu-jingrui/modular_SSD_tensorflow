@@ -34,19 +34,22 @@ class Trainer:
         self.momentum = 0.9
         self.rmsprop_decay = 0.9
         self.rmsprop_momentum = 0.9
+        self.label_smoothing = 0
 
         self.g_prepare = data_preparer
         self.g_post = data_postprocessor
         self.g_ssd = ssd_model
 
-        if isinstance(params, train_params.TrainerParames):
+        if isinstance(params, train_params.TrainerParams):
             self.fine_tune_fe = params.fine_tune_fe
             self.train_dir = params.train_dir
             self.checkpoint_path = params.checkpoint_path
-            self.checkpoint_exluce_scopes = params.checkpoint_exlude_scopes
-            self.trainable_scopes = params.trainable_scopes
+            self.ignore_missing_vars = params.ignore_missing_vars
             self.learning_rate = params.learning_rate
             self.learning_rate_decay_type = params.learning_rate_decay_type
+            self.learning_rate_decay_factor = params.learning_rate_decay_factor
+            self.num_epochs_per_decay = params.num_epochs_per_decay
+            self.end_learning_rate = params.end_learning_rate
             self.max_number_of_steps = params.max_number_of_steps
             self.optimizer = params.optimizer
             self.weight_decay = params.weight_decay
@@ -54,11 +57,17 @@ class Trainer:
             self.log_every_n_steps = params.log_every_n_steps
             self.save_interval_secs = params.save_interval_secs
             self.save_summaries_secs = params.save_summaries_secs
-            self.label_smoothing = params.label_smoothing
-            self.ignore_missing_vars = params.ignore_missing_vars
         else:
             raise ValueError('Parameters are not complete.')
 
+        if self.fine_tune_fe is False:
+            self.checkpoint_exclude_scopes = self.g_ssd.params.model_name
+            self.trainable_scopes = self.g_ssd.params.model_name
+        elif self.fine_tune_fe is True:
+            self.checkpoint_exclude_scopes = None
+            self.trainable_scopes = None # place holder! to be changed!
+        else:
+            raise ValueError('Wrong definition of fine_tune_fe!')
 
     def start_training(self):
         tf.logging.set_verbosity(tf.logging.INFO)
@@ -67,8 +76,7 @@ class Trainer:
         image, filename, glabels, gbboxes, gdifficulties, gclasses, localizations, gscores = \
             self.g_prepare.get_voc_2007_train_data()
         # Get model outputs
-        predictions, localisations, logits, end_points = \
-            self.g_ssd.get_model(image, weight_decay=self.weight_decay)
+        predictions, localisations, logits, end_points = self.g_ssd.get_model(image)
         # Get model training loss
         total_loss = ssdmodel.get_losses(logits, localisations, gclasses, localizations, gscores)
 

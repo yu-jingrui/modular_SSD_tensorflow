@@ -9,6 +9,7 @@ ssd300_params = SSDParams(model_name='ssd300',
                           num_classes=21,
                           no_annotation_label=21,
                           feature_layers=['ssd_block7', 'ssd_block8', 'ssd_block9', 'ssd_block10', 'ssd_block11'],
+                          # TODO: feature shapes may be different if other feature extractor than vgg used!
                           feature_shapes=[(38, 38), (19, 19), (10, 10), (5, 5), (3, 3), (1, 1)],
                           anchor_size_bounds=[0.15, 0.90],
                           anchor_sizes=[(21., 45.),
@@ -35,6 +36,7 @@ ssd512_params = SSDParams(model_name='ssd512',
                           num_classes=21,
                           no_annotation_label=21,
                           feature_layers=['ssd_block7', 'ssd_block8', 'ssd_block9', 'ssd_block10', 'ssd_block11', 'ssd_block12'],
+                          # TODO: feature shapes may be different if other feature extractor than vgg used!
                           feature_shapes=[(64, 64), (32, 32), (16, 16), (8, 8), (4, 4), (2, 2), (1, 1)],
                           anchor_size_bounds=[0.10, 0.90],
                           anchor_sizes=[(20.48, 51.2),
@@ -173,11 +175,13 @@ def ssd512(net, end_points):
     # Block 6: 3x3 conv
     net = slim.conv2d(net, 1024, [3, 3], rate=6, scope='conv6')
     net = slim.batch_norm(net)
+    net = custom_layers.dropout_with_noise(net)
     end_points['ssd_block6'] = net
 
     # Block 7: 1x1 conv
     net = slim.conv2d(net, 1024, [1, 1], scope='conv7')
     net = slim.batch_norm(net)
+    net = custom_layers.dropout_with_noise(net)
     end_points['ssd_block7'] = net
 
     # Block 8/9/10/11/12: 1x1 and 3x3 convolutions stride 2 (except last).
@@ -211,8 +215,10 @@ def ssd512(net, end_points):
     end_point = 'ssd_block11'
     with tf.variable_scope(end_point):
         net = slim.conv2d(net, 128, [1, 1], scope='conv1x1')
+        net = slim.batch_norm(net)
         net = custom_layers.pad2d(net, pad=(1, 1))
         net = slim.conv2d(net, 256, [3, 3], stride=2, scope='conv3x3', padding='VALID')
+        net = slim.batch_norm(net)
     end_points[end_point] = net
 
     end_point = 'ssd_block12'

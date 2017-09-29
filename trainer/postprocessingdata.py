@@ -3,7 +3,7 @@ import tensorflow.contrib.slim as slim
 from tensorflow.python.ops import math_ops
 
 import tf_extended as tfe
-
+from ssd import ssdmodel
 
 class PostProcessingData:
     def __init__(self, ssd_model):
@@ -18,7 +18,7 @@ class PostProcessingData:
             localisations = self.g_ssd.decode_bboxes_all_layers_tf(localisations)
             # Select via thresholding and also top_k bboxes from predictions
             # Apply NMS algorithm.
-            rscores, rbboxes = self.g_ssd.detected_bboxes(predictions, localisations)
+            rscores, rbboxes = ssdmodel.detected_bboxes(predictions, localisations, self.g_ssd.params.num_classes)
 
             # Compute TP and FP statistics.
             c_num_gbboxes, c_tp, c_fp, c_scores = \
@@ -47,7 +47,7 @@ class PostProcessingData:
         with tf.device('/device:CPU:0'):
             # Detected objects from SSD output.
             localisations = self.g_ssd.decode_bboxes_all_layers_tf(localisations)
-            rscores, rbboxes = self.g_ssd.detected_bboxes(predictions, localisations)
+            rscores, rbboxes = ssdmodel.detected_bboxes(predictions, localisations, self.g_ssd.params.num_classes)
             # Compute TP and FP statistics.
             num_gbboxes, tp, fp, rscores = \
                 tfe.bboxes_matching_batch(rscores.keys(), rscores, rbboxes,
