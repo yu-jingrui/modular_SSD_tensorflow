@@ -27,7 +27,7 @@ class SSDModel:
         if feature_extractor not in nf.base_networks_map:
             raise ValueError('Feature extractor %s unknown.' % feature_extractor)
         if model_name not in ['ssd300', 'ssd512']:
-            raise ValueError('Model %s unknown. Choose model between ssd300 and ssd512.' % model_name)
+            raise ValueError('Model %s unknown. Choose either ssd300 or ssd512.' % model_name)
 
         if model_name == 'ssd300':
             self.params = ssd_blocks.ssd300_params

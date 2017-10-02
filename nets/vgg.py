@@ -157,19 +157,20 @@ def vgg_16_base(inputs, scope='vgg_16',):
         end_points_collection = sc.name + 'end_points'
         with slim.arg_scope([slim.conv2d, slim.fully_connected, slim.max_pool2d],
                             outputs_collections=end_points_collection):
-            net = slim.repeat(inputs, 2, slim.conv2d, 64, [3, 3], scope='conv1')
-            net = slim.max_pool2d(net, [2, 2], scope='pool1')
-            net = slim.repeat(net, 2, slim.conv2d, 128, [3, 3], scope='conv2')
-            net = slim.max_pool2d(net, [2, 2], scope='pool2')
-            net = slim.repeat(net, 3, slim.conv2d, 256, [3, 3], scope='conv3')
-            net = slim.max_pool2d(net, [2, 2], scope='pool3')
-            net = slim.repeat(net, 3, slim.conv2d, 512, [3, 3], scope='conv4')
-            net = slim.max_pool2d(net, [2, 2], scope='pool4')
-            net = slim.repeat(net, 3, slim.conv2d, 512, [3, 3], scope='conv5')
-            net = slim.max_pool2d(net, [3, 3], stride=1, scope='pool5', padding='SAME')
-            # Convert end_points_collection into a end_point dict.
-            end_points = slim.utils.convert_collection_to_dict(end_points_collection)
-            return net, end_points
+            with slim.arg_scope([slim.conv2d, slim.max_pool2d], padding='SAME', data_format='NHWC') as sc:
+                net = slim.repeat(inputs, 2, slim.conv2d, 64, [3, 3], scope='conv1')
+                net = slim.max_pool2d(net, [2, 2], scope='pool1')
+                net = slim.repeat(net, 2, slim.conv2d, 128, [3, 3], scope='conv2')
+                net = slim.max_pool2d(net, [2, 2], scope='pool2')
+                net = slim.repeat(net, 3, slim.conv2d, 256, [3, 3], scope='conv3')
+                net = slim.max_pool2d(net, [2, 2], scope='pool3')
+                net = slim.repeat(net, 3, slim.conv2d, 512, [3, 3], scope='conv4')
+                net = slim.max_pool2d(net, [2, 2], scope='pool4')
+                net = slim.repeat(net, 3, slim.conv2d, 512, [3, 3], scope='conv5')
+                net = slim.max_pool2d(net, [3, 3], stride=1, scope='pool5')
+                # Convert end_points_collection into a end_point dict.
+                end_points = slim.utils.convert_collection_to_dict(end_points_collection)
+                return net, end_points
 
 
 def vgg_16(inputs,
