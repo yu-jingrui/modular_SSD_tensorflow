@@ -124,7 +124,7 @@ def get_network_fn(name, num_classes, weight_decay=0.0, is_training=True):
 
 
 # TODO: build base network for all feature extractors
-base_networks_map = {'inception_resnet_v2':inception.inception_resnet_v2_base,
+base_networks_map = {'inception_resnet_v2': inception.inception_resnet_v2_base,
                      'inception_v1': inception.inception_v1_base,
                      'inception_v2': inception.inception_v2_base,
                      'inception_v3': inception.inception_v3_base,
@@ -134,6 +134,9 @@ base_networks_map = {'inception_resnet_v2':inception.inception_resnet_v2_base,
                      'vgg_a': vgg.vgg_a_base,
                      'vgg_19': vgg.vgg_19_base
                      }
+
+
+base_arg_scopes_map = {'vgg_16': vgg.vgg_base_arg_scope}
 
 
 def get_base_network_fn(name, weight_decay=0.0):
@@ -159,7 +162,7 @@ def get_base_network_fn(name, weight_decay=0.0):
 
     @functools.wraps(func)
     def base_network_fn(images):
-        arg_scope = arg_scopes_map[name](weight_decay=weight_decay)
+        arg_scope = base_arg_scopes_map[name](weight_decay=weight_decay)
         with slim.arg_scope(arg_scope):
             return func(images)
 

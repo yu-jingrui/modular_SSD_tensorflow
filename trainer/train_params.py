@@ -66,7 +66,7 @@ ssd_train_params = TrainerParams(fine_tune_fe=False,
                                  max_number_of_steps=30000,
                                  optimizer='adam',
                                  weight_decay=0.0005,
-                                 batch_size=2,
+                                 batch_size=32,
                                  log_every_n_steps=100,
                                  save_interval_secs=60*60,
                                  save_summaries_secs=60
