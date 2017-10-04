@@ -7,6 +7,7 @@ Usage:
 """
 
 import tensorflow as tf
+
 slim = tf.contrib.slim
 
 
@@ -114,6 +115,8 @@ def xception(inputs,
             end_points['predictions'] = prediction_fn(logits, scope='Predictions')
 
         return logits, end_points
+
+
 xception.default_image_size = 299
 
 
@@ -128,12 +131,12 @@ def xception_arg_scope(weight_decay=0.00001, stddev=0.1):
       An `arg_scope` to use for the xception model.
     """
     batch_norm_params = {
-      # Decay for the moving averages.
-      'decay': 0.9997,
-      # epsilon to prevent 0s in variance.
-      'epsilon': 0.001,
-      # collection containing update_ops.
-      'updates_collections': tf.GraphKeys.UPDATE_OPS,
+        # Decay for the moving averages.
+        'decay': 0.9997,
+        # epsilon to prevent 0s in variance.
+        'epsilon': 0.001,
+        # collection containing update_ops.
+        'updates_collections': tf.GraphKeys.UPDATE_OPS,
     }
 
     # Set weight_decay for weights in Conv and FC layers.
@@ -142,7 +145,8 @@ def xception_arg_scope(weight_decay=0.00001, stddev=0.1):
         with slim.arg_scope(
                 [slim.conv2d, slim.separable_convolution2d],
                 padding='SAME',
-                weights_initializer=tf.contrib.layers.variance_scaling_initializer(factor=2.0, mode='FAN_IN', uniform=False),
+                weights_initializer=tf.contrib.layers.variance_scaling_initializer(factor=2.0, mode='FAN_IN',
+                                                                                   uniform=False),
                 activation_fn=tf.nn.relu,
                 normalizer_fn=slim.batch_norm,
                 normalizer_params=batch_norm_params):
@@ -210,6 +214,7 @@ def xception_keras_arg_scope(hdf5_file, weight_decay=0.00001):
             'moving_variance': _variance_initializer,
         }
         return params
+
     keras_bn_params.bidx = 0
     keras_bn_params.gidx = 0
     keras_bn_params.midx = 0
@@ -221,7 +226,9 @@ def xception_keras_arg_scope(hdf5_file, weight_decay=0.00001):
             k = 'convolution2d_%i' % keras_conv2d_weights.idx
             kw = 'convolution2d_%i_W:0' % keras_conv2d_weights.idx
             return tf.cast(hdf5_file[k][kw][:], dtype)
+
         return _initializer
+
     keras_conv2d_weights.idx = 0
 
     def keras_sep_conv2d_weights():
@@ -238,7 +245,9 @@ def xception_keras_arg_scope(hdf5_file, weight_decay=0.00001):
                 kp = 'separableconvolution2d_%i_pointwise_kernel:0' % keras_sep_conv2d_weights.pidx
                 weights = hdf5_file[k][kp][:]
             return tf.cast(weights, dtype)
+
         return _initializer
+
     keras_sep_conv2d_weights.didx = 0
     keras_sep_conv2d_weights.pidx = 0
 
@@ -248,7 +257,9 @@ def xception_keras_arg_scope(hdf5_file, weight_decay=0.00001):
             k = 'dense_%i' % keras_dense_weights.idx
             kw = 'dense_%i_W:0' % keras_dense_weights.idx
             return tf.cast(hdf5_file[k][kw][:], dtype)
+
         return _initializer
+
     keras_dense_weights.idx = 1
 
     def keras_dense_biases():
@@ -257,7 +268,9 @@ def xception_keras_arg_scope(hdf5_file, weight_decay=0.00001):
             k = 'dense_%i' % keras_dense_biases.idx
             kb = 'dense_%i_b:0' % keras_dense_biases.idx
             return tf.cast(hdf5_file[k][kb][:], dtype)
+
         return _initializer
+
     keras_dense_biases.idx = 1
 
     # Default network arg scope.
@@ -270,7 +283,6 @@ def xception_keras_arg_scope(hdf5_file, weight_decay=0.00001):
                 normalizer_fn=slim.batch_norm,
                 normalizer_params=keras_bn_params()):
             with slim.arg_scope([slim.max_pool2d], padding='SAME'):
-
                 # Weights initializers from Keras weights.
                 with slim.arg_scope([slim.conv2d],
                                     weights_initializer=keras_conv2d_weights()):
@@ -280,4 +292,3 @@ def xception_keras_arg_scope(hdf5_file, weight_decay=0.00001):
                                             weights_initializer=keras_dense_weights(),
                                             biases_initializer=keras_dense_biases()) as sc:
                             return sc
-
