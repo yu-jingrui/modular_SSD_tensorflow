@@ -40,25 +40,23 @@ class Trainer:
         self.g_post = data_postprocessor
         self.g_ssd = ssd_model
 
-        if isinstance(params, train_params.TrainerParams):
-            self.fine_tune_fe = params.fine_tune_fe
-            self.train_dir = params.train_dir
-            self.checkpoint_path = params.checkpoint_path
-            self.ignore_missing_vars = params.ignore_missing_vars
-            self.learning_rate = params.learning_rate
-            self.learning_rate_decay_type = params.learning_rate_decay_type
-            self.learning_rate_decay_factor = params.learning_rate_decay_factor
-            self.num_epochs_per_decay = params.num_epochs_per_decay
-            self.end_learning_rate = params.end_learning_rate
-            self.max_number_of_steps = params.max_number_of_steps
-            self.optimizer = params.optimizer
-            self.weight_decay = params.weight_decay
-            self.batch_size = params.batch_size
-            self.log_every_n_steps = params.log_every_n_steps
-            self.save_interval_secs = params.save_interval_secs
-            self.save_summaries_secs = params.save_summaries_secs
-        else:
-            raise ValueError('Parameters are not complete.')
+
+        self.fine_tune_fe = params.fine_tune_fe
+        self.train_dir = params.train_dir
+        self.checkpoint_path = params.checkpoint_path
+        self.ignore_missing_vars = params.ignore_missing_vars
+        self.learning_rate = params.learning_rate
+        self.learning_rate_decay_type = params.learning_rate_decay_type
+        self.learning_rate_decay_factor = params.learning_rate_decay_factor
+        self.num_epochs_per_decay = params.num_epochs_per_decay
+        self.end_learning_rate = params.end_learning_rate
+        self.max_number_of_steps = params.max_number_of_steps
+        self.optimizer = params.optimizer
+        self.weight_decay = params.weight_decay
+        self.batch_size = params.batch_size
+        self.log_every_n_steps = params.log_every_n_steps
+        self.save_interval_secs = params.save_interval_secs
+        self.save_summaries_secs = params.save_summaries_secs
 
         if self.fine_tune_fe is False:
             self.checkpoint_exclude_scopes = self.g_ssd.params.model_name
