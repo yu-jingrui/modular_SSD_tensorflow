@@ -18,7 +18,7 @@ class SSDModel:
     """
 
     # ============================= PUBLIC METHODS ============================== #
-    def __init__(self, feature_extractor, model_name, fe_is_training=True, is_training=True):
+    def __init__(self, feature_extractor, model_name, weight_decay, is_training=True):
         """
         Initialize an instance of the SSDModel
         :param feature_extractor: name of the feature extractor (backbone)
@@ -37,7 +37,8 @@ class SSDModel:
             self._ssd_blocks = ssd_blocks.ssd512
 
         # TODO: figure out if extra arg_scope() needed for feature_extractor
-        self._feature_extractor = nf.get_base_network_fn(feature_extractor, weight_decay=0.0005)
+        self.feature_extractor = feature_extractor
+        self._feature_extractor = nf.get_base_network_fn(feature_extractor, weight_decay=weight_decay)
         self.params.feature_layers.insert(0, ssd_blocks.feature_layer[feature_extractor])
         self.is_training = is_training
         # all of the computed anchors for this model,

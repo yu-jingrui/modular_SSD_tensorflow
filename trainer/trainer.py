@@ -3,7 +3,6 @@ from __future__ import division
 from __future__ import print_function
 
 import os
-import sys
 import time
 
 import tensorflow as tf
@@ -15,7 +14,6 @@ from tensorflow.python.platform import tf_logging as logging
 from tensorflow.python.training import saver as tf_saver
 
 from ssd import ssdmodel
-from trainer import train_params
 
 
 class Trainer:
@@ -40,7 +38,6 @@ class Trainer:
         self.g_post = data_postprocessor
         self.g_ssd = ssd_model
 
-
         self.fine_tune_fe = params.fine_tune_fe
         self.train_dir = params.train_dir
         self.checkpoint_path = params.checkpoint_path
@@ -63,7 +60,7 @@ class Trainer:
             self.trainable_scopes = self.g_ssd.params.model_name
         elif self.fine_tune_fe is True:
             self.checkpoint_exclude_scopes = None
-            self.trainable_scopes = None # place holder! to be changed!
+            self.trainable_scopes = '{},{}'.format(self.g_ssd.params.model_name, self.g_ssd.feature_extractor)
         else:
             raise ValueError('Wrong definition of fine_tune_fe!')
 

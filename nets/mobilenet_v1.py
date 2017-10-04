@@ -139,6 +139,26 @@ _CONV_DEFS = [
 ]
 
 
+def mobilenet_v1_base_ssd(inputs):
+    conv_defs = [
+        Conv(kernel=[3, 3], stride=1, depth=32),
+        DepthSepConv(kernel=[3, 3], stride=1, depth=64),
+        DepthSepConv(kernel=[3, 3], stride=2, depth=128),
+        DepthSepConv(kernel=[3, 3], stride=1, depth=128),
+        DepthSepConv(kernel=[3, 3], stride=2, depth=256),
+        DepthSepConv(kernel=[3, 3], stride=1, depth=256),
+        DepthSepConv(kernel=[3, 3], stride=2, depth=512),
+        DepthSepConv(kernel=[3, 3], stride=1, depth=512),
+        DepthSepConv(kernel=[3, 3], stride=1, depth=512),
+        DepthSepConv(kernel=[3, 3], stride=1, depth=512),
+        DepthSepConv(kernel=[3, 3], stride=1, depth=512),
+        DepthSepConv(kernel=[3, 3], stride=1, depth=512),
+        DepthSepConv(kernel=[3, 3], stride=2, depth=1024),
+        DepthSepConv(kernel=[3, 3], stride=1, depth=1024)
+    ]
+    return mobilenet_v1_base(inputs, conv_defs=conv_defs)
+
+
 def mobilenet_v1_base(inputs,
                       final_endpoint='Conv2d_13_pointwise',
                       min_depth=8,
@@ -412,3 +432,11 @@ def mobilenet_v1_arg_scope(is_training=True,
                 with slim.arg_scope([slim.separable_conv2d],
                                     weights_regularizer=depthwise_regularizer) as sc:
                     return sc
+
+
+def mobilenet_v1_base_arg_scope(is_training=True,
+                                weight_decay=0.00004,
+                                stddev=0.09,
+                                regularize_depthwise=False):
+    with slim.arg_scope([slim.conv2d, slim.batch_norm], data_format='NHWC'):
+        return mobilenet_v1_arg_scope(is_training, weight_decay, stddev, regularize_depthwise)
