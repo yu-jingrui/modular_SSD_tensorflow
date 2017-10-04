@@ -1,50 +1,17 @@
 from collections import namedtuple
 
 
-reference_params = {'num_epochs_per_decay': 2.0,
-                    'learning_rate_decay_type': 'exponential',
-                    'learning_rate_decay_factor': 0.1,
-                    'end_learning_rate': 0.0001,
-                    'learning_rate': 0.01,
-                    'optimizer': 'rmsprop',
-                    'weight_decay': 0.0005,
-                    'adadelta_rho': 0.95,
-                    'opt_epsilon': 1.0,
-                    'adagrad_initial_accumulator_value': 0.1,
-                    'adam_beta1': 0.9,
-                    'adam_beta2': 0.999,
-                    'ftrl_learning_rate_power': -0.5,
-                    'ftrl_initial_accumulator_value': 0.1,
-                    'ftrl_l1': 0.0,
-                    'ftrl_l2': 0.0,
-                    'momentum': 0.9,
-                    'rmsprop_decay': 0.9,
-                    'rmsprop_momentum': 0.9,
-                    'train_dir': './logs',
-                    'max_number_of_steps': None,
-                    'log_every_n_steps': None,
-                    'checkpoint_path': None,
-                    'checkpoint_exclude_scopes': None,
-                    'ignore_missing_vars': False,
-                    'batch_size': 32,
-                    'save_interval_secs': 60 * 60,  # one hour
-                    'save_summaries_secs': 60,
-                    'label_smoothing': 0,
-                    'fine_tune_fe': True
-                    }
-
-
 TrainerParams = namedtuple('TrainerParameters',
-                           ['fine_tune_fe',
-                            'train_dir',
-                            'checkpoint_path',
-                            'ignore_missing_vars',
-                            'learning_rate',
+                           ['fine_tune_fe',  # (True / False) whether feature extractor should be fine tuned
+                            'train_dir',  # directory to save model weights
+                            'checkpoint_path',  # directory of the initial / pre trained weights
+                            'ignore_missing_vars',  # (True / False) whether to ignore layers in the pre trained weights
+                            'learning_rate',  # initial learning rate
                             'learning_rate_decay_type',
                             'learning_rate_decay_factor',
                             'num_epochs_per_decay',
                             'end_learning_rate',
-                            'max_number_of_steps',
+                            'max_number_of_steps',  # maximal number of training steps
                             'optimizer',
                             'weight_decay',
                             'batch_size',
@@ -66,7 +33,7 @@ ssd_train_params = TrainerParams(fine_tune_fe=False,
                                  max_number_of_steps=30000,
                                  optimizer='adam',
                                  weight_decay=0.0005,
-                                 batch_size=32,
+                                 batch_size=20,
                                  log_every_n_steps=100,
                                  save_interval_secs=60*60,
                                  save_summaries_secs=60
