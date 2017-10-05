@@ -4,8 +4,6 @@
     <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ssd/ssd_blocks.py" afterPath="$PROJECT_DIR$/ssd/ssd_blocks.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainer/train_params.py" afterPath="$PROJECT_DIR$/trainer/train_params.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -102,8 +100,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="399">
+              <caret line="21" column="132" lean-forward="false" selection-start-line="21" selection-start-column="132" selection-end-line="21" selection-end-column="132" />
               <folding />
             </state>
           </provider>
@@ -547,7 +545,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507103161118</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Updated README.md">
+      <created>1507190508869</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1507190508869</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TodoView" selected-index="5">
@@ -611,7 +616,8 @@
     <MESSAGE value="Initial training works with ssd300. SSD512 gives OOM error even with batch_size=2." />
     <MESSAGE value="Solved ssd512 OOM issue: same batch_size must be used for DataPreparer and Trainer." />
     <MESSAGE value="bug fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="bug fixes." />
+    <MESSAGE value="Updated README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -909,8 +915,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="399">
+          <caret line="21" column="132" lean-forward="false" selection-start-line="21" selection-start-column="132" selection-end-line="21" selection-end-column="132" />
           <folding />
         </state>
       </provider>
