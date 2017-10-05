@@ -81,10 +81,10 @@ feature_layer = {'alexnet_v2': '',
                  'resnet_v2_101': '',
                  'resnet_v2_152': '',
                  'resnet_v2_200': '',
-                 'mobilenet_v1': 'xx',
-                 'mobilenet_v1_075': '',
-                 'mobilenet_v1_050': '',
-                 'mobilenet_v1_025': '',
+                 'mobilenet_v1': 'Conv2d_11_pointwise',
+                 'mobilenet_v1_075': 'Conv2d_11_pointwise',
+                 'mobilenet_v1_050': 'Conv2d_11_pointwise',
+                 'mobilenet_v1_025': 'Conv2d_11_pointwise',
                  'xception': 'block14'
                  }
 
