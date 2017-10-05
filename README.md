@@ -13,11 +13,12 @@ Inspiration: Speed/accuracy trade-offs for modern convolutional object detectors
 - [ ] Test VGG-SSD
 - [ ] Connect other backends for SSD
 - [ ] Test connected backends
+-- [ ] what is this?
 
 
 ## Acknowledgement
 
 This repo is based on the works:
-* [SSD-Tensorflow](https://github.com/balancap/SSD-Tensorflow/) The Tensorflow reimplementation of Caffe SSD
-* [SSD_tensorflow_VOC](https://github.com/LevinJ/SSD_tensorflow_VOC) A fork of SSD-Tensorflow with bachnorm and simplified structure
+* [SSD-Tensorflow](https://github.com/balancap/SSD-Tensorflow/): The Tensorflow re-implementation of Caffe SSD
+* [SSD_tensorflow_VOC](https://github.com/LevinJ/SSD_tensorflow_VOC): A fork of SSD-Tensorflow with bachnorm and simplified structure
 
