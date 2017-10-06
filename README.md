@@ -5,15 +5,26 @@ This repo tries to implement SSD in a modularized fashion.
 Inspiration: Speed/accuracy trade-offs for modern convolutional object detectors. (arXiv:1611.10012)
 
 
+## Dependencies:
+- Python 3.x
+- Tensorflow 1.x
+- CUDA 8.0
+- OpenCV 3.x
+
+## HOWTO:
+#### Prepare data for training
+#### Train SSD layers
+#### Fine tune feature extractor
+#### Get training and test results
+#### Demo 
+
 ## TODOs:
 - [x] Rewrite core Tensorflow SSD for modularization
 - [x] Connect original VGG backend for SSD
-- [ ] Train VGG-SSD
-- [ ] Build test routine
-- [ ] Test VGG-SSD
+- [ ] Implement test routine
+- [ ] Train and test VGG-SSD
 - [ ] Connect other backends for SSD
-- [ ] Test connected backends
--- [ ] what is this?
+- [ ] Train and test connected backends
 
 
 ## Acknowledgement

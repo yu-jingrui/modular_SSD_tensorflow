@@ -36,7 +36,6 @@ class SSDModel:
             self.params = ssd_blocks.ssd512_params
             self._ssd_blocks = ssd_blocks.ssd512
 
-        # TODO: figure out if extra arg_scope() needed for feature_extractor
         self.feature_extractor = feature_extractor
         self._feature_extractor = nf.get_base_network_fn(feature_extractor, weight_decay=weight_decay)
         self.params.feature_layers.insert(0, ssd_blocks.feature_layer[feature_extractor])
@@ -47,7 +46,6 @@ class SSDModel:
         # format: layer number, numpy format for ymin,xmin,ymax,xmax
         self.np_anchors_minmax = None
 
-    # TODO: construct the whole SSD network
     def get_model(self, inputs):
         net, end_points = self._feature_extractor(inputs)
         keep_prob = 0.8
@@ -59,19 +57,21 @@ class SSDModel:
                         net, end_points = self._ssd_blocks(net, end_points)
 
         # Prediction and localisations layers.
+        # set breakpoint here to find out which layer in feature extractor to use as bbox layer
         predictions = []
         logits = []
         localisations = []
-        for i, layer in enumerate(self.params.feature_layers):
-            with tf.variable_scope(layer + '_box'):
-                p, l = ssd_utils.multibox_layer(end_points[layer],
-                                                self.params.num_classes,
-                                                self.params.anchor_sizes[i],
-                                                self.params.anchor_ratios[i],
-                                                self.params.normalizations[i])
-            predictions.append(slim.softmax(p))
-            logits.append(p)
-            localisations.append(l)
+        with tf.variable_scope('bbox_layers'):
+            for i, layer in enumerate(self.params.feature_layers):
+                with tf.variable_scope(layer + '_box'):
+                    p, l = ssd_utils.multibox_layer(end_points[layer],
+                                                    self.params.num_classes,
+                                                    self.params.anchor_sizes[i],
+                                                    self.params.anchor_ratios[i],
+                                                    self.params.normalizations[i])
+                predictions.append(slim.softmax(p))
+                logits.append(p)
+                localisations.append(l)
 
         return predictions, localisations, logits, end_points
 

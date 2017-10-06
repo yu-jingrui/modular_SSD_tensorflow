@@ -6,7 +6,7 @@ from trainer import train_params
 
 
 if __name__ == '__main__':
-    params = train_params.ssd_train_params
+    params = train_params.mobilenet_ssd_params
 
     feature_extractor = params.feature_extractor
     model_name = params.model_name

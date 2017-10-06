@@ -12,7 +12,7 @@ from pathlib import Path
 
 from preprocessing import ssd_vgg_preprocessing
 from utils import visualization
-from ssd.SSDModel import *
+from ssd.ssdmodel import SSDModel
 import utils.np_methods as np_methods
 
 # TensorFlow session: grow memory when needed. TF, DO NOT USE ALL MY GPU MEMORY!!!
@@ -30,13 +30,11 @@ image_pre, labels_pre, bboxes_pre, bbox_img = ssd_vgg_preprocessing.preprocess_f
 image_4d = tf.expand_dims(image_pre, 0)
 
 # Define the SSD model.
-g_ssd_model = SSDModel('vgg_16', 'ssd300')
+g_ssd_model = SSDModel('vgg_16', 'ssd300', weight_decay=0.0005)
 predictions, localisations, _, _ = g_ssd_model.get_model(image_4d)
 
 # Restore SSD model.
-# ckpt_filename = tf.train.latest_checkpoint('../logs/finetune/')
-ckpt_filename = tf.train.latest_checkpoint('../SSD_tensorflow_VOC/logs/')
-
+ckpt_filename = tf.train.latest_checkpoint('./logs/')
 isess.run(tf.global_variables_initializer())
 saver = tf.train.Saver()
 saver.restore(isess, ckpt_filename)
@@ -47,15 +45,16 @@ ssd_anchors = g_ssd_model.get_anchors_all_layers()
 
 # Main image processing routine.
 # def process_image(img, select_threshold=0.5, nms_threshold=.45, net_shape=(300, 300)):
-def process_image(img, select_threshold=0.25, nms_threshold=.45, net_shape=(300, 300)):
+def process_image(img, select_threshold=0.3, nms_threshold=.1, net_shape=(300, 300)):
     # Run SSD network.
-    rimg, rpredictions, rlocalisations, rbbox_img = isess.run([image_4d, predictions, localisations, bbox_img],
-                                                              feed_dict={img_input: img})
+    rimg, rpredictions, rlocalisations, rbbox_img = \
+        isess.run([image_4d, predictions, localisations, bbox_img], feed_dict={img_input: img})
 
     # Get classes and bboxes from the net outputs.
-    rclasses, rscores, rbboxes = np_methods.ssd_bboxes_select(
-        rpredictions, rlocalisations, ssd_anchors,
-        select_threshold=select_threshold, img_shape=net_shape, num_classes=21, decode=True)
+    rclasses, rscores, rbboxes = \
+        np_methods.ssd_bboxes_select(rpredictions, rlocalisations, ssd_anchors,
+                                     select_threshold=select_threshold,
+                                     img_shape=net_shape, num_classes=21, decode=True)
 
     rbboxes = np_methods.bboxes_clip(rbbox_img, rbboxes)
     rclasses, rscores, rbboxes = np_methods.bboxes_sort(rclasses, rscores, rbboxes, top_k=400)
