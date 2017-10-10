@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="">
+    <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="Added training parameters for MobileNet-SSD512.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/evaluator/evaluator.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/new_demo.py" afterPath="$PROJECT_DIR$/new_demo.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train_model.py" afterPath="$PROJECT_DIR$/train_model.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainer/train_params.py" afterPath="$PROJECT_DIR$/trainer/train_params.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trainer/trainer.py" afterPath="$PROJECT_DIR$/trainer/trainer.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,9 +17,11 @@
       <file leaf-file-name="train_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-              <folding />
+            <state relative-caret-position="437">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,25 +39,10 @@
       <file leaf-file-name="preparedata.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trainer/preparedata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="856">
-              <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+            <state relative-caret-position="266">
+              <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
               <folding>
-                <element signature="e#0#38#0" expanded="true" />
-                <element signature="e#6886#7015#1" expanded="true" />
-                <element signature="e#7512#7821#1" expanded="true" />
-                <element signature="e#9270#11258#0" expanded="false" />
-                <element signature="e#9270#9544#1" expanded="true" />
-                <element signature="e#12241#12510#1" expanded="true" />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,7 +51,7 @@
       <file leaf-file-name="ssdmodel.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ssd/ssdmodel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
+            <state relative-caret-position="495">
               <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -86,58 +69,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new_demo.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new_demo.py">
+      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="47" column="82" lean-forward="false" selection-start-line="47" selection-start-column="82" selection-end-line="47" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ssd_blocks.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ssd/ssd_blocks.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1273">
-              <caret line="67" column="50" lean-forward="false" selection-start-line="67" selection-start-column="50" selection-end-line="67" selection-end-column="50" />
+            <state relative-caret-position="361">
+              <caret line="76" column="17" lean-forward="true" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="e#0#38#0" expanded="true" />
+                <element signature="e#6886#7015#1" expanded="true" />
+                <element signature="e#7512#7821#1" expanded="true" />
+                <element signature="e#9270#11258#0" expanded="false" />
+                <element signature="e#9270#9544#1" expanded="true" />
+                <element signature="e#12241#12510#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="361">
-                <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inception_resnet_v2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nets/inception_resnet_v2.py">
+      <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-56">
-              <caret line="296" column="75" lean-forward="false" selection-start-line="296" selection-start-column="75" selection-end-line="296" selection-end-column="75" />
+            <state relative-caret-position="1387">
+              <caret line="73" column="51" lean-forward="true" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
               <folding>
-                <element signature="e#4482#5856#1" expanded="true" />
+                <element signature="e#0#11#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nets_factory.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nets/nets_factory.py">
+      <file leaf-file-name="postprocessingdata.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trainer/postprocessingdata.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="142" column="0" lean-forward="false" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,7 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>np_anchors</find>
       <find>np__anchors</find>
       <find>decode_bboxes_all_layers_tf</find>
       <find>decode_bboxes_all_layers</find>
@@ -184,6 +148,7 @@
       <find>preprocess_for_train</find>
       <find>learning_rate_decay_type</find>
       <find>fine_tune_fe</find>
+      <find>2007</find>
     </findStrings>
     <replaceStrings>
       <replace>_bboxes_decode_layer</replace>
@@ -203,6 +168,9 @@
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
+    <push-targets>
+      <push-target-info target-remote="dst" target-branch="master" repo="$PROJECT_DIR$" source="master" />
+    </push-targets>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -253,14 +221,15 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/trainer/train_params.py" />
         <option value="$PROJECT_DIR$/trainer/trainer.py" />
+        <option value="$PROJECT_DIR$/evaluator/evaluator.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="80" />
-    <option name="y" value="4" />
+    <option name="y" value="11" />
     <option name="width" value="1841" />
-    <option name="height" value="1212" />
+    <option name="height" value="1205" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -306,6 +275,16 @@
             <path>
               <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
+              <item name="evaluator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
+              <item name="ssd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
@@ -574,7 +553,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507290560686</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Added training parameters for MobileNet-SSD512.">
+      <created>1507627567328</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1507627567328</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TodoView" selected-index="5">
@@ -587,9 +573,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="4" width="1841" height="1212" extended-state="6" />
+    <frame x="80" y="11" width="1841" height="1205" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15878195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15878195" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.4980968" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28051" sideWeight="0.5051659" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -619,7 +605,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/models" />
     </ignored-roots>
-    <MESSAGE value="First commit:&#10;1) added all nets from tf.slim. (just copy-paste)&#10;2) built blocks of the SSD nets. Used the version from SSD_tensorflow_VOC with batch normalisation, because this worked for me.&#10;3) initialized SSD_Model.py. Try to build the functional model step by step. Most copied from SSD_tensorflow_VOC." />
     <MESSAGE value="added some functions" />
     <MESSAGE value="created branch to try SSD_tensorflow_VOC copy" />
     <MESSAGE value="start rebuild. Try to get all public methods of SSDModel in one place" />
@@ -644,7 +629,8 @@
     <MESSAGE value="Updated README.md" />
     <MESSAGE value="Changed training scope definition." />
     <MESSAGE value="Modified README" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modified README" />
+    <MESSAGE value="Added training parameters for MobileNet-SSD512." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added training parameters for MobileNet-SSD512." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -668,8 +654,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/trainer/PrepareData.py" />
-    <entry file="file://$PROJECT_DIR$/ssd/SSDModel.py" />
     <entry file="file://$PROJECT_DIR$/utils/net_concatenator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -752,9 +736,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainer/postprocessingdata.py" />
     <entry file="file://$PROJECT_DIR$/ssd/ssd_utils.py" />
-    <entry file="file://$PROJECT_DIR$/preprocessing/pascalvoc_datasets.py" />
     <entry file="file://$PROJECT_DIR$/models/neural_programmer/model.py" />
     <entry file="file://$USER_HOME$/anaconda2/envs/tf-py3/lib/python3.6/contextlib.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -852,6 +834,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2679">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -932,33 +915,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trainer/preparedata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="856">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssd/ssdmodel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <element signature="e#3444#4195#0" expanded="false" />
-            <element signature="e#4256#5582#0" expanded="false" />
-            <element signature="e#5666#9196#0" expanded="false" />
-            <element signature="e#9270#10687#0" expanded="false" />
-            <element signature="e#9270#9494#1" expanded="true" />
-            <element signature="e#10752#11187#0" expanded="false" />
-            <element signature="e#11260#11619#0" expanded="false" />
-            <element signature="e#11719#13554#0" expanded="false" />
-            <element signature="e#13705#14461#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nets/nets_factory.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="590">
@@ -983,14 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/trainer/train_params.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="628">
@@ -999,10 +947,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/pascalvoc_datasets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-56">
+          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/vgg_preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssd/ssdmodel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <element signature="e#3444#4195#0" expanded="false" />
+            <element signature="e#4256#5582#0" expanded="false" />
+            <element signature="e#5666#9196#0" expanded="false" />
+            <element signature="e#9270#10687#0" expanded="false" />
+            <element signature="e#9270#9494#1" expanded="true" />
+            <element signature="e#10752#11187#0" expanded="false" />
+            <element signature="e#11260#11619#0" expanded="false" />
+            <element signature="e#11719#13554#0" expanded="false" />
+            <element signature="e#13705#14461#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer/postprocessingdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer/preparedata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="37" lean-forward="true" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="64" column="13" lean-forward="true" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+        <state relative-caret-position="361">
+          <caret line="76" column="17" lean-forward="true" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
             <element signature="e#6886#7015#1" expanded="true" />
@@ -1010,6 +1021,16 @@
             <element signature="e#9270#11258#0" expanded="false" />
             <element signature="e#9270#9544#1" expanded="true" />
             <element signature="e#12241#12510#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1387">
+          <caret line="73" column="51" lean-forward="true" selection-start-line="73" selection-start-column="51" selection-end-line="73" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
