@@ -57,7 +57,7 @@ class Trainer:
 
         if self.fine_tune_fe is False:
             self.checkpoint_exclude_scopes = '{},{}'.format(self.g_ssd.params.model_name, 'bbox_layers')
-            self.trainable_scopes = '{},{}'.format(self.g_ssd.params.model_name, 'bbox_layers')
+            self.trainable_scopes = self.checkpoint_exclude_scopes
         elif self.fine_tune_fe is True:
             self.checkpoint_exclude_scopes = None
             self.trainable_scopes = \

@@ -47,6 +47,52 @@ mobilenet_ssd_params = TrainerParams(feature_extractor='mobilenet_v1',
                                      matched_thresholds=0.5
                                      )
 
+mobilenet_ssd_fine_tune_1 = TrainerParams(feature_extractor='mobilenet_v1',
+                                          model_name='ssd512',
+                                          fine_tune_fe=True,
+                                          train_dir='./logs/finetune',
+                                          checkpoint_path='./logs',
+                                          ignore_missing_vars=False,
+                                          learning_rate=0.01,
+                                          learning_rate_decay_type='fixed',
+                                          learning_rate_decay_factor=1,
+                                          num_epochs_per_decay=1,
+                                          end_learning_rate=0.01,
+                                          max_number_of_steps=120000,
+                                          optimizer='adam',
+                                          weight_decay=0.0005,
+                                          batch_size=10,
+                                          log_every_n_steps=100,
+                                          save_interval_secs=60*60,
+                                          save_summaries_secs=30,
+                                          labels_offset=0,
+                                          matched_thresholds=0.5
+                                          )
+
+
+mobilenet_ssd_fine_tune_2 = TrainerParams(feature_extractor='mobilenet_v1',
+                                          model_name='ssd512',
+                                          fine_tune_fe=True,
+                                          train_dir='./logs/finetune',
+                                          checkpoint_path='./logs/finetune',
+                                          ignore_missing_vars=False,
+                                          learning_rate=0.005,
+                                          learning_rate_decay_type='fixed',
+                                          learning_rate_decay_factor=1,
+                                          num_epochs_per_decay=1,
+                                          end_learning_rate=0.01,
+                                          max_number_of_steps=120000,
+                                          optimizer='adam',
+                                          weight_decay=0.0005,
+                                          batch_size=10,
+                                          log_every_n_steps=100,
+                                          save_interval_secs=60*60,
+                                          save_summaries_secs=30,
+                                          labels_offset=0,
+                                          matched_thresholds=0.5
+                                          )
+
+
 
 ssd_train_params = TrainerParams(feature_extractor='vgg_16',
                                  model_name='ssd300',
