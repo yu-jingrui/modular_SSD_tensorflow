@@ -10,7 +10,8 @@ import tensorflow.contrib.slim as slim
 class Evaluator:
     def __init__(self, ssd_model, data_preparer, data_postprocessor, params):
         self.checkpoint_path = params.checkpoint_path
-        self.use_finetune = params.use_finetune
+        if params.use_finetune:
+            self.checkpoint_path = self.checkpoint_path + 'finetune/'
         self.is_training = params.is_training
         self.eval_train_dataset = params.eval_train_dataset
         self.loop = params.loop
@@ -20,32 +21,19 @@ class Evaluator:
         self.g_prepare = data_preparer
         self.g_post = data_postprocessor
 
-    def get_all_checkpoints(self, min_step, step):
-        with open(self.checkpoint_path + 'chekpoint') as f:
-            content = f.readline()
-        content = [x.strip() for x in content]
-        checkpoints = []
-        for line in content:
-            m = re.search('all_model_checkpoint_paths: "model.ckpt-(.*)"', line)
-            if m:
-                num = m.group(1)
-                checkpoints.append(num)
-        min_step = min_step
-        step = step
-        last_step = min_step
-        selected_checkpoints = []
-        for ckpt in checkpoints:
-            ckpt = int(ckpt)
-            if ckpt < min_step:
-                continue
-            if ckpt == int(checkpoints[-1]):
-                # the last checkpoint always get selected
-                selected_checkpoints.append(ckpt)
-                continue
-            if ckpt >= last_step:
-                selected_checkpoints.append(ckpt)
-                last_step = last_step + step
+    def start_evalutaion(self):
+        if self.is_training:
+            with tf.device('/device:CPU:0'):
+                self._setup_evaluation()
+        else:
+            self._setup_evaluation()
 
+    # TODO: in process
+    def eval_all_checkpoints(self, min_step, step):
+        selected_checkpoints = self._get_all_checkpoints(min_step, step)
+        for ckpt in selected_checkpoints:
+            if not self.eval_train_dataset:
+                ckpt_file = self.checkpoint_path
 
     def _setup_evaluation(self):
         tf.logging.set_verbosity(tf.logging.INFO)
@@ -107,3 +95,30 @@ class Evaluator:
                                             session_config=config,
                                             max_number_of_evaluations=np.inf,
                                             timeout=None)
+
+    def _get_all_checkpoints(self, min_step, step):
+        with open(self.checkpoint_path + 'checkpoint') as f:
+            content = f.readline()
+        content = [x.strip() for x in content]
+        checkpoints = []
+        for line in content:
+            m = re.search('all_model_checkpoint_paths: "model.ckpt-(.*)"', line)
+            if m:
+                num = m.group(1)
+                checkpoints.append(num)
+        last_step = min_step
+        selected_checkpoints = []
+        for ckpt in checkpoints:
+            ckpt = int(ckpt)
+            if ckpt < min_step:
+                continue
+            if ckpt == int(checkpoints[-1]):
+                # the last checkpoint always get selected
+                selected_checkpoints.append(ckpt)
+                continue
+            if ckpt >= last_step:
+                selected_checkpoints.append(ckpt)
+                last_step = last_step + step
+        if self.which_checkpoint == 'last':
+            selected_checkpoints = [selected_checkpoints[-1]]
+        return selected_checkpoints
