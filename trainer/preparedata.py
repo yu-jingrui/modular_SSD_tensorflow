@@ -1,9 +1,9 @@
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
 
-from preprocessing.ssd_vgg_preprocessing import preprocess_for_train
+from datasets import pascalvoc_datasets
 from preprocessing.ssd_vgg_preprocessing import preprocess_for_eval
-from preprocessing import pascalvoc_datasets
+from preprocessing.ssd_vgg_preprocessing import preprocess_for_train
 from utils import tf_utils
 
 
