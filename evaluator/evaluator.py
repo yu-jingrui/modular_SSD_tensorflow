@@ -28,12 +28,16 @@ class Evaluator:
         else:
             self._setup_evaluation()
 
-    # TODO: in process
     def eval_all_checkpoints(self, min_step, step):
         selected_checkpoints = self._get_all_checkpoints(min_step, step)
         for ckpt in selected_checkpoints:
-            if not self.eval_train_dataset:
-                ckpt_file = self.checkpoint_path
+            ckpt_file = self.checkpoint_path + 'model.ckpt' + str(ckpt)
+            if self.eval_train_dataset:
+                data = 'train'
+            else:
+                data = 'test'
+            print('checkpoint {}, {} data'.format(ckpt_file, data))
+            self.start_evaluation()
 
     def _setup_evaluation(self):
         tf.logging.set_verbosity(tf.logging.INFO)
