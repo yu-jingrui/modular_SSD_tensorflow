@@ -1,3 +1,4 @@
 logs/
-.idea/preferred-vcs.xml
+.idea/
 checkpoints/
+vgg_ssd300_logs/
