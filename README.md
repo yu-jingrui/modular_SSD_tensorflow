@@ -48,9 +48,14 @@ If you got everything right, you can now train your network with customized back
 - [x] Rewrite core Tensorflow SSD for modularization
 - [x] Connect original VGG backend for SSD
 - [ ] Implement test routine
-- [ ] Train and test VGG-SSD
 - [ ] Connect other backends for SSD
-- [ ] Train and test connected backends
+- [ ] Train and evaluate connected backends  
+
+| Model | Trained | Evaluated | mAP |
+|:-----:|:-------:|:---------:|:---:|
+| VGG_16-SSD300 | VOC2007_train | &#10007; | - |
+| VGG_16-SSD512 | &#10007; | &#10007; | - |
+| MobileNet-SSD512 | &#10007; | &#10007; | - |
 
 ## Acknowledgement
 This repo is based on the works:
