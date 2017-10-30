@@ -21,7 +21,7 @@ class Evaluator:
         self.g_prepare = data_preparer
         self.g_post = data_postprocessor
 
-    def start_evalutaion(self):
+    def start_evaluation(self):
         if self.is_training:
             with tf.device('/device:CPU:0'):
                 self._setup_evaluation()
@@ -53,7 +53,7 @@ class Evaluator:
                 self.g_prepare.get_voc_2007_train_data(is_training_data=False)
             self.eval_dir = './logs/evals/train_data'
         else:
-            image, _, glabels, gbboxes, gdifficults, _, _, _ = self.g_prepare.get_voc_2007_test_data
+            image, _, glabels, gbboxes, gdifficults, _, _, _ = self.g_prepare.get_voc_2007_test_data()
             self.eval_dir = './logs/evals/test_data'
 
         # get model outputs
