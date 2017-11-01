@@ -132,12 +132,14 @@ base_networks_map = {'inception_resnet_v2': inception.inception_resnet_v2_base,
                      'mobilenet_v1': mobilenet_v1.mobilenet_v1_base_ssd,
                      'vgg_16': vgg.vgg_16_base,
                      'vgg_a': vgg.vgg_a_base,
-                     'vgg_19': vgg.vgg_19_base
+                     'vgg_19': vgg.vgg_19_base,
+                     'resnet_v1_50': resnet_v1.resnet_v1_50_base
                      }
 
 
 base_arg_scopes_map = {'vgg_16': vgg.vgg_base_arg_scope,
-                       'mobilenet_v1': mobilenet_v1.mobilenet_v1_base_arg_scope
+                       'mobilenet_v1': mobilenet_v1.mobilenet_v1_base_arg_scope,
+                       'resnet_v1_50': resnet_v1.resnet_arg_scope
                        }
 
 
