@@ -44,9 +44,9 @@ class Evaluator:
         _ = slim.get_or_create_global_step()
 
         if self.is_training:
-            gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.01)
+            gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.1)
         else:
-            gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.9)
+            gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
 
         if self.eval_train_dataset:
             image, _, glabels, gbboxes, gdifficults, _, _, _ = \
@@ -72,7 +72,7 @@ class Evaluator:
                 checkpoint_file = tf.train.latest_checkpoint(self.checkpoint_path)
             else:
                 checkpoint_file = self.checkpoint_path
-            tf.logging.INFO('Evaluateing %s' % checkpoint_file)
+            # tf.logging.INFO('Evaluating %s' % checkpoint_file)
             start = time.time()
             slim.evaluation.evaluate_once(master='',
                                           checkpoint_path=checkpoint_file,

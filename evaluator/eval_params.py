@@ -47,3 +47,12 @@ eval_only_last_ckpt_finetune = EvaluatorParams(
     loop=False,
     which_checkpoint='last'
 )
+
+debug_params = EvaluatorParams(
+    checkpoint_path='/home/yjin/SSD/tmp/logs/',
+    use_finetune=False,
+    is_training=False,
+    eval_train_dataset=True,
+    loop=False,
+    which_checkpoint='last'
+)

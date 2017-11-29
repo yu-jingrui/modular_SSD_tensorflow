@@ -17,8 +17,8 @@ class PrepareData:
 
     def get_voc_2007_train_data(self, is_training_data=True):
         #  data_sources = "../data/voc/tfrecords/voc_train_2007*.tfrecord"
-        data_sources = '../data/SSDfinetune_tf/voc_2007_train*.tfrecord'
-        num_samples = pascalvoc_datasets.DATASET_SIZE['2007+HDA']
+        data_sources = '/home/yjin/SSD/voc_tfrecords/voc_2007_train*.tfrecord'
+        num_samples = pascalvoc_datasets.DATASET_SIZE['2007_train']
         return self._get_images_labels_bboxes(data_sources, num_samples, is_training_data)
 
     def get_voc_2012_train_data(self,is_training_data=True):

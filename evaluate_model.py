@@ -7,8 +7,8 @@ from evaluator import eval_params
 
 
 if __name__ == '__main__':
-    model_params = train_params.mobilenet_ssd_params
-    params = eval_params.eval_while_training
+    model_params = train_params.tmp_params
+    params = eval_params.debug_params
 
     feature_extractor = model_params.feature_extractor
     model_name = model_params.model_name
