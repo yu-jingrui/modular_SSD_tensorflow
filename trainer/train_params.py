@@ -239,3 +239,55 @@ resnet_params = TrainerParams(
     labels_offset=0,
     matched_thresholds=0.5
     )
+
+
+# -------------------------------------------------------- #
+# Experiment 27.11.2017, VGG16-SSD512 on VOC 2007 Trainval
+params_2711 = TrainerParams(
+    feature_extractor='vgg_16',
+    model_name='ssd512',
+    fine_tune_fe=False,
+    train_dir='../experiments/vgg_16-ssd512_27-11-2017_modular_SSD_tensorflow/logs',
+    checkpoint_path='../checkpoints/vgg_16.ckpt',
+    ignore_missing_vars=False,
+    learning_rate=0.1,
+    learning_rate_decay_type='fixed',
+    learning_rate_decay_factor=1,
+    num_epochs_per_decay=1,
+    end_learning_rate=0.1,
+    max_number_of_steps=30000,
+    optimizer='adam',
+    weight_decay=0.0005,
+    batch_size=20,
+    log_every_n_steps=100,
+    save_interval_secs=60*60,
+    save_summaries_secs=30,
+    labels_offset=0,
+    matched_thresholds=0.5
+    )
+
+
+# -------------------------------------------------------- #
+# tmp, VGG16-SSD512 on VOC 2007 Trainval
+tmp_params = TrainerParams(
+    feature_extractor='vgg_16',
+    model_name='ssd512',
+    fine_tune_fe=False,
+    train_dir='../tmp/logs',
+    checkpoint_path='../checkpoints/vgg_16.ckpt',
+    ignore_missing_vars=False,
+    learning_rate=0.1,
+    learning_rate_decay_type='fixed',
+    learning_rate_decay_factor=1,
+    num_epochs_per_decay=1,
+    end_learning_rate=0.1,
+    max_number_of_steps=30000,
+    optimizer='adam',
+    weight_decay=0.0005,
+    batch_size=20,
+    log_every_n_steps=100,
+    save_interval_secs=60*60,
+    save_summaries_secs=30,
+    labels_offset=0,
+    matched_thresholds=0.5
+    )

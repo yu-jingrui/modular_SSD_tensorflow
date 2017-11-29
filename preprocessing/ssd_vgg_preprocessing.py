@@ -289,7 +289,9 @@ def preprocess_for_train(image, labels, bboxes,
                                           align_corners=False)
         # Randomly flip the image horizontally.
         dst_image, bboxes = tf_image.random_flip_left_right(dst_image, bboxes)
-        tf_summary_image(dst_image, bboxes, 'resized_image')
+        # Randomly flip the image vertically.
+        dst_image, bboxes = tf_image.random_flip_up_down(dst_image, bboxes)
+        tf_summary_image(dst_image, bboxes, 'resized_flipped_image')
 
         # Randomly distort the colors. There are 4 ways to do it.
         dst_image = apply_with_random_selector(
