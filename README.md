@@ -47,7 +47,7 @@ If you got everything right, you can now train your network with customized back
 ## TODOs:
 - [x] Rewrite core Tensorflow SSD for modularization
 - [x] Connect original VGG backend for SSD
-- [ ] Implement test routine
+- [x] Implement test routine
 - [ ] Connect other backends for SSD
 - [ ] Train and evaluate connected backends  
 

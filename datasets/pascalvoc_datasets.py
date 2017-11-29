@@ -95,7 +95,6 @@ def get_dataset_info(data_sources, num_samples):
 
     labels_to_names = None
 
-
     return slim.dataset.Dataset(
             data_sources=data_sources,
             reader=reader,
