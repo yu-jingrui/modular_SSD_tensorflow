@@ -3,10 +3,11 @@ from trainer.trainer import Trainer
 from trainer.preparedata import PrepareData
 from trainer.postprocessingdata import PostProcessingData
 from trainer import train_params
+from experiments import ssd512_voc0712 as sv
 
 
 if __name__ == '__main__':
-    params = train_params.tmp_params
+    params = sv.step1_1
 
     feature_extractor = params.feature_extractor
     model_name = params.model_name
