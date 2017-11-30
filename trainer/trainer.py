@@ -85,7 +85,7 @@ class Trainer:
         self._add_summaries(end_points, total_loss)
         self._setup_debugging(predictions, localizations, glabels, gbboxes, gdifficulties)
 
-        gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.9)
+        gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
         config = tf.ConfigProto(log_device_placement=False, gpu_options=gpu_options)
 
         slim.learning.train(

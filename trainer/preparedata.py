@@ -31,7 +31,7 @@ class PrepareData:
         return self._get_images_labels_bboxes(data_sources, num_samples, is_training_data)
 
     def get_voc_2007_test_data(self):
-        data_sources = "/home/yjin/SSD/voc_tfrecords/voc_test_2007*.tfrecord"
+        data_sources = "/home/yjin/SSD/voc_tfrecords/voc_2007_test*.tfrecord"
         num_samples = pascalvoc_datasets.DATASET_SIZE['2007_test']
         return self._get_images_labels_bboxes(data_sources, num_samples, False)
 

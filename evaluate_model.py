@@ -2,13 +2,14 @@ from ssd.ssdmodel import SSDModel
 from trainer.preparedata import PrepareData
 from trainer.postprocessingdata import PostProcessingData
 from trainer import train_params
+from experiments import ssd512_voc0712
 from evaluator.evaluator import Evaluator
 from evaluator import eval_params
 
 
 if __name__ == '__main__':
-    model_params = train_params.tmp_params
-    params = eval_params.debug_params
+    model_params = ssd512_voc0712.step1_1
+    params = ssd512_voc0712.eval1
 
     feature_extractor = model_params.feature_extractor
     model_name = model_params.model_name

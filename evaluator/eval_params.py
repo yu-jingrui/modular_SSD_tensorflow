@@ -13,7 +13,7 @@ EvaluatorParams = namedtuple(
 
 
 eval_while_training = EvaluatorParams(
-    checkpoint_path='./logs/',
+    checkpoint_path='/home/yjin/SSD/experiments/ssd512_voc0712_29-11-2017/logs/',
     use_finetune=False,
     is_training=True,
     eval_train_dataset=False,
