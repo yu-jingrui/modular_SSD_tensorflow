@@ -98,7 +98,7 @@ step2_1 = TrainerParams(
     max_number_of_steps=144000,
     optimizer='adam',
     weight_decay=0.0005,
-    batch_size=20,
+    batch_size=10,
     log_every_n_steps=100,
     save_interval_secs=60*60,
     save_summaries_secs=60,
@@ -125,8 +125,19 @@ eval2 = EvaluatorParams(
     loop=True,
     which_checkpoint=None
     )
+# Evluate when not training, after fine tune
+eval3 = EvaluatorParams(
+    checkpoint_path='/home/yjin/SSD/experiments/ssd512_voc0712_29-11-2017/logs/',
+    use_finetune=True,
+    is_training=False,
+    eval_train_dataset=False,
+    loop=False,
+    which_checkpoint=None
+    )
 # At 18719 steps, mAP = 0.464 on VOC07test.
 # At 22136 steps, mAP = 0.457.
 # At 25406 steps, mAP = 0.458.
 # At 44702 steps, mAP = 0.519.
 # At 48000 steps, mAP = 0.518.
+# At 50050 steps, mAP = 0.449. Fine tuned from step 44702.
+
