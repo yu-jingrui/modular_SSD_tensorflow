@@ -8,7 +8,7 @@ from evaluator import eval_params
 
 
 if __name__ == '__main__':
-    model_params = ssd512_voc0712.step1_1
+    model_params = ssd512_voc0712.step1_2
     params = ssd512_voc0712.eval1
 
     feature_extractor = model_params.feature_extractor

@@ -44,7 +44,7 @@ class Evaluator:
         _ = slim.get_or_create_global_step()
 
         if self.is_training:
-            gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.1)
+            gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.01)
         else:
             gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
 

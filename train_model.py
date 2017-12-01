@@ -7,7 +7,7 @@ from experiments import ssd512_voc0712 as sv
 
 
 if __name__ == '__main__':
-    params = sv.step1_2
+    params = sv.step2_1
 
     feature_extractor = params.feature_extractor
     model_name = params.model_name
