@@ -4,10 +4,10 @@ from trainer.preparedata import PrepareData
 from trainer.postprocessingdata import PostProcessingData
 from trainer import train_params
 from experiments import ssd512_voc0712 as sv
-from experiments import finetune_person as fp
+
 
 if __name__ == '__main__':
-    params = fp.step3_1
+    params = sv.step2_3
 
     feature_extractor = params.feature_extractor
     model_name = params.model_name

@@ -40,12 +40,9 @@ DATASET_SIZE = {
     '2007_test': 4952,
     '2007_train': 5011,
     '2012_train': 17125,
-    '2007+HDA': 18156,
-    'person_train': 7017
+    '2007+HDA': 18156
 }
 NUM_CLASSES = 20
-
-
 def get_dataset_info(data_sources, num_samples):
     """Gets a dataset tuple with instructions for reading Pascal VOC dataset.
 

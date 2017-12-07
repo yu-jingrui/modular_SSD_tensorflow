@@ -35,11 +35,6 @@ class PrepareData:
         num_samples = pascalvoc_datasets.DATASET_SIZE['2007_test']
         return self._get_images_labels_bboxes(data_sources, num_samples, False)
 
-    def get_person_train_data(self, is_training_data=True):
-        data_sources = "/home/yjin/SSD/person_tfrecords/person_train*.tfrecord"
-        num_samples = pascalvoc_datasets.DATASET_SIZE['person_train']
-        return self._get_images_labels_bboxes(data_sources, num_samples, is_training_data)
-
     # =========================== PRIVATE METHODS ============================ #
     def _get_images_labels_bboxes(self, data_sources, num_samples, is_training_data):
         self.dataset = pascalvoc_datasets.get_dataset_info(data_sources, num_samples)
