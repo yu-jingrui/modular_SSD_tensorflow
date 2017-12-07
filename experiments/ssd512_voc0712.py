@@ -105,7 +105,53 @@ step2_1 = TrainerParams(
     labels_offset=0,
     matched_thresholds=0.5
     )
-
+# Finished first step of fine tuning on 1:18 Sunday 03.12. Total_loss=~3.7
+step2_2 = TrainerParams(
+    feature_extractor='vgg_16',
+    model_name='ssd512',
+    fine_tune_fe=True,
+    train_dir='../experiments/ssd512_voc0712_29-11-2017/logs/finetune',
+    checkpoint_path='../experiments/ssd512_voc0712_29-11-2017/logs',
+    ignore_missing_vars=False,
+    learning_rate=0.01,
+    learning_rate_decay_type='fixed',
+    learning_rate_decay_factor=1,
+    num_epochs_per_decay=1,
+    end_learning_rate=0.001,
+    max_number_of_steps=208000,
+    optimizer='adam',
+    weight_decay=0.0005,
+    batch_size=10,
+    log_every_n_steps=100,
+    save_interval_secs=60*60,
+    save_summaries_secs=60,
+    labels_offset=0,
+    matched_thresholds=0.5
+    )
+# Finished second step of fine tuning on 04:40 Wednesday 06.12. Total_loss=~3.7
+step2_3 = TrainerParams(
+    feature_extractor='vgg_16',
+    model_name='ssd512',
+    fine_tune_fe=True,
+    train_dir='../experiments/ssd512_voc0712_29-11-2017/logs/finetune',
+    checkpoint_path='../experiments/ssd512_voc0712_29-11-2017/logs',
+    ignore_missing_vars=False,
+    learning_rate=0.01,
+    learning_rate_decay_type='fixed',
+    learning_rate_decay_factor=1,
+    num_epochs_per_decay=1,
+    end_learning_rate=0.0005,
+    max_number_of_steps=216000,
+    optimizer='adam',
+    weight_decay=0.0005,
+    batch_size=10,
+    log_every_n_steps=100,
+    save_interval_secs=60*60,
+    save_summaries_secs=60,
+    labels_offset=0,
+    matched_thresholds=0.5
+    )
+# start from 184587 steps for the last fine tune stage. Finished at 22:00 on 6.12 Wednesday. Total_loss=~3.5
 # -------------------------------------------------------- #
 # Evaluate when not training
 eval1 = EvaluatorParams(
@@ -134,10 +180,25 @@ eval3 = EvaluatorParams(
     loop=False,
     which_checkpoint=None
     )
+# Evluate when not training, after fine tune, on train set
+eval4 = EvaluatorParams(
+    checkpoint_path='/home/yjin/SSD/experiments/ssd512_voc0712_29-11-2017/logs/',
+    use_finetune=True,
+    is_training=False,
+    eval_train_dataset=True,
+    loop=False,
+    which_checkpoint=None
+    )
 # At 18719 steps, mAP = 0.464 on VOC07test.
 # At 22136 steps, mAP = 0.457.
 # At 25406 steps, mAP = 0.458.
 # At 44702 steps, mAP = 0.519.
 # At 48000 steps, mAP = 0.518.
 # At 50050 steps, mAP = 0.449. Fine tuned from step 44702.
-
+# At 124k steps, mAP = 0.564. Although loss looks lower, mAP is not as good as 144k steps.
+# At 144k steps, mAP = 0.571. Train mAP = 0.629
+# At 176k steps, mAP = 0.574. Train mAP = 0.637
+# At 184k steps, mAP = 0.579. Train mAP = 0.649
+# At 198k steps, mAP = 0.564
+# At 208k steps, mAP = 0.574.
+# At 216k steps (starting from 184k steps), mAP = 0.570. Train mAP = 0.646
