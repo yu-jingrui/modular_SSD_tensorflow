@@ -70,7 +70,7 @@ class Trainer:
 
         # Get batched training data
         image, filename, glabels, gbboxes, gdifficulties, gclasses, localizations, gscores = \
-            self.g_prepare.get_voc_2007_2012_train_data()
+            self.g_prepare.get_person_train_data()
         # Get model outputs
         predictions, localisations, logits, end_points = self.g_ssd.get_model(image)
         # Get model training loss
