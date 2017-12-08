@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../preprocessing/ssd_vgg_preprocessing.py" afterPath="$PROJECT_DIR$/../../preprocessing/ssd_vgg_preprocessing.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../preprocessing/tf_image.py" afterPath="$PROJECT_DIR$/../../preprocessing/tf_image.py" />
+    <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="update">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modular_SSD_tensorflow.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/.idea/workspace.xml" afterPath="$USER_HOME$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/preprocessing/ssd_vgg_preprocessing.py" afterPath="$USER_HOME$/preprocessing/ssd_vgg_preprocessing.py" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/preprocessing/tf_image.py" afterPath="$USER_HOME$/preprocessing/tf_image.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,21 +21,141 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="tf_image.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../../preprocessing/tf_image.py">
+      <file leaf-file-name="pascalvoc_datasets.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datasets/pascalvoc_datasets.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="336" column="56" lean-forward="false" selection-start-line="336" selection-start-column="56" selection-end-line="336" selection-end-column="56" />
-              <folding />
+            <state relative-caret-position="817">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <marker date="1512744064638" expanded="true" signature="1043:1137" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="1205:3961" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="1210:1659" ph="&quot;&quot;&quot;Gets a dataset tuple with instructions for reading Pascal VOC dataset....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="1846:2825" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="2852:3527" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../train_model.py">
+      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="1350">
+              <caret line="73" column="27" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+                <marker date="1512744064638" expanded="true" signature="495:14060" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="2691:4305" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="4462:6837" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="4471:5066" ph="&quot;&quot;&quot;Function that takes a gradient step and specifies whether to stop....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="5208:5589" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="5429:5589" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="5891:6414" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="6460:6636" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="6877:7426" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="6886:7015" ph="&quot;&quot;&quot;Returns a list of variables to train....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="7260:7392" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="7503:9209" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="7512:7821" ph="&quot;&quot;&quot;Configures the learning rate....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="8001:8412" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="8606:9054" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="9068:9209" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="9261:11258" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="9270:9544" ph="&quot;&quot;&quot;Configures the optimizer used for training....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="9585:9749" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="9791:9955" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="9994:10193" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="10232:10571" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="10614:10770" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="10812:11026" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="11313:11947" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="11404:11585" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="12039:12203" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="12232:14060" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="12241:12510" ph="&quot;&quot;&quot;Returns a function run by the chief worker to warm-start the training....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="12741:12915" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="12983:13105" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="13010:13104" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="13221:13326" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="13360:13625" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="13431:13547" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="13485:13547" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="1007">
+                <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_demo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new_demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="912">
+              <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1512744064638" expanded="true" signature="1618:2555" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="2648:3141" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="2763:3048" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visualization.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/visualization.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="973">
+              <caret line="120" column="42" lean-forward="false" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
+              <folding>
+                <marker date="1512744064638" expanded="true" signature="3634:5366" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="5123:5366" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ssd_vgg_preprocessing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preprocessing/ssd_vgg_preprocessing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1330">
+              <caret line="92" column="68" lean-forward="false" selection-start-line="92" selection-start-column="68" selection-end-line="92" selection-end-column="68" />
+              <folding>
+                <marker date="1512744064638" expanded="true" signature="10274:13191" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="11038:13191" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="13431:16140" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="13436:13710" ph="&quot;&quot;&quot;Preprocess an image for evaluation....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="13741:16140" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="14221:14267" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="14311:14490" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="14536:15357" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="15400:15644" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="15808:15974" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="16366:17639" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="16371:17213" ph="&quot;&quot;&quot;Pre-process an given image....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="17233:17410" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="17420:17639" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evaluate_model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluate_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -37,11 +163,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ssd_vgg_preprocessing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../preprocessing/ssd_vgg_preprocessing.py">
+      <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="855">
-              <caret line="306" column="69" lean-forward="true" selection-start-line="306" selection-start-column="69" selection-end-line="306" selection-end-column="69" />
+            <state relative-caret-position="304">
+              <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1512744064638" expanded="true" signature="144:5587" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="2078:4534" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="2607:3730" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="3744:4534" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="4587:5587" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="4784:4956" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="4883:4956" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="5052:5445" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="5183:5316" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="5350:5445" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bboxes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tf_extended/bboxes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="374" column="64" lean-forward="true" selection-start-line="374" selection-start-column="64" selection-end-line="374" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -101,7 +259,7 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$USER_HOME$/modular_SSD_tensorflow" value="evaluator" />
@@ -114,7 +272,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/modular_SSD_tensorflow/ssd/ssd_utils.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/ssd/SSDModel.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/trainer/train_utils.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/nets/inception_resnet_v2.py" />
@@ -163,8 +320,9 @@
         <option value="$USER_HOME$/modular_SSD_tensorflow/evaluate_model.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/datasets/pascalvoc_datasets.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/README.md" />
-        <option value="$PROJECT_DIR$/../../preprocessing/ssd_vgg_preprocessing.py" />
-        <option value="$PROJECT_DIR$/../../preprocessing/tf_image.py" />
+        <option value="$USER_HOME$/preprocessing/ssd_vgg_preprocessing.py" />
+        <option value="$USER_HOME$/preprocessing/tf_image.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -215,25 +373,36 @@
         <subPane>
           <expand>
             <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
+              <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
+              <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
-              <item name="datasets" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="." type="b2602c69:ProjectViewProjectNode" />
+              <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
-              <item name="preprocessing" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="evals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
+              <item name="trainer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -266,12 +435,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../.." />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="modular_SSD_tensorflow" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../train_model.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/train_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -552,12 +721,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="80" y="11" width="1841" height="1205" extended-state="6" />
+    <frame x="1919" y="-4" width="1922" height="1205" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12180533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11145833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.4980968" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28051" sideWeight="0.5051659" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29143897" sideWeight="0.49483415" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29143897" sideWeight="0.49483415" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22222222" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -566,16 +735,27 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.4980968" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28051" sideWeight="0.5051659" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29143897" sideWeight="0.49483415" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22222222" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12180533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43260473" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.4980968" order="6" side_tool="false" content_ui="tabs" />
@@ -714,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9386">
           <caret line="675" column="0" lean-forward="false" selection-start-line="675" selection-start-column="0" selection-end-line="675" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -740,31 +919,8 @@
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/README.md" />
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/trainer.py" />
     <entry file="file://$USER_HOME$/datasets/pascalvoc_datasets.py" />
-    <entry file="file://$PROJECT_DIR$/../../preprocessing/ssd_vgg_preprocessing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="306" column="69" lean-forward="true" selection-start-line="306" selection-start-column="69" selection-end-line="306" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../train_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../preprocessing/tf_image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="336" column="56" lean-forward="false" selection-start-line="336" selection-start-column="56" selection-end-line="336" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/preprocessing/ssd_vgg_preprocessing.py" />
+    <entry file="file://$USER_HOME$/train_model.py" />
+    <entry file="file://$USER_HOME$/preprocessing/tf_image.py" />
   </component>
 </project>
