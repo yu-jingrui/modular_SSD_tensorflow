@@ -28,6 +28,14 @@ step3_1 = TrainerParams(
     labels_offset=0,
     matched_thresholds=0.5
     )
+# Training stopped at 203192 steps because it ran out of space on my ssd.
+# Believing that the evaluation number is somewhat off, I ran the demo and the result is actually already usable.
+# In the data I have that is taken in the experiment apartment downstairs the network recognizes the person most of the
+# time, despite some false positives.
+# I looked into the evaluation code and found out that the standard used is somewhat too harsh for the result.
+# The detections have confidence in the range 35%~100%, whereas the evaluation uses 50% as the lower limit.
+# Also noticeable is that in the piropo test data person on the far end cannot be recognized.
+
 
 # Evaluation on HDA and PIROPO.
 eval_train = EvaluatorParams(
@@ -38,8 +46,6 @@ eval_train = EvaluatorParams(
     loop=False,
     which_checkpoint=None
     )
-# 205935 steps (fine tuned from 184587 steps), mAP = 0.364. This is very strange (compared to SSD-Tensorflow).
-# 184587 steps (frome finetune_person dir), mAP = 4.66e-5. This is also very very strange, because the model should at
-# least be able to detect the persons in voc07 data.
-# 187287 steps, mAP = 0.444. WTF!!!
+
+# 195129 steps, mAP = 0.0364
 

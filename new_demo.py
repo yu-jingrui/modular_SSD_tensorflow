@@ -30,11 +30,11 @@ image_pre, labels_pre, bboxes_pre, bbox_img = ssd_vgg_preprocessing.preprocess_f
 image_4d = tf.expand_dims(image_pre, 0)
 
 # Define the SSD model.
-g_ssd_model = SSDModel('vgg_16', 'ssd300', weight_decay=0.0005)
+g_ssd_model = SSDModel('vgg_16', 'ssd512', weight_decay=0.0005)
 predictions, localisations, _, _ = g_ssd_model.get_model(image_4d)
 
 # Restore SSD model.
-ckpt_filename = tf.train.latest_checkpoint('./logs/')
+ckpt_filename = tf.train.latest_checkpoint('/home/yjin/SSD/experiments/ssd512_voc0712_29-11-2017/logs/finetune_person')
 isess.run(tf.global_variables_initializer())
 saver = tf.train.Saver()
 saver.restore(isess, ckpt_filename)
@@ -45,7 +45,7 @@ ssd_anchors = g_ssd_model.get_anchors_all_layers()
 
 # Main image processing routine.
 # def process_image(img, select_threshold=0.5, nms_threshold=.45, net_shape=(300, 300)):
-def process_image(img, select_threshold=0.3, nms_threshold=.1, net_shape=(300, 30)):
+def process_image(img, select_threshold=0.3, nms_threshold=.1, net_shape=(512, 512)):
     # Run SSD network.
     rimg, rpredictions, rlocalisations, rbbox_img = \
         isess.run([image_4d, predictions, localisations, bbox_img], feed_dict={img_input: img})
