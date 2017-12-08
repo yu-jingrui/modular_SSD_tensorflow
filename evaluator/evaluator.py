@@ -46,12 +46,12 @@ class Evaluator:
         if self.is_training:
             gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.01)
         else:
-            gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
+            gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.85)
 
         if self.eval_train_dataset:
             image, _, glabels, gbboxes, gdifficults, _, _, _ = \
-                self.g_prepare.get_voc_2007_train_data(is_training_data=False)
-            self.eval_dir = './logs/evals/train_data'
+                self.g_prepare.get_person_train_data(is_training_data=False)
+            self.eval_dir = os.path.join(self.checkpoint_path, 'eval_train_data')
         else:
             image, _, glabels, gbboxes, gdifficults, _, _, _ = self.g_prepare.get_voc_2007_test_data()
             self.eval_dir = './logs/evals/test_data'

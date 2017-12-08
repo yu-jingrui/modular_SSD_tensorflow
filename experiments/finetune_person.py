@@ -30,11 +30,16 @@ step3_1 = TrainerParams(
     )
 
 # Evaluation on HDA and PIROPO.
-eval_hda = EvaluatorParams(
+eval_train = EvaluatorParams(
     checkpoint_path='/home/yjin/SSD/experiments/ssd512_voc0712_29-11-2017/logs/finetune_person',
     use_finetune=False,
     is_training=False,
-    eval_train_dataset=False,
+    eval_train_dataset=True,
     loop=False,
     which_checkpoint=None
     )
+# 205935 steps (fine tuned from 184587 steps), mAP = 0.364. This is very strange (compared to SSD-Tensorflow).
+# 184587 steps (frome finetune_person dir), mAP = 4.66e-5. This is also very very strange, because the model should at
+# least be able to detect the persons in voc07 data.
+# 187287 steps, mAP = 0.444. WTF!!!
+
