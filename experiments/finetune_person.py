@@ -11,14 +11,14 @@ step3_1 = TrainerParams(
     model_name='ssd512',
     fine_tune_fe=True,
     train_dir='../experiments/ssd512_voc0712_29-11-2017/logs/finetune_person',
-    checkpoint_path='../experiments/ssd512_voc0712_29-11-2017/logs/finetune/model.ckpt-184587',
+    checkpoint_path='../experiments/ssd512_voc0712_29-11-2017/logs/finetune_person',
     ignore_missing_vars=False,
     learning_rate=0.001,
     learning_rate_decay_type='fixed',
     learning_rate_decay_factor=1,
     num_epochs_per_decay=1,
     end_learning_rate=0.01,
-    max_number_of_steps=230000,
+    max_number_of_steps=300000,
     optimizer='adam',
     weight_decay=0.0005,
     batch_size=10,
@@ -27,4 +27,14 @@ step3_1 = TrainerParams(
     save_summaries_secs=60,
     labels_offset=0,
     matched_thresholds=0.5
+    )
+
+# Evaluation on HDA and PIROPO.
+eval_hda = EvaluatorParams(
+    checkpoint_path='/home/yjin/SSD/experiments/ssd512_voc0712_29-11-2017/logs/finetune_person',
+    use_finetune=False,
+    is_training=False,
+    eval_train_dataset=False,
+    loop=False,
+    which_checkpoint=None
     )
