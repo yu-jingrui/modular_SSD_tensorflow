@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/eval_params.py" afterPath="$PROJECT_DIR$/evaluator/eval_params.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluator/evaluator.py" afterPath="$PROJECT_DIR$/evaluator/evaluator.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/preprocessing/tf_image.py" afterPath="$USER_HOME$/preprocessing/tf_image.py" />
+    <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="update">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modular_SSD_tensorflow.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/preprocessing/ssd_vgg_preprocessing.py" afterPath="$USER_HOME$/preprocessing/ssd_vgg_preprocessing.py" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/.idea/workspace.xml" afterPath="$USER_HOME$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$USER_HOME$/preprocessing/tf_image.py" afterPath="$USER_HOME$/preprocessing/tf_image.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,11 +27,11 @@
             <state relative-caret-position="817">
               <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
-                <marker date="1512729827607" expanded="true" signature="1043:1137" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="1205:3961" ph="..." />
-                <marker date="1512729827607" expanded="false" signature="1210:1659" ph="&quot;&quot;&quot;Gets a dataset tuple with instructions for reading Pascal VOC dataset....&quot;&quot;&quot;" />
-                <marker date="1512729827607" expanded="true" signature="1846:2825" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="2852:3527" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="1043:1137" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="1205:3961" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="1210:1659" ph="&quot;&quot;&quot;Gets a dataset tuple with instructions for reading Pascal VOC dataset....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="1846:2825" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="2852:3527" ph="..." />
               </folding>
             </state>
           </provider>
@@ -41,42 +44,42 @@
               <caret line="73" column="27" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
-                <marker date="1512729827607" expanded="true" signature="495:14060" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="2691:4305" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="4462:6837" ph="..." />
-                <marker date="1512729827607" expanded="false" signature="4471:5066" ph="&quot;&quot;&quot;Function that takes a gradient step and specifies whether to stop....&quot;&quot;&quot;" />
-                <marker date="1512729827607" expanded="true" signature="5208:5589" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="5429:5589" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="5891:6414" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="6460:6636" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="6877:7426" ph="..." />
-                <marker date="1512729827607" expanded="false" signature="6886:7015" ph="&quot;&quot;&quot;Returns a list of variables to train....&quot;&quot;&quot;" />
-                <marker date="1512729827607" expanded="true" signature="7260:7392" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="7503:9209" ph="..." />
-                <marker date="1512729827607" expanded="false" signature="7512:7821" ph="&quot;&quot;&quot;Configures the learning rate....&quot;&quot;&quot;" />
-                <marker date="1512729827607" expanded="true" signature="8001:8412" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="8606:9054" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="9068:9209" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="9261:11258" ph="..." />
-                <marker date="1512729827607" expanded="false" signature="9270:9544" ph="&quot;&quot;&quot;Configures the optimizer used for training....&quot;&quot;&quot;" />
-                <marker date="1512729827607" expanded="true" signature="9585:9749" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="9791:9955" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="9994:10193" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="10232:10571" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="10614:10770" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="10812:11026" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="11313:11947" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="11404:11585" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="12039:12203" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="12232:14060" ph="..." />
-                <marker date="1512729827607" expanded="false" signature="12241:12510" ph="&quot;&quot;&quot;Returns a function run by the chief worker to warm-start the training....&quot;&quot;&quot;" />
-                <marker date="1512729827607" expanded="true" signature="12741:12915" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="12983:13105" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="13010:13104" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="13221:13326" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="13360:13625" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="13431:13547" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="13485:13547" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="495:14060" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="2691:4305" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="4462:6837" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="4471:5066" ph="&quot;&quot;&quot;Function that takes a gradient step and specifies whether to stop....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="5208:5589" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="5429:5589" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="5891:6414" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="6460:6636" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="6877:7426" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="6886:7015" ph="&quot;&quot;&quot;Returns a list of variables to train....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="7260:7392" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="7503:9209" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="7512:7821" ph="&quot;&quot;&quot;Configures the learning rate....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="8001:8412" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="8606:9054" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="9068:9209" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="9261:11258" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="9270:9544" ph="&quot;&quot;&quot;Configures the optimizer used for training....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="9585:9749" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="9791:9955" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="9994:10193" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="10232:10571" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="10614:10770" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="10812:11026" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="11313:11947" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="11404:11585" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="12039:12203" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="12232:14060" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="12241:12510" ph="&quot;&quot;&quot;Returns a function run by the chief worker to warm-start the training....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="12741:12915" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="12983:13105" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="13010:13104" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="13221:13326" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="13360:13625" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="13431:13547" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="13485:13547" ph="..." />
               </folding>
             </state>
           </provider>
@@ -98,10 +101,26 @@
       <file leaf-file-name="new_demo.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new_demo.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="21" lean-forward="false" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="912">
+              <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+                <marker date="1512744064638" expanded="true" signature="1618:2555" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="2648:3141" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="2763:3048" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="visualization.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/visualization.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="973">
+              <caret line="120" column="42" lean-forward="false" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
+              <folding>
+                <marker date="1512744064638" expanded="true" signature="3634:5366" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="5123:5366" ph="..." />
               </folding>
             </state>
           </provider>
@@ -113,20 +132,20 @@
             <state relative-caret-position="1330">
               <caret line="92" column="68" lean-forward="false" selection-start-line="92" selection-start-column="68" selection-end-line="92" selection-end-column="68" />
               <folding>
-                <marker date="1512729827607" expanded="true" signature="10274:13191" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="11038:13191" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="13431:16140" ph="..." />
-                <marker date="1512729827607" expanded="false" signature="13436:13710" ph="&quot;&quot;&quot;Preprocess an image for evaluation....&quot;&quot;&quot;" />
-                <marker date="1512729827607" expanded="true" signature="13741:16140" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="14221:14267" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="14311:14490" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="14536:15357" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="15400:15644" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="15808:15974" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="16366:17639" ph="..." />
-                <marker date="1512729827607" expanded="false" signature="16371:17213" ph="&quot;&quot;&quot;Pre-process an given image....&quot;&quot;&quot;" />
-                <marker date="1512729827607" expanded="true" signature="17233:17410" ph="..." />
-                <marker date="1512729827607" expanded="true" signature="17420:17639" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="10274:13191" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="11038:13191" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="13431:16140" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="13436:13710" ph="&quot;&quot;&quot;Preprocess an image for evaluation....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="13741:16140" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="14221:14267" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="14311:14490" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="14536:15357" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="15400:15644" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="15808:15974" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="16366:17639" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="16371:17213" ph="&quot;&quot;&quot;Pre-process an given image....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="17233:17410" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="17420:17639" ph="..." />
               </folding>
             </state>
           </provider>
@@ -136,7 +155,7 @@
         <entry file="file://$PROJECT_DIR$/evaluate_model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+              <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -144,46 +163,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eval_params.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evaluator/eval_params.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="723">
-              <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="train_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train_model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="36" lean-forward="false" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#33#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+            <state relative-caret-position="304">
+              <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+                <marker date="1512744189455" expanded="true" signature="144:5520" ph="..." />
+                <marker date="1512744189455" expanded="true" signature="222:392" ph="..." />
+                <marker date="1512744189455" expanded="true" signature="2011:4467" ph="..." />
+                <marker date="1512744189455" expanded="true" signature="2540:3663" ph="..." />
+                <marker date="1512744189455" expanded="true" signature="3677:4467" ph="..." />
+                <marker date="1512744189455" expanded="true" signature="4520:5520" ph="..." />
+                <marker date="1512744189455" expanded="true" signature="4717:4889" ph="..." />
+                <marker date="1512744189455" expanded="true" signature="4816:4889" ph="..." />
+                <marker date="1512744189455" expanded="true" signature="4985:5378" ph="..." />
+                <marker date="1512744189455" expanded="true" signature="5116:5249" ph="..." />
+                <marker date="1512744189455" expanded="true" signature="5283:5378" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bboxes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tf_extended/bboxes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="374" column="64" lean-forward="true" selection-start-line="374" selection-start-column="64" selection-end-line="374" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -256,7 +274,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/modular_SSD_tensorflow/trainer/train_utils.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/nets/inception_resnet_v2.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/nets/inception_v1.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/nets/alexnet.py" />
@@ -307,6 +324,7 @@
         <option value="$USER_HOME$/preprocessing/tf_image.py" />
         <option value="$PROJECT_DIR$/evaluator/eval_params.py" />
         <option value="$PROJECT_DIR$/evaluator/evaluator.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -370,6 +388,16 @@
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
               <item name="logs" type="462c0819:PsiDirectoryNode" />
               <item name="evals" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
+              <item name="trainer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -682,7 +710,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511949629252</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="update">
+      <created>1512744179254</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1512744179254</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView">
@@ -697,7 +732,7 @@
   <component name="ToolWindowManager">
     <frame x="1919" y="-4" width="1922" height="1205" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11145833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11145833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.4980968" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28051" sideWeight="0.5051659" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29143897" sideWeight="0.49483415" order="2" side_tool="false" content_ui="tabs" />
@@ -772,7 +807,6 @@
     <ignored-roots>
       <path value="$USER_HOME$/modular_SSD_tensorflow/models" />
     </ignored-roots>
-    <MESSAGE value="All internal functions for SSDModel are now in ssd_utils" />
     <MESSAGE value="Import SSDModel in ipython OK. Class build OK.&#10;Still no idea what the end_points from slim.nets exactly look like." />
     <MESSAGE value="found out what end_points look like (vgg_16)" />
     <MESSAGE value="Changed internal function names to _function_name instead of __function_name to comply to PEP8." />
@@ -797,7 +831,8 @@
     <MESSAGE value="Adapted resnet v1." />
     <MESSAGE value="Add vertical flipping to pre-processing" />
     <MESSAGE value="Debug passed&#10;&#10;- CPU usage very high.&#10;- GPU usage inconstant." />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug passed&#10;&#10;- CPU usage very high.&#10;- GPU usage inconstant." />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -894,7 +929,7 @@
     <entry file="file://$PROJECT_DIR$/evaluate_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
@@ -907,25 +942,14 @@
           <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1512729827607" expanded="true" signature="288:5380" ph="..." />
-            <marker date="1512729827607" expanded="true" signature="681:690" ph="..." />
-            <marker date="1512729827607" expanded="true" signature="2062:3644" ph="..." />
-            <marker date="1512729827607" expanded="true" signature="2231:2356" ph="..." />
-            <marker date="1512729827607" expanded="true" signature="2370:2483" ph="..." />
-            <marker date="1512729827607" expanded="true" signature="2912:3040" ph="..." />
-            <marker date="1512729827607" expanded="true" signature="3700:4037" ph="..." />
-            <marker date="1512729827607" expanded="true" signature="4182:5380" ph="..." />
-            <marker date="1512729827607" expanded="true" signature="4192:4327" ph="..." />
-            <marker date="1512729827607" expanded="true" signature="4670:4791" ph="..." />
-            <marker date="1512729827607" expanded="true" signature="4801:4957" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="38">
+          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -934,16 +958,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="723">
           <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
+        <state relative-caret-position="304">
+          <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+            <marker date="1512744189455" expanded="true" signature="144:5520" ph="..." />
+            <marker date="1512744189455" expanded="true" signature="222:392" ph="..." />
+            <marker date="1512744189455" expanded="true" signature="2011:4467" ph="..." />
+            <marker date="1512744189455" expanded="true" signature="2540:3663" ph="..." />
+            <marker date="1512744189455" expanded="true" signature="3677:4467" ph="..." />
+            <marker date="1512744189455" expanded="true" signature="4520:5520" ph="..." />
+            <marker date="1512744189455" expanded="true" signature="4717:4889" ph="..." />
+            <marker date="1512744189455" expanded="true" signature="4816:4889" ph="..." />
+            <marker date="1512744189455" expanded="true" signature="4985:5378" ph="..." />
+            <marker date="1512744189455" expanded="true" signature="5116:5249" ph="..." />
+            <marker date="1512744189455" expanded="true" signature="5283:5378" ph="..." />
           </folding>
         </state>
       </provider>
