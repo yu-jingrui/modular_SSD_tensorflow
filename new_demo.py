@@ -45,7 +45,7 @@ ssd_anchors = g_ssd_model.get_anchors_all_layers()
 
 # Main image processing routine.
 # def process_image(img, select_threshold=0.5, nms_threshold=.45, net_shape=(300, 300)):
-def process_image(img, select_threshold=0.3, nms_threshold=.1, net_shape=(512, 512)):
+def process_image(img, select_threshold=0.3, nms_threshold=.45, net_shape=(512, 512)):
     # Run SSD network.
     rimg, rpredictions, rlocalisations, rbbox_img = \
         isess.run([image_4d, predictions, localisations, bbox_img], feed_dict={img_input: img})
