@@ -118,11 +118,11 @@ class Trainer:
             raise ValueError('Wrong definition of fine_tune_fe!')
 
     def start_training(self):
-        tf.logging.set_verbosity(tf.logging.INFO)
+        tf.logging.set_verbosity(tf.logging.DEBUG)
 
         # Get batched training data
         image, filename, glabels, gbboxes, gdifficulties, gclasses, localizations, gscores = \
-            self.g_prepare.get_voc_2007_train_data()
+            self.g_prepare.get_voc_2007_2012_train_data()
         # Get model outputs
         predictions, localisations, logits, end_points = self.g_ssd.get_model(image)
         # Get model training loss
@@ -135,6 +135,7 @@ class Trainer:
 
         train_op = slim.learning.create_train_op(total_loss, optimizer, variables_to_train=variables_to_train)
         self._add_summaries(end_points, total_loss)
+        tf.summary.scalar('learning_rate', learning_rate)
         self._setup_debugging(predictions, localizations, glabels, gbboxes, gdifficulties)
 
         gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.9)
