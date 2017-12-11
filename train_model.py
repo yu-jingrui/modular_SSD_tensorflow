@@ -1,12 +1,11 @@
 from ssd.ssdmodel import SSDModel
-from trainer.trainer import Trainer
+from trainer.trainer import Trainer, tmp_params
 from trainer.preparedata import PrepareData
 from trainer.postprocessingdata import PostProcessingData
-from trainer import train_params
 
 
 if __name__ == '__main__':
-    params = train_params.tmp_params
+    params = tmp_params
 
     feature_extractor = params.feature_extractor
     model_name = params.model_name

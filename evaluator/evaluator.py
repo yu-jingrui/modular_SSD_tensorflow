@@ -5,8 +5,35 @@ import math
 import numpy as np
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
+from collections import namedtuple
+
+# -------------------------------------------------------- #
+# Definition of the parameter matrix
+EvaluatorParams = namedtuple(
+    'EvaluatorParameters',
+    ['checkpoint_path',  # directory must have '/' at the end
+     'eval_dir',  # directory to save evaluation results
+     'use_finetune',  # whether use checkpoints under 'finetune/' folder
+     'is_training',  # whether evaluate while training is ongoing
+     'eval_train_dataset',  # whether evaluate against training dataset
+     'loop',  # whether evaluate in loops
+     'which_checkpoint'  # specify a checkpoint to evaluate
+     ])
+# -------------------------------------------------------- #
+# example evaluation parameters
+eval_only_last_ckpt = EvaluatorParams(
+    checkpoint_path='./logs/',
+    eval_dir='./logs/eval',
+    use_finetune=False,
+    is_training=False,
+    eval_train_dataset=False,
+    loop=False,
+    which_checkpoint='last'
+)
 
 
+# -------------------------------------------------------- #
+# Definition of class Evaluator
 class Evaluator:
     def __init__(self, ssd_model, data_preparer, data_postprocessor, params):
         self.checkpoint_path = params.checkpoint_path

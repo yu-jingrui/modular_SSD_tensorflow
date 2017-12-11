@@ -1,14 +1,13 @@
 from ssd.ssdmodel import SSDModel
 from trainer.preparedata import PrepareData
 from trainer.postprocessingdata import PostProcessingData
-from trainer import train_params
-from evaluator.evaluator import Evaluator
-from evaluator import eval_params
+from trainer.trainer import tmp_params
+from evaluator.evaluator import Evaluator, eval_only_last_ckpt
 
 
 if __name__ == '__main__':
-    model_params = train_params.tmp_params
-    params = eval_params.debug_params
+    model_params = tmp_params
+    params = eval_only_last_ckpt
 
     feature_extractor = model_params.feature_extractor
     model_name = model_params.model_name
