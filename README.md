@@ -51,11 +51,11 @@ If you got everything right, you can now train your network with customized back
 - [ ] Connect other backends for SSD
 - [ ] Train and evaluate connected backends  
 
-| Model | Trained | train mAP | mAP |
-|:-----:|:-------:|:---------:|:---:|
-| VGG_16-SSD300 | VOC2007_train | &#10007; | - |
-| VGG_16-SSD512 | VOC07+12 trainval | 0.649 | 0.579 |
-| MobileNet-SSD512 | &#10007; | &#10007; | - |
+| Model | Trained on | Train mAP | Tested on | mAP |
+|:-----:|:-------:|:---------:|:-------:|:---:|
+| VGG_16-SSD300 | VOC2007_train | &#10007; | - | - |
+| VGG_16-SSD512 | VOC07+12 trainval | 0.649 | VOC07 test | 0.579 |
+| MobileNet-SSD512 | &#10007; | &#10007; | - | - |
 
 ## Acknowledgement
 This repo is based on the works:
