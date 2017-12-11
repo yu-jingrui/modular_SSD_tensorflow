@@ -12,6 +12,7 @@ class Evaluator:
         self.checkpoint_path = params.checkpoint_path
         if params.use_finetune:
             self.checkpoint_path = self.checkpoint_path + 'finetune/'
+        self.eval_dir = params.eval_dir
         self.is_training = params.is_training
         self.eval_train_dataset = params.eval_train_dataset
         self.loop = params.loop
@@ -51,10 +52,8 @@ class Evaluator:
         if self.eval_train_dataset:
             image, _, glabels, gbboxes, gdifficults, _, _, _ = \
                 self.g_prepare.get_voc_2007_train_data(is_training_data=False)
-            self.eval_dir = './logs/evals/train_data'
         else:
             image, _, glabels, gbboxes, gdifficults, _, _, _ = self.g_prepare.get_voc_2007_test_data()
-            self.eval_dir = './logs/evals/test_data'
 
         # get model outputs
         predictions, localisations, logits, end_points = self.g_ssd.get_model(image)
