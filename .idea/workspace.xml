@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="">
       <change type="DELETED" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/eval_params.py" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/train_params.py" afterPath="" />
@@ -9,6 +10,9 @@
       <change type="MODIFICATION" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/train_model.py" afterPath="$USER_HOME$/SSD/modular_SSD_tensorflow/train_model.py" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py" afterPath="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py" />
     </list>
+=======
+    <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="" />
+>>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,10 +25,56 @@
       <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="361">
               <caret line="19" column="36" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="36" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
+=======
+            <state relative-caret-position="323">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+                <marker date="1512991022572" expanded="true" signature="495:14060" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="658:2660" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="2171:2343" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="2383:2580" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="2691:4305" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="4462:6837" ph="..." />
+                <marker date="1512991022572" expanded="false" signature="4471:5066" ph="&quot;&quot;&quot;Function that takes a gradient step and specifies whether to stop....&quot;&quot;&quot;" />
+                <marker date="1512991022572" expanded="true" signature="5208:5589" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="5429:5589" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="5891:6414" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="6460:6636" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="6877:7426" ph="..." />
+                <marker date="1512991022572" expanded="false" signature="6886:7015" ph="&quot;&quot;&quot;Returns a list of variables to train....&quot;&quot;&quot;" />
+                <marker date="1512991022572" expanded="true" signature="7260:7392" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="7503:9209" ph="..." />
+                <marker date="1512991022572" expanded="false" signature="7512:7821" ph="&quot;&quot;&quot;Configures the learning rate....&quot;&quot;&quot;" />
+                <marker date="1512991022572" expanded="true" signature="8001:8412" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="8606:9054" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="9068:9209" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="9261:11258" ph="..." />
+                <marker date="1512991022572" expanded="false" signature="9270:9544" ph="&quot;&quot;&quot;Configures the optimizer used for training....&quot;&quot;&quot;" />
+                <marker date="1512991022572" expanded="true" signature="9585:9749" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="9791:9955" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="9994:10193" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="10232:10571" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="10614:10770" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="10812:11026" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="11313:11947" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="11404:11585" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="12039:12203" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="12232:14060" ph="..." />
+                <marker date="1512991022572" expanded="false" signature="12241:12510" ph="&quot;&quot;&quot;Returns a function run by the chief worker to warm-start the training....&quot;&quot;&quot;" />
+                <marker date="1512991022572" expanded="true" signature="12741:12915" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="12983:13105" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="13010:13104" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="13221:13326" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="13360:13625" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="13431:13547" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="13485:13547" ph="..." />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -34,7 +84,11 @@
         <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/train_model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
+<<<<<<< Updated upstream
               <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+=======
+              <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -45,10 +99,33 @@
       <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/evaluator.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="209">
               <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+=======
+            <state relative-caret-position="-76">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1512991022572" expanded="true" signature="144:5520" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="222:724" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="757:923" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="786:872" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="976:1386" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="1091:1386" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="1420:4467" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="1750:1894" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="2540:3663" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="3677:4467" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="4520:5520" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="4717:4889" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="4816:4889" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="4985:5378" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="5116:5249" ph="..." />
+                <marker date="1512991022572" expanded="true" signature="5283:5378" ph="..." />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -57,8 +134,13 @@
       <file leaf-file-name="evaluate_model.py" pinned="false" current-in-tab="true">
         <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluate_model.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="342">
               <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+=======
+            <state relative-caret-position="361">
+              <caret line="19" column="58" lean-forward="true" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+>>>>>>> Stashed changes
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -124,7 +206,11 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$USER_HOME$" value="master" />
+<<<<<<< Updated upstream
         <entry key="$USER_HOME$/SSD/modular_SSD_tensorflow" value="mobilenet_ssd" />
+=======
+        <entry key="$USER_HOME$/SSD/modular_SSD_tensorflow" value="master" />
+>>>>>>> Stashed changes
         <entry key="$USER_HOME$/modular_SSD_tensorflow" value="evaluator" />
       </map>
     </option>
@@ -642,10 +728,24 @@
       <created>1512989613299</created>
       <option name="number" value="00038" />
       <option name="presentableId" value="LOCAL-00038" />
+<<<<<<< Updated upstream
       <option name="project" value="LOCAL" />
       <updated>1512989613299</updated>
     </task>
     <option name="localTasksCounter" value="39" />
+=======
+      <option name="project" value="LOCAL" />
+      <updated>1512989613299</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Merge train and eval parameters definition into class definition files&#10;&#10;- for simpler structure and clearer oversight&#10;- for every experiment use a dedicated file to define parameters, preferably in a new directory 'experiments'">
+      <created>1512990984818</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1512990984818</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="TodoView">
@@ -659,6 +759,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="-11" width="1922" height="1212" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.4980968" order="6" side_tool="false" content_ui="tabs" />
@@ -724,7 +825,10 @@
     <ignored-roots>
       <path value="$USER_HOME$/modular_SSD_tensorflow/models" />
     </ignored-roots>
+<<<<<<< Updated upstream
     <MESSAGE value="Rewrote postprocessingdata.py." />
+=======
+>>>>>>> Stashed changes
     <MESSAGE value="added get_base_network_fn() to nets.nets_factory. Styling modification." />
     <MESSAGE value="Redefined method to pass parameters to trainer." />
     <MESSAGE value="Did some debugging. Problem: arg_scope may need to be redefined for feature_extractor." />
@@ -749,7 +853,12 @@
     <MESSAGE value="Add logs for training step 1" />
     <MESSAGE value="Update demo configuration" />
     <MESSAGE value="Update README.md" />
+<<<<<<< Updated upstream
     <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
+=======
+    <MESSAGE value="Merge train and eval parameters definition into class definition files&#10;&#10;- for simpler structure and clearer oversight&#10;- for every experiment use a dedicated file to define parameters, preferably in a new directory 'experiments'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge train and eval parameters definition into class definition files&#10;&#10;- for simpler structure and clearer oversight&#10;- for every experiment use a dedicated file to define parameters, preferably in a new directory 'experiments'" />
+>>>>>>> Stashed changes
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -945,7 +1054,11 @@
     <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/train_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
+<<<<<<< Updated upstream
           <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+=======
+          <caret line="17" column="37" lean-forward="false" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
@@ -954,10 +1067,56 @@
     </entry>
     <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="361">
           <caret line="19" column="36" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="36" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+=======
+        <state relative-caret-position="323">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1512991022572" expanded="true" signature="495:14060" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="658:2660" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="2171:2343" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="2383:2580" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="2691:4305" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="4462:6837" ph="..." />
+            <marker date="1512991022572" expanded="false" signature="4471:5066" ph="&quot;&quot;&quot;Function that takes a gradient step and specifies whether to stop....&quot;&quot;&quot;" />
+            <marker date="1512991022572" expanded="true" signature="5208:5589" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="5429:5589" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="5891:6414" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="6460:6636" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="6877:7426" ph="..." />
+            <marker date="1512991022572" expanded="false" signature="6886:7015" ph="&quot;&quot;&quot;Returns a list of variables to train....&quot;&quot;&quot;" />
+            <marker date="1512991022572" expanded="true" signature="7260:7392" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="7503:9209" ph="..." />
+            <marker date="1512991022572" expanded="false" signature="7512:7821" ph="&quot;&quot;&quot;Configures the learning rate....&quot;&quot;&quot;" />
+            <marker date="1512991022572" expanded="true" signature="8001:8412" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="8606:9054" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="9068:9209" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="9261:11258" ph="..." />
+            <marker date="1512991022572" expanded="false" signature="9270:9544" ph="&quot;&quot;&quot;Configures the optimizer used for training....&quot;&quot;&quot;" />
+            <marker date="1512991022572" expanded="true" signature="9585:9749" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="9791:9955" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="9994:10193" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="10232:10571" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="10614:10770" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="10812:11026" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="11313:11947" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="11404:11585" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="12039:12203" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="12232:14060" ph="..." />
+            <marker date="1512991022572" expanded="false" signature="12241:12510" ph="&quot;&quot;&quot;Returns a function run by the chief worker to warm-start the training....&quot;&quot;&quot;" />
+            <marker date="1512991022572" expanded="true" signature="12741:12915" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="12983:13105" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="13010:13104" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="13221:13326" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="13360:13625" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="13431:13547" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="13485:13547" ph="..." />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
@@ -972,18 +1131,46 @@
     </entry>
     <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/evaluator.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="209">
           <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
+=======
+        <state relative-caret-position="-76">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1512991022572" expanded="true" signature="144:5520" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="222:724" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="757:923" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="786:872" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="976:1386" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="1091:1386" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="1420:4467" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="1750:1894" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="2540:3663" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="3677:4467" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="4520:5520" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="4717:4889" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="4816:4889" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="4985:5378" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="5116:5249" ph="..." />
+            <marker date="1512991022572" expanded="true" signature="5283:5378" ph="..." />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluate_model.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="342">
           <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+=======
+        <state relative-caret-position="361">
+          <caret line="19" column="58" lean-forward="true" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+>>>>>>> Stashed changes
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
