@@ -1,13 +1,13 @@
 from ssd.ssdmodel import SSDModel
 from trainer.preparedata import PrepareData
 from trainer.postprocessingdata import PostProcessingData
-from trainer.trainer import tmp_params
-from evaluator.evaluator import Evaluator, eval_only_last_ckpt
+from evaluator.evaluator import Evaluator
+from experiments import mobilenet_sdd
 
 
 if __name__ == '__main__':
-    model_params = tmp_params
-    params = eval_only_last_ckpt
+    model_params = mobilenet_sdd.train1_1
+    params = mobilenet_sdd.eval_train
 
     feature_extractor = model_params.feature_extractor
     model_name = model_params.model_name

@@ -78,7 +78,7 @@ class Evaluator:
 
         if self.eval_train_dataset:
             image, _, glabels, gbboxes, gdifficults, _, _, _ = \
-                self.g_prepare.get_voc_2007_train_data(is_training_data=False)
+                self.g_prepare.get_voc_2007_2012_train_data(is_training_data=False)
         else:
             image, _, glabels, gbboxes, gdifficults, _, _, _ = self.g_prepare.get_voc_2007_test_data()
 
