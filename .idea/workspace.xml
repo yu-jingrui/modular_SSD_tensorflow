@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluate_model.py" afterPath="$PROJECT_DIR$/evaluate_model.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/mobilenet_sdd.py" afterPath="$PROJECT_DIR$/experiments/mobilenet_sdd.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train_model.py" afterPath="$PROJECT_DIR$/train_model.py" />
+=======
+    <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="Add logs for training step 1">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modular_SSD_tensorflow.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+>>>>>>> ssd512_voc0712
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,6 +26,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="train_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_model.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -23,11 +34,25 @@
               <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
+=======
+      <file leaf-file-name="pascalvoc_datasets.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/datasets/pascalvoc_datasets.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="817">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <marker date="1512744064638" expanded="true" signature="1043:1137" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="1205:3961" ph="..." />
+                <marker date="1512744064638" expanded="false" signature="1210:1659" ph="&quot;&quot;&quot;Gets a dataset tuple with instructions for reading Pascal VOC dataset....&quot;&quot;&quot;" />
+                <marker date="1512744064638" expanded="true" signature="1846:2825" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="2852:3527" ph="..." />
+>>>>>>> ssd512_voc0712
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="trainer.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -35,11 +60,57 @@
               <caret line="237" column="57" lean-forward="true" selection-start-line="237" selection-start-column="57" selection-end-line="237" selection-end-column="57" />
               <folding>
                 <element signature="e#0#38#0" expanded="true" />
+=======
+      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1350">
+              <caret line="73" column="27" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+                <marker date="1512744262642" expanded="true" signature="495:14066" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="2691:4311" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="4468:6843" ph="..." />
+                <marker date="1512744262642" expanded="false" signature="4477:5072" ph="&quot;&quot;&quot;Function that takes a gradient step and specifies whether to stop....&quot;&quot;&quot;" />
+                <marker date="1512744262642" expanded="true" signature="5214:5595" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="5435:5595" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="5897:6420" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="6466:6642" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="6883:7432" ph="..." />
+                <marker date="1512744262642" expanded="false" signature="6892:7021" ph="&quot;&quot;&quot;Returns a list of variables to train....&quot;&quot;&quot;" />
+                <marker date="1512744262642" expanded="true" signature="7266:7398" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="7509:9215" ph="..." />
+                <marker date="1512744262642" expanded="false" signature="7518:7827" ph="&quot;&quot;&quot;Configures the learning rate....&quot;&quot;&quot;" />
+                <marker date="1512744262642" expanded="true" signature="8007:8418" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="8612:9060" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="9074:9215" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="9267:11264" ph="..." />
+                <marker date="1512744262642" expanded="false" signature="9276:9550" ph="&quot;&quot;&quot;Configures the optimizer used for training....&quot;&quot;&quot;" />
+                <marker date="1512744262642" expanded="true" signature="9591:9755" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="9797:9961" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="10000:10199" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="10238:10577" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="10620:10776" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="10818:11032" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="11319:11953" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="11410:11591" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="12045:12209" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="12238:14066" ph="..." />
+                <marker date="1512744262642" expanded="false" signature="12247:12516" ph="&quot;&quot;&quot;Returns a function run by the chief worker to warm-start the training....&quot;&quot;&quot;" />
+                <marker date="1512744262642" expanded="true" signature="12747:12921" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="12989:13111" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="13016:13110" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="13227:13332" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="13366:13631" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="13437:13553" ph="..." />
+                <marker date="1512744262642" expanded="true" signature="13491:13553" ph="..." />
+>>>>>>> ssd512_voc0712
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="mobilenet_sdd.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/experiments/mobilenet_sdd.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -47,11 +118,37 @@
               <caret line="175" column="62" lean-forward="false" selection-start-line="175" selection-start-column="62" selection-end-line="175" selection-end-column="62" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
+=======
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="1007">
+                <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="new_demo.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new_demo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="912">
+              <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <marker date="1512744064638" expanded="true" signature="1618:2555" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="2648:3141" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="2763:3048" ph="..." />
+>>>>>>> ssd512_voc0712
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -59,11 +156,22 @@
               <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+=======
+      <file leaf-file-name="visualization.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/visualization.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="973">
+              <caret line="120" column="42" lean-forward="false" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
+              <folding>
+                <marker date="1512744064638" expanded="true" signature="3634:5366" ph="..." />
+                <marker date="1512744064638" expanded="true" signature="5123:5366" ph="..." />
+>>>>>>> ssd512_voc0712
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="evaluate_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluate_model.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -72,6 +180,83 @@
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="ssd_vgg_preprocessing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preprocessing/ssd_vgg_preprocessing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1330">
+              <caret line="92" column="68" lean-forward="false" selection-start-line="92" selection-start-column="68" selection-end-line="92" selection-end-column="68" />
+              <folding>
+                <marker date="1512744262638" expanded="true" signature="10274:13191" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="11038:13191" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="13431:16140" ph="..." />
+                <marker date="1512744262638" expanded="false" signature="13436:13710" ph="&quot;&quot;&quot;Preprocess an image for evaluation....&quot;&quot;&quot;" />
+                <marker date="1512744262638" expanded="true" signature="13741:16140" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="14221:14267" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="14311:14490" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="14536:15357" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="15400:15644" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="15808:15974" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="16366:17639" ph="..." />
+                <marker date="1512744262638" expanded="false" signature="16371:17213" ph="&quot;&quot;&quot;Pre-process an given image....&quot;&quot;&quot;" />
+                <marker date="1512744262638" expanded="true" signature="17233:17410" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="17420:17639" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evaluate_model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluate_model.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+              <folding>
+                <element signature="e#0#33#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+                <marker date="1512744262638" expanded="true" signature="144:5588" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="2079:4535" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="2608:3731" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="3745:4535" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="4588:5588" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="4785:4957" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="4884:4957" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="5053:5446" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="5184:5317" ph="..." />
+                <marker date="1512744262638" expanded="true" signature="5351:5446" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bboxes.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tf_extended/bboxes.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="374" column="64" lean-forward="false" selection-start-line="374" selection-start-column="64" selection-end-line="374" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <folding />
+>>>>>>> ssd512_voc0712
             </state>
           </provider>
         </entry>
@@ -144,6 +329,30 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="$USER_HOME$/modular_SSD_tensorflow/nets/resnet_utils.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/nets/xception.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/trainer/postprocessingdata.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/preprocessing/pascalvoc_datasets.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/nets/vgg.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/nets/mobilenet_v1.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/ssd/ssd_blocks.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/ssd/ssdmodel.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/new_demo.py" />
+        <option value="$USER_HOME$/Documents/work_logs/week41_2017.md" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/README.md" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/trainer/trainer.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/eval_model.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/evaluate_model.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/evaluator/eval_params.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/.gitignore" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/evaluator/evaluator.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/trainer/preparedata.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/trainer/train_params.py" />
+        <option value="$USER_HOME$/modular_SSD_tensorflow/nets/nets_factory.py" />
+>>>>>>> ssd512_voc0712
         <option value="$USER_HOME$/modular_SSD_tensorflow/nets/resnet_v1.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/new_demo.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/preprocessing/tf_image.py" />
@@ -169,6 +378,7 @@
         <option value="$USER_HOME$/train_model.py" />
         <option value="$USER_HOME$/experiments/ssd512_voc0712.py" />
         <option value="$USER_HOME$/trainer/trainer.py" />
+<<<<<<< HEAD
         <option value="$USER_HOME$/experiments/ssd512_voc0712.py" />
         <option value="$USER_HOME$/datasets/person_dataset.py" />
         <option value="$USER_HOME$/datasets/pascalvoc_datasets.py" />
@@ -195,6 +405,13 @@
         <option value="$PROJECT_DIR$/evaluator/evaluator.py" />
         <option value="$PROJECT_DIR$/experiments/mobilenet_sdd.py" />
         <option value="$PROJECT_DIR$/trainer/trainer.py" />
+=======
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/train_model.py" />
+        <option value="$PROJECT_DIR$/evaluate_model.py" />
+        <option value="$PROJECT_DIR$/experiments/ssd512_voc0712.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+>>>>>>> ssd512_voc0712
       </list>
     </option>
   </component>
@@ -251,17 +468,34 @@
             <path>
               <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="evaluator" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+>>>>>>> ssd512_voc0712
             </path>
             <path>
               <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="experiments" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="evals" type="462c0819:PsiDirectoryNode" />
+>>>>>>> ssd512_voc0712
             </path>
             <path>
               <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
               <item name="trainer" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
+            </path>
+            <path>
+              <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+>>>>>>> ssd512_voc0712
             </path>
           </expand>
           <select />
@@ -294,8 +528,12 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.train_model">
     <configuration name="new_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+  <component name="RunManager" selected="Python.evaluate_model">
+    <configuration name="evaluate_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -307,7 +545,29 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="modular_SSD_tensorflow" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/evaluate_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="train_model (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> ssd512_voc0712
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="modular_SSD_tensorflow" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$USER_HOME$/new_demo.py" />
+=======
+      <option name="SCRIPT_NAME" value="$USER_HOME$/train_model.py" />
+>>>>>>> ssd512_voc0712
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -329,14 +589,25 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.train_model" />
+<<<<<<< HEAD
       <item index="1" class="java.lang.String" itemvalue="Python.new_demo" />
     </list>
     <recent_temporary>
       <list size="2">
         <item index="0" class="java.lang.String" itemvalue="Python.train_model" />
         <item index="1" class="java.lang.String" itemvalue="Python.new_demo" />
+=======
+      <item index="1" class="java.lang.String" itemvalue="Python.train_model (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.evaluate_model" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.evaluate_model" />
+        <item index="1" class="java.lang.String" itemvalue="Python.train_model (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Python.train_model" />
+>>>>>>> ssd512_voc0712
       </list>
     </recent_temporary>
   </component>
@@ -603,6 +874,7 @@
       <option name="project" value="LOCAL" />
       <updated>1512119638556</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00037" summary="Update demo configuration">
       <created>1512989172546</created>
       <option name="number" value="00037" />
@@ -639,6 +911,9 @@
       <updated>1513073085612</updated>
     </task>
     <option name="localTasksCounter" value="42" />
+=======
+    <option name="localTasksCounter" value="37" />
+>>>>>>> ssd512_voc0712
     <servers />
   </component>
   <component name="TodoView">
@@ -651,6 +926,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="1919" y="-11" width="1922" height="1212" extended-state="6" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -659,22 +935,52 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29143897" sideWeight="0.49483415" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22222222" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+=======
+    <frame x="1919" y="-4" width="1922" height="1205" extended-state="6" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11145833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.4980968" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28051" sideWeight="0.5051659" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29143897" sideWeight="0.49483415" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22222222" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+>>>>>>> ssd512_voc0712
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43260473" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.4980968" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28051" sideWeight="0.5051659" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29143897" sideWeight="0.49483415" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22222222" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+>>>>>>> ssd512_voc0712
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43260473" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> ssd512_voc0712
     </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -694,6 +1000,14 @@
     <ignored-roots>
       <path value="$USER_HOME$/modular_SSD_tensorflow/models" />
     </ignored-roots>
+<<<<<<< HEAD
+=======
+    <MESSAGE value="Rewrote train_model.py to trainer.py." />
+    <MESSAGE value="Rewrote preparedata.py." />
+    <MESSAGE value="Rewrote postprocessingdata.py." />
+    <MESSAGE value="added get_base_network_fn() to nets.nets_factory. Styling modification." />
+    <MESSAGE value="Redefined method to pass parameters to trainer." />
+>>>>>>> ssd512_voc0712
     <MESSAGE value="Did some debugging. Problem: arg_scope may need to be redefined for feature_extractor." />
     <MESSAGE value="Did some debugging. Problem 1: arg_scope may need to be redefined for feature_extractor. Problem 2: feature shape may change depending on feature extractor." />
     <MESSAGE value="fixed feature shapes do not match bug." />
@@ -714,12 +1028,16 @@
     <MESSAGE value="New branch 'ssd512_voc0712'&#10;&#10;- Train and validate vgg_16-ssd512&#10;- fine tune for omni detection" />
     <MESSAGE value="First results after 18179 steps&#10;&#10;- Total loss = 4.3&#10;- mAP on VOC07test = 0.464 This is about the same with the result by&#10;    @LevinJ&#10;- Further results and adjustments see comments in ssd512_voc0712.py" />
     <MESSAGE value="Add logs for training step 1" />
+<<<<<<< HEAD
     <MESSAGE value="Update demo configuration" />
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Merge train and eval parameters definition into class definition files&#10;&#10;- for simpler structure and clearer oversight&#10;- for every experiment use a dedicated file to define parameters, preferably in a new directory 'experiments'" />
     <MESSAGE value="Configuration for training mobilenet_ssd512" />
     <MESSAGE value="Add log for first 30k steps" />
     <option name="LAST_COMMIT_MESSAGE" value="Add log for first 30k steps" />
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="Add logs for training step 1" />
+>>>>>>> ssd512_voc0712
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -743,6 +1061,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/preprocessing/ssd_vgg_preprocessing.py" />
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/eval_model.py" />
@@ -815,20 +1134,177 @@
           <caret line="175" column="62" lean-forward="false" selection-start-line="175" selection-start-column="62" selection-end-line="175" selection-end-column="62" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+=======
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/nets/resnet_v1.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/ssd/ssdmodel.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/ssd/ssd_blocks.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/new_demo.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/utils/visualization.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/train_params.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/trainer.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/train_params.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/site-packages/tensorflow/python/framework/common_shapes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9386">
+          <caret line="675" column="0" lean-forward="false" selection-start-line="675" selection-start-column="0" selection-end-line="675" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/preprocessing/preprocessing_factory.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/preprocessing/tf_image.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/preprocessing/vgg_preprocessing.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/preprocessing/ssd_vgg_preprocessing.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/ssd/ssdmodel.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/ssd/ssd_blocks.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/preparedata.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/evaluate_model.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/trainer.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/evaluator/eval_params.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/evaluator/evaluator.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/.gitignore" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/train_params.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/evaluate_model.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/preprocessing/ssd_vgg_preprocessing.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/eval_model.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/datasets/pascalvoc_datasets.py" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/README.md" />
+    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/trainer.py" />
+    <entry file="file://$USER_HOME$/datasets/pascalvoc_datasets.py" />
+    <entry file="file://$USER_HOME$/experiments/ssd512_voc0712_29-11-2017.py" />
+    <entry file="file://$USER_HOME$/trainer/train_params.py" />
+    <entry file="file://$USER_HOME$/trainer/preparedata.py" />
+    <entry file="file://$USER_HOME$/evaluator/eval_params.py" />
+    <entry file="file://$USER_HOME$/preprocessing/tf_image.py" />
+    <entry file="file://$USER_HOME$/preprocessing/ssd_vgg_preprocessing.py" />
+    <entry file="file://$USER_HOME$/evaluator/evaluator.py" />
+    <entry file="file://$USER_HOME$/evaluate_model.py" />
+    <entry file="file://$USER_HOME$/train_model.py" />
+    <entry file="file://$USER_HOME$/experiments/ssd512_voc0712.py" />
+    <entry file="file://$USER_HOME$/trainer/trainer.py" />
+    <entry file="file://$PROJECT_DIR$/trainer/preparedata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1007">
+            <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1512744262638" expanded="true" signature="144:5588" ph="..." />
+            <marker date="1512744262638" expanded="true" signature="2079:4535" ph="..." />
+            <marker date="1512744262638" expanded="true" signature="2608:3731" ph="..." />
+            <marker date="1512744262638" expanded="true" signature="3745:4535" ph="..." />
+            <marker date="1512744262638" expanded="true" signature="4588:5588" ph="..." />
+            <marker date="1512744262638" expanded="true" signature="4785:4957" ph="..." />
+            <marker date="1512744262638" expanded="true" signature="4884:4957" ph="..." />
+            <marker date="1512744262638" expanded="true" signature="5053:5446" ph="..." />
+            <marker date="1512744262638" expanded="true" signature="5184:5317" ph="..." />
+            <marker date="1512744262638" expanded="true" signature="5351:5446" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="73" column="27" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+            <marker date="1512744262642" expanded="true" signature="495:14066" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="2691:4311" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="4468:6843" ph="..." />
+            <marker date="1512744262642" expanded="false" signature="4477:5072" ph="&quot;&quot;&quot;Function that takes a gradient step and specifies whether to stop....&quot;&quot;&quot;" />
+            <marker date="1512744262642" expanded="true" signature="5214:5595" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="5435:5595" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="5897:6420" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="6466:6642" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="6883:7432" ph="..." />
+            <marker date="1512744262642" expanded="false" signature="6892:7021" ph="&quot;&quot;&quot;Returns a list of variables to train....&quot;&quot;&quot;" />
+            <marker date="1512744262642" expanded="true" signature="7266:7398" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="7509:9215" ph="..." />
+            <marker date="1512744262642" expanded="false" signature="7518:7827" ph="&quot;&quot;&quot;Configures the learning rate....&quot;&quot;&quot;" />
+            <marker date="1512744262642" expanded="true" signature="8007:8418" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="8612:9060" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="9074:9215" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="9267:11264" ph="..." />
+            <marker date="1512744262642" expanded="false" signature="9276:9550" ph="&quot;&quot;&quot;Configures the optimizer used for training....&quot;&quot;&quot;" />
+            <marker date="1512744262642" expanded="true" signature="9591:9755" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="9797:9961" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="10000:10199" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="10238:10577" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="10620:10776" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="10818:11032" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="11319:11953" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="11410:11591" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="12045:12209" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="12238:14066" ph="..." />
+            <marker date="1512744262642" expanded="false" signature="12247:12516" ph="&quot;&quot;&quot;Returns a function run by the chief worker to warm-start the training....&quot;&quot;&quot;" />
+            <marker date="1512744262642" expanded="true" signature="12747:12921" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="12989:13111" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="13016:13110" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="13227:13332" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="13366:13631" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="13437:13553" ph="..." />
+            <marker date="1512744262642" expanded="true" signature="13491:13553" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluator/eval_params.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+>>>>>>> ssd512_voc0712
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evaluate_model.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="171">
           <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+=======
+        <state relative-caret-position="190">
+          <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+>>>>>>> ssd512_voc0712
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
@@ -836,6 +1312,12 @@
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/experiments/ssd512_voc0712.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="913">
+          <caret line="203" column="74" lean-forward="false" selection-start-line="203" selection-start-column="74" selection-end-line="203" selection-end-column="74" />
+>>>>>>> ssd512_voc0712
         </state>
       </provider>
     </entry>
