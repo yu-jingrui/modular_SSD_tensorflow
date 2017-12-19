@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="">
-      <change type="DELETED" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/eval_params.py" afterPath="" />
-      <change type="DELETED" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/train_params.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluate_model.py" afterPath="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluate_model.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/evaluator.py" afterPath="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/evaluator.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/train_model.py" afterPath="$USER_HOME$/SSD/modular_SSD_tensorflow/train_model.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py" afterPath="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluate_model.py" afterPath="$PROJECT_DIR$/evaluate_model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/mobilenet_sdd.py" afterPath="$PROJECT_DIR$/experiments/mobilenet_sdd.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train_model.py" afterPath="$PROJECT_DIR$/train_model.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,23 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="19" column="36" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="train_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/train_model.py">
+        <entry file="file://$PROJECT_DIR$/train_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+            <state relative-caret-position="133">
+              <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -42,11 +28,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/evaluator.py">
+      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            <state relative-caret-position="361">
+              <caret line="237" column="57" lean-forward="true" selection-start-line="237" selection-start-column="57" selection-end-line="237" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobilenet_sdd.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/mobilenet_sdd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2148">
+              <caret line="175" column="62" lean-forward="false" selection-start-line="175" selection-start-column="62" selection-end-line="175" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="817">
+              <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -54,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="evaluate_model.py" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluate_model.py">
+      <file leaf-file-name="evaluate_model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluate_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+            <state relative-caret-position="171">
+              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -120,11 +130,10 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/SSD/modular_SSD_tensorflow" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$USER_HOME$" value="master" />
-        <entry key="$USER_HOME$/SSD/modular_SSD_tensorflow" value="mobilenet_ssd" />
         <entry key="$USER_HOME$/modular_SSD_tensorflow" value="evaluator" />
       </map>
     </option>
@@ -135,16 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/modular_SSD_tensorflow/trainer/trainer.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/eval_model.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/evaluate_model.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/evaluator/eval_params.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/.gitignore" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/evaluator/evaluator.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/trainer/preparedata.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/trainer/train_params.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/nets/nets_factory.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/nets/resnet_v1.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/new_demo.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/preprocessing/tf_image.py" />
@@ -170,22 +169,32 @@
         <option value="$USER_HOME$/train_model.py" />
         <option value="$USER_HOME$/experiments/ssd512_voc0712.py" />
         <option value="$USER_HOME$/trainer/trainer.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/ssd512_voc0712.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/datasets/person_dataset.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/datasets/pascalvoc_datasets.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/preparedata.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/preprocessing/ssd_vgg_preprocessing.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/utils/visualization.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/finetune_person.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/.gitignore" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/new_demo.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/README.md" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/eval_params.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/mobilenet_11-12-2017.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/train_model.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/evaluator.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluate_model.py" />
+        <option value="$USER_HOME$/experiments/ssd512_voc0712.py" />
+        <option value="$USER_HOME$/datasets/person_dataset.py" />
+        <option value="$USER_HOME$/datasets/pascalvoc_datasets.py" />
+        <option value="$USER_HOME$/utils/visualization.py" />
+        <option value="$USER_HOME$/experiments/finetune_person.py" />
+        <option value="$USER_HOME$/.gitignore" />
+        <option value="$USER_HOME$/new_demo.py" />
+        <option value="$USER_HOME$/README.md" />
+        <option value="$USER_HOME$/evaluator/eval_params.py" />
+        <option value="$USER_HOME$/experiments/mobilenet_11-12-2017.py" />
+        <option value="$USER_HOME$/train_model.py" />
+        <option value="$USER_HOME$/preprocessing/ssd_vgg_preprocessing.py" />
+        <option value="$USER_HOME$/trainer/trainer.py" />
+        <option value="$USER_HOME$/evaluator/evaluator.py" />
+        <option value="$USER_HOME$/trainer/preparedata.py" />
+        <option value="$USER_HOME$/evaluate_model.py" />
+        <option value="$USER_HOME$/experiments/mobilenet_sdd.py" />
+        <option value="$PROJECT_DIR$/../evaluate_model.py" />
+        <option value="$PROJECT_DIR$/../train_model.py" />
+        <option value="$PROJECT_DIR$/../trainer/trainer.py" />
+        <option value="$PROJECT_DIR$/../experiments/mobilenet_sdd.py" />
+        <option value="$PROJECT_DIR$/evaluate_model.py" />
+        <option value="$PROJECT_DIR$/train_model.py" />
+        <option value="$PROJECT_DIR$/evaluator/evaluator.py" />
+        <option value="$PROJECT_DIR$/experiments/mobilenet_sdd.py" />
+        <option value="$PROJECT_DIR$/trainer/trainer.py" />
       </list>
     </option>
   </component>
@@ -232,7 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,24 +256,26 @@
             <path>
               <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
-              <item name="trainer" type="462c0819:PsiDirectoryNode" />
+              <item name="experiments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="trainer" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$USER_HOME$/modular_SSD_tensorflow" />
+    <property name="last_opened_file_path" value="$USER_HOME$/SSD-Tensorflow/train_ssd_network.py" />
     <property name="add_unversioned_files" value="true" />
+    <property name="two.files.diff.last.used.file" value="$USER_HOME$/SSD-Tensorflow/train_ssd_network.py" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -284,8 +294,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.new_demo">
-    <configuration name="evaluate_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.train_model">
+    <configuration name="new_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -297,29 +307,12 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="modular_SSD_tensorflow" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/evaluate_model.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/new_demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="new_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/SSD/modular_SSD_tensorflow" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="modular_SSD_tensorflow" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/SSD/modular_SSD_tensorflow/new_demo.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="train_model (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="train_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -336,35 +329,14 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="train_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/modular_SSD_tensorflow" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="modular_SSD_tensorflow" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <list size="4">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.train_model" />
-      <item index="1" class="java.lang.String" itemvalue="Python.train_model (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.evaluate_model" />
-      <item index="3" class="java.lang.String" itemvalue="Python.new_demo" />
+      <item index="1" class="java.lang.String" itemvalue="Python.new_demo" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.new_demo" />
-        <item index="1" class="java.lang.String" itemvalue="Python.evaluate_model" />
-        <item index="2" class="java.lang.String" itemvalue="Python.train_model (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.train_model" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.train_model" />
+        <item index="1" class="java.lang.String" itemvalue="Python.new_demo" />
       </list>
     </recent_temporary>
   </component>
@@ -645,7 +617,28 @@
       <option name="project" value="LOCAL" />
       <updated>1512989613299</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Merge train and eval parameters definition into class definition files&#10;&#10;- for simpler structure and clearer oversight&#10;- for every experiment use a dedicated file to define parameters, preferably in a new directory 'experiments'">
+      <created>1512990984818</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1512990984818</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Configuration for training mobilenet_ssd512">
+      <created>1512996137257</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1512996137257</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Add log for first 30k steps">
+      <created>1513073085612</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1513073085612</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView">
@@ -660,52 +653,29 @@
   <component name="ToolWindowManager">
     <frame x="1919" y="-11" width="1922" height="1212" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.4980968" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28051" sideWeight="0.5051659" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28051" sideWeight="0.5051659" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29143897" sideWeight="0.49483415" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22222222" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43260473" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.4980968" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28051" sideWeight="0.5051659" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4690346" sideWeight="0.49483415" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22222222" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12180533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43260473" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+    </layout>
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
@@ -724,9 +694,6 @@
     <ignored-roots>
       <path value="$USER_HOME$/modular_SSD_tensorflow/models" />
     </ignored-roots>
-    <MESSAGE value="Rewrote postprocessingdata.py." />
-    <MESSAGE value="added get_base_network_fn() to nets.nets_factory. Styling modification." />
-    <MESSAGE value="Redefined method to pass parameters to trainer." />
     <MESSAGE value="Did some debugging. Problem: arg_scope may need to be redefined for feature_extractor." />
     <MESSAGE value="Did some debugging. Problem 1: arg_scope may need to be redefined for feature_extractor. Problem 2: feature shape may change depending on feature extractor." />
     <MESSAGE value="fixed feature shapes do not match bug." />
@@ -749,7 +716,10 @@
     <MESSAGE value="Add logs for training step 1" />
     <MESSAGE value="Update demo configuration" />
     <MESSAGE value="Update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update README.md" />
+    <MESSAGE value="Merge train and eval parameters definition into class definition files&#10;&#10;- for simpler structure and clearer oversight&#10;- for every experiment use a dedicated file to define parameters, preferably in a new directory 'experiments'" />
+    <MESSAGE value="Configuration for training mobilenet_ssd512" />
+    <MESSAGE value="Add log for first 30k steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add log for first 30k steps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -773,19 +743,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/preprocessing/vgg_preprocessing.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/preprocessing/ssd_vgg_preprocessing.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/ssd/ssdmodel.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/ssd/ssd_blocks.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/preparedata.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/evaluate_model.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/trainer.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/evaluator/eval_params.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/evaluator/evaluator.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/.gitignore" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/train_params.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/evaluate_model.py" />
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/preprocessing/ssd_vgg_preprocessing.py" />
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/eval_model.py" />
@@ -804,188 +761,80 @@
     <entry file="file://$USER_HOME$/train_model.py" />
     <entry file="file://$USER_HOME$/experiments/ssd512_voc0712.py" />
     <entry file="file://$USER_HOME$/trainer/trainer.py" />
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/datasets/person_dataset.py" />
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/preprocessing/ssd_vgg_preprocessing.py">
+    <entry file="file://$USER_HOME$/datasets/person_dataset.py" />
+    <entry file="file://$USER_HOME$/experiments/ssd512_voc0712.py" />
+    <entry file="file://$USER_HOME$/datasets/pascalvoc_datasets.py" />
+    <entry file="file://$USER_HOME$/tf_extended/bboxes.py" />
+    <entry file="file://$USER_HOME$/trainer/postprocessingdata.py" />
+    <entry file="file://$USER_HOME$/utils/visualization.py" />
+    <entry file="file://$USER_HOME$/experiments/finetune_person.py" />
+    <entry file="file://$USER_HOME$/.gitignore" />
+    <entry file="file://$USER_HOME$/utils/np_methods.py" />
+    <entry file="file://$USER_HOME$/new_demo.py" />
+    <entry file="file://$USER_HOME$/README.md" />
+    <entry file="file://$USER_HOME$/trainer/train_params.py" />
+    <entry file="file://$USER_HOME$/evaluator/eval_params.py" />
+    <entry file="file://$USER_HOME$/experiments/mobilenet_11-12-2017.py" />
+    <entry file="file://$USER_HOME$/SSD-Tensorflow/train_ssd_network.py" />
+    <entry file="file://$USER_HOME$/train_model.py" />
+    <entry file="file://$USER_HOME$/trainer/preparedata.py" />
+    <entry file="file://$USER_HOME$/evaluator/evaluator.py" />
+    <entry file="file://$USER_HOME$/evaluate_model.py" />
+    <entry file="file://$USER_HOME$/trainer/trainer.py" />
+    <entry file="file://$USER_HOME$/experiments/mobilenet_sdd.py" />
+    <entry file="file://$USER_HOME$/preprocessing/ssd_vgg_preprocessing.py" />
+    <entry file="file://$PROJECT_DIR$/../evaluate_model.py" />
+    <entry file="file://$PROJECT_DIR$/../datasets/pascalvoc_datasets.py" />
+    <entry file="file://$PROJECT_DIR$/../trainer/preparedata.py" />
+    <entry file="file://$PROJECT_DIR$/../trainer/trainer.py" />
+    <entry file="file://$PROJECT_DIR$/../train_model.py" />
+    <entry file="file://$PROJECT_DIR$/../experiments/mobilenet_sdd.py" />
+    <entry file="file://$PROJECT_DIR$/train_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="92" column="68" lean-forward="false" selection-start-line="92" selection-start-column="68" selection-end-line="92" selection-end-column="68" />
-          <folding>
-            <marker date="1512989187950" expanded="true" signature="10274:13191" ph="..." />
-            <marker date="1512989187950" expanded="true" signature="11038:13191" ph="..." />
-            <marker date="1512989187950" expanded="true" signature="13431:16140" ph="..." />
-            <marker date="1512989187950" expanded="false" signature="13436:13710" ph="&quot;&quot;&quot;Preprocess an image for evaluation....&quot;&quot;&quot;" />
-            <marker date="1512989187950" expanded="true" signature="13741:16140" ph="..." />
-            <marker date="1512989187950" expanded="true" signature="14221:14267" ph="..." />
-            <marker date="1512989187950" expanded="true" signature="14311:14490" ph="..." />
-            <marker date="1512989187950" expanded="true" signature="14536:15357" ph="..." />
-            <marker date="1512989187950" expanded="true" signature="15400:15644" ph="..." />
-            <marker date="1512989187950" expanded="true" signature="15808:15974" ph="..." />
-            <marker date="1512989187950" expanded="true" signature="16366:17639" ph="..." />
-            <marker date="1512989187950" expanded="false" signature="16371:17213" ph="&quot;&quot;&quot;Pre-process an given image....&quot;&quot;&quot;" />
-            <marker date="1512989187950" expanded="true" signature="17233:17410" ph="..." />
-            <marker date="1512989187950" expanded="true" signature="17420:17639" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/ssd512_voc0712.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="913">
-          <caret line="203" column="32" lean-forward="true" selection-start-line="203" selection-start-column="32" selection-end-line="203" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/datasets/pascalvoc_datasets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <marker date="1512989187950" expanded="true" signature="1043:1137" ph="..." />
-            <marker date="1512989187950" expanded="true" signature="1205:3961" ph="..." />
-            <marker date="1512989187950" expanded="false" signature="1210:1659" ph="&quot;&quot;&quot;Gets a dataset tuple with instructions for reading Pascal VOC dataset....&quot;&quot;&quot;" />
-            <marker date="1512989187950" expanded="true" signature="1846:2825" ph="..." />
-            <marker date="1512989187950" expanded="true" signature="2852:3527" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/preparedata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/tf_extended/bboxes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5358">
-          <caret line="374" column="64" lean-forward="false" selection-start-line="374" selection-start-column="64" selection-end-line="374" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/postprocessingdata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1687">
-          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/utils/visualization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2185">
-          <caret line="120" column="42" lean-forward="false" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
-          <folding>
-            <marker date="1512989187954" expanded="true" signature="3634:5366" ph="..." />
-            <marker date="1512989187954" expanded="true" signature="5123:5366" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/finetune_person.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="36" column="93" lean-forward="false" selection-start-line="36" selection-start-column="93" selection-end-line="36" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/utils/np_methods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3971">
-          <caret line="228" column="4" lean-forward="false" selection-start-line="228" selection-start-column="4" selection-end-line="228" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/new_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="47" column="62" lean-forward="false" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="765">
-            <caret line="57" column="44" lean-forward="false" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/mobilenet_11-12-2017.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/train_params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="269" column="0" lean-forward="false" selection-start-line="269" selection-start-column="0" selection-end-line="292" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/train_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state relative-caret-position="133">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py">
+    <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="19" column="36" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/eval_params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="913">
-          <caret line="63" column="1" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="63" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/evaluator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        <state relative-caret-position="817">
+          <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluate_model.py">
+    <entry file="file://$PROJECT_DIR$/experiments/mobilenet_sdd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="58" lean-forward="true" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+        <state relative-caret-position="2148">
+          <caret line="175" column="62" lean-forward="false" selection-start-line="175" selection-start-column="62" selection-end-line="175" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluate_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="237" column="57" lean-forward="true" selection-start-line="237" selection-start-column="57" selection-end-line="237" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

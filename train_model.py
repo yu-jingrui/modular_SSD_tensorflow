@@ -1,11 +1,11 @@
 from ssd.ssdmodel import SSDModel
-from trainer.trainer import Trainer, tmp_params
+from trainer.trainer import Trainer
 from trainer.preparedata import PrepareData
 from trainer.postprocessingdata import PostProcessingData
-
+from experiments import mobilenet_sdd
 
 if __name__ == '__main__':
-    params = tmp_params
+    params = mobilenet_sdd.train2_4
 
     feature_extractor = params.feature_extractor
     model_name = params.model_name
