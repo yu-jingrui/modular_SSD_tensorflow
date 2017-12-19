@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluate_model.py" afterPath="$PROJECT_DIR$/evaluate_model.py" />
@@ -9,13 +10,19 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train_model.py" afterPath="$PROJECT_DIR$/train_model.py" />
 =======
     <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="Add logs for training step 1">
+=======
+    <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="start fine tune person">
+>>>>>>> finetune_person
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modular_SSD_tensorflow.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+<<<<<<< HEAD
 >>>>>>> ssd512_voc0712
+=======
+>>>>>>> finetune_person
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,6 +34,7 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <file leaf-file-name="train_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/train_model.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -35,10 +43,13 @@
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
 =======
+=======
+>>>>>>> finetune_person
       <file leaf-file-name="pascalvoc_datasets.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/datasets/pascalvoc_datasets.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="817">
+<<<<<<< HEAD
               <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <marker date="1512744064638" expanded="true" signature="1043:1137" ph="..." />
@@ -47,6 +58,14 @@
                 <marker date="1512744064638" expanded="true" signature="1846:2825" ph="..." />
                 <marker date="1512744064638" expanded="true" signature="2852:3527" ph="..." />
 >>>>>>> ssd512_voc0712
+=======
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+              <folding>
+                <marker date="1512743795199" expanded="true" signature="1043:1137" ph="..." />
+                <marker date="1512743795199" expanded="true" signature="1233:3989" ph="..." />
+                <marker date="1512743795199" expanded="false" signature="1238:1687" ph="&quot;&quot;&quot;Gets a dataset tuple with instructions for reading Pascal VOC dataset....&quot;&quot;&quot;" />
+                <marker date="1512743795199" expanded="true" signature="1874:2853" ph="..." />
+>>>>>>> finetune_person
               </folding>
             </state>
           </provider>
@@ -139,15 +158,20 @@
               <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
+<<<<<<< HEAD
                 <marker date="1512744064638" expanded="true" signature="1618:2555" ph="..." />
                 <marker date="1512744064638" expanded="true" signature="2648:3141" ph="..." />
                 <marker date="1512744064638" expanded="true" signature="2763:3048" ph="..." />
 >>>>>>> ssd512_voc0712
+=======
+                <marker date="1512743795199" expanded="true" signature="2715:3208" ph="..." />
+>>>>>>> finetune_person
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
@@ -157,15 +181,24 @@
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
 =======
+=======
+>>>>>>> finetune_person
       <file leaf-file-name="visualization.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/visualization.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="973">
+<<<<<<< HEAD
               <caret line="120" column="42" lean-forward="false" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
               <folding>
                 <marker date="1512744064638" expanded="true" signature="3634:5366" ph="..." />
                 <marker date="1512744064638" expanded="true" signature="5123:5366" ph="..." />
 >>>>>>> ssd512_voc0712
+=======
+              <caret line="142" column="42" lean-forward="false" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+              <folding>
+                <marker date="1512743795203" expanded="true" signature="3634:5825" ph="..." />
+                <marker date="1512743795203" expanded="true" signature="5582:5825" ph="..." />
+>>>>>>> finetune_person
               </folding>
             </state>
           </provider>
@@ -186,6 +219,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1330">
               <caret line="92" column="68" lean-forward="false" selection-start-line="92" selection-start-column="68" selection-end-line="92" selection-end-column="68" />
+<<<<<<< HEAD
               <folding>
                 <marker date="1512744262638" expanded="true" signature="10274:13191" ph="..." />
                 <marker date="1512744262638" expanded="true" signature="11038:13191" ph="..." />
@@ -202,6 +236,9 @@
                 <marker date="1512744262638" expanded="true" signature="17233:17410" ph="..." />
                 <marker date="1512744262638" expanded="true" signature="17420:17639" ph="..." />
               </folding>
+=======
+              <folding />
+>>>>>>> finetune_person
             </state>
           </provider>
         </entry>
@@ -209,8 +246,13 @@
       <file leaf-file-name="evaluate_model.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evaluate_model.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="190">
               <caret line="10" column="41" lean-forward="false" selection-start-line="10" selection-start-column="41" selection-end-line="10" selection-end-column="41" />
+=======
+            <state relative-caret-position="209">
+              <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+>>>>>>> finetune_person
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -225,6 +267,7 @@
               <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
+<<<<<<< HEAD
                 <marker date="1512744262638" expanded="true" signature="144:5588" ph="..." />
                 <marker date="1512744262638" expanded="true" signature="2079:4535" ph="..." />
                 <marker date="1512744262638" expanded="true" signature="2608:3731" ph="..." />
@@ -235,6 +278,18 @@
                 <marker date="1512744262638" expanded="true" signature="5053:5446" ph="..." />
                 <marker date="1512744262638" expanded="true" signature="5184:5317" ph="..." />
                 <marker date="1512744262638" expanded="true" signature="5351:5446" ph="..." />
+=======
+                <marker date="1512743795199" expanded="true" signature="144:5615" ph="..." />
+                <marker date="1512743795199" expanded="true" signature="2106:4562" ph="..." />
+                <marker date="1512743795199" expanded="true" signature="2635:3758" ph="..." />
+                <marker date="1512743795199" expanded="true" signature="3772:4562" ph="..." />
+                <marker date="1512743795199" expanded="true" signature="4615:5615" ph="..." />
+                <marker date="1512743795199" expanded="true" signature="4812:4984" ph="..." />
+                <marker date="1512743795199" expanded="true" signature="4911:4984" ph="..." />
+                <marker date="1512743795199" expanded="true" signature="5080:5473" ph="..." />
+                <marker date="1512743795199" expanded="true" signature="5211:5344" ph="..." />
+                <marker date="1512743795199" expanded="true" signature="5378:5473" ph="..." />
+>>>>>>> finetune_person
               </folding>
             </state>
           </provider>
@@ -244,7 +299,11 @@
         <entry file="file://$PROJECT_DIR$/tf_extended/bboxes.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="424">
+<<<<<<< HEAD
               <caret line="374" column="64" lean-forward="false" selection-start-line="374" selection-start-column="64" selection-end-line="374" selection-end-column="64" />
+=======
+              <caret line="374" column="64" lean-forward="true" selection-start-line="374" selection-start-column="64" selection-end-line="374" selection-end-column="64" />
+>>>>>>> finetune_person
               <folding />
             </state>
           </provider>
@@ -254,9 +313,14 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
+<<<<<<< HEAD
               <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
 >>>>>>> ssd512_voc0712
+=======
+              <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <folding />
+>>>>>>> finetune_person
             </state>
           </provider>
         </entry>
@@ -319,6 +383,7 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$USER_HOME$" value="master" />
+        <entry key="$PROJECT_DIR$" value="ssd512_voc0712" />
         <entry key="$USER_HOME$/modular_SSD_tensorflow" value="evaluator" />
       </map>
     </option>
@@ -330,6 +395,7 @@
     <option name="CHANGED_PATHS">
       <list>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
         <option value="$USER_HOME$/modular_SSD_tensorflow/nets/resnet_utils.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/nets/xception.py" />
@@ -340,6 +406,8 @@
         <option value="$USER_HOME$/modular_SSD_tensorflow/ssd/ssd_blocks.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/ssd/ssdmodel.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/new_demo.py" />
+=======
+>>>>>>> finetune_person
         <option value="$USER_HOME$/Documents/work_logs/week41_2017.md" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/README.md" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/trainer/trainer.py" />
@@ -379,6 +447,7 @@
         <option value="$USER_HOME$/experiments/ssd512_voc0712.py" />
         <option value="$USER_HOME$/trainer/trainer.py" />
 <<<<<<< HEAD
+<<<<<<< HEAD
         <option value="$USER_HOME$/experiments/ssd512_voc0712.py" />
         <option value="$USER_HOME$/datasets/person_dataset.py" />
         <option value="$USER_HOME$/datasets/pascalvoc_datasets.py" />
@@ -404,22 +473,39 @@
         <option value="$PROJECT_DIR$/train_model.py" />
         <option value="$PROJECT_DIR$/evaluator/evaluator.py" />
         <option value="$PROJECT_DIR$/experiments/mobilenet_sdd.py" />
+=======
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/experiments/ssd512_voc0712.py" />
+        <option value="$PROJECT_DIR$/datasets/person_dataset.py" />
+        <option value="$PROJECT_DIR$/datasets/pascalvoc_datasets.py" />
+        <option value="$PROJECT_DIR$/trainer/preparedata.py" />
+>>>>>>> finetune_person
         <option value="$PROJECT_DIR$/trainer/trainer.py" />
 =======
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/train_model.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/evaluate_model.py" />
         <option value="$PROJECT_DIR$/experiments/ssd512_voc0712.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
 >>>>>>> ssd512_voc0712
+=======
+        <option value="$PROJECT_DIR$/preprocessing/ssd_vgg_preprocessing.py" />
+        <option value="$PROJECT_DIR$/evaluate_model.py" />
+        <option value="$PROJECT_DIR$/evaluator/evaluator.py" />
+        <option value="$PROJECT_DIR$/new_demo.py" />
+        <option value="$PROJECT_DIR$/utils/visualization.py" />
+        <option value="$PROJECT_DIR$/experiments/finetune_person.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+>>>>>>> finetune_person
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1919" />
-    <option name="y" value="-11" />
+    <option name="y" value="-4" />
     <option name="width" value="1922" />
-    <option name="height" value="1212" />
+    <option name="height" value="1205" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -469,33 +555,48 @@
               <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
+<<<<<<< HEAD
               <item name="evaluator" type="462c0819:PsiDirectoryNode" />
 =======
               <item name="logs" type="462c0819:PsiDirectoryNode" />
 >>>>>>> ssd512_voc0712
+=======
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+>>>>>>> finetune_person
             </path>
             <path>
               <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
 <<<<<<< HEAD
               <item name="experiments" type="462c0819:PsiDirectoryNode" />
 =======
               <item name="logs" type="462c0819:PsiDirectoryNode" />
               <item name="evals" type="462c0819:PsiDirectoryNode" />
 >>>>>>> ssd512_voc0712
+=======
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="evals" type="462c0819:PsiDirectoryNode" />
+>>>>>>> finetune_person
             </path>
             <path>
               <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
               <item name="trainer" type="462c0819:PsiDirectoryNode" />
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> finetune_person
             </path>
             <path>
               <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
 >>>>>>> ssd512_voc0712
+=======
+>>>>>>> finetune_person
             </path>
           </expand>
           <select />
@@ -529,10 +630,14 @@
     </option>
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.train_model">
     <configuration name="new_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
 =======
   <component name="RunManager" selected="Python.evaluate_model">
+=======
+  <component name="RunManager" selected="Python.new_demo">
+>>>>>>> finetune_person
     <configuration name="evaluate_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -546,6 +651,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="modular_SSD_tensorflow" />
       <option name="SCRIPT_NAME" value="$USER_HOME$/evaluate_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="new_demo" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="modular_SSD_tensorflow" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/new_demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -589,7 +711,7 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.train_model" />
 <<<<<<< HEAD
       <item index="1" class="java.lang.String" itemvalue="Python.new_demo" />
@@ -601,13 +723,22 @@
 =======
       <item index="1" class="java.lang.String" itemvalue="Python.train_model (1)" />
       <item index="2" class="java.lang.String" itemvalue="Python.evaluate_model" />
+      <item index="3" class="java.lang.String" itemvalue="Python.new_demo" />
     </list>
     <recent_temporary>
+<<<<<<< HEAD
       <list size="3">
         <item index="0" class="java.lang.String" itemvalue="Python.evaluate_model" />
         <item index="1" class="java.lang.String" itemvalue="Python.train_model (1)" />
         <item index="2" class="java.lang.String" itemvalue="Python.train_model" />
 >>>>>>> ssd512_voc0712
+=======
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.new_demo" />
+        <item index="1" class="java.lang.String" itemvalue="Python.evaluate_model" />
+        <item index="2" class="java.lang.String" itemvalue="Python.train_model (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.train_model" />
+>>>>>>> finetune_person
       </list>
     </recent_temporary>
   </component>
@@ -927,9 +1058,13 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="1919" y="-11" width="1922" height="1212" extended-state="6" />
+=======
+    <frame x="1919" y="-4" width="1922" height="1205" extended-state="6" />
+>>>>>>> finetune_person
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11145833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.4980968" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28051" sideWeight="0.5051659" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29143897" sideWeight="0.49483415" order="2" side_tool="false" content_ui="tabs" />
@@ -974,8 +1109,11 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
 =======
+=======
+>>>>>>> finetune_person
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43260473" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1062,6 +1200,7 @@
   </component>
   <component name="editorHistoryManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/preprocessing/ssd_vgg_preprocessing.py" />
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/eval_model.py" />
@@ -1144,6 +1283,8 @@
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/trainer.py" />
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/train_params.py" />
+=======
+>>>>>>> finetune_person
     <entry file="file://$USER_HOME$/anaconda3/envs/tensorflow/lib/python3.6/site-packages/tensorflow/python/framework/common_shapes.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9386">
@@ -1184,13 +1325,45 @@
     <entry file="file://$USER_HOME$/train_model.py" />
     <entry file="file://$USER_HOME$/experiments/ssd512_voc0712.py" />
     <entry file="file://$USER_HOME$/trainer/trainer.py" />
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/trainer/preparedata.py">
+=======
+    <entry file="file://$PROJECT_DIR$/evaluator/eval_params.py">
+>>>>>>> finetune_person
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="628">
+          <caret line="45" column="29" lean-forward="true" selection-start-line="45" selection-start-column="29" selection-end-line="45" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/datasets/person_dataset.py" />
+    <entry file="file://$PROJECT_DIR$/train_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#0#23#0" expanded="true" />
           </folding>
+=======
+            <element signature="e#0#33#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocessing/ssd_vgg_preprocessing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1330">
+          <caret line="92" column="68" lean-forward="false" selection-start-line="92" selection-start-column="68" selection-end-line="92" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/ssd512_voc0712.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="913">
+          <caret line="203" column="32" lean-forward="true" selection-start-line="203" selection-start-column="32" selection-end-line="203" selection-end-column="32" />
+>>>>>>> finetune_person
         </state>
       </provider>
     </entry>
@@ -1205,6 +1378,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -1221,14 +1395,42 @@
             <marker date="1512744262638" expanded="true" signature="5053:5446" ph="..." />
             <marker date="1512744262638" expanded="true" signature="5184:5317" ph="..." />
             <marker date="1512744262638" expanded="true" signature="5351:5446" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+=======
     <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1350">
           <caret line="73" column="27" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+>>>>>>> finetune_person
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="73" column="27" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="27" />
+=======
+    <entry file="file://$PROJECT_DIR$/datasets/pascalvoc_datasets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <marker date="1512743795199" expanded="true" signature="1043:1137" ph="..." />
+            <marker date="1512743795199" expanded="true" signature="1233:3989" ph="..." />
+            <marker date="1512743795199" expanded="false" signature="1238:1687" ph="&quot;&quot;&quot;Gets a dataset tuple with instructions for reading Pascal VOC dataset....&quot;&quot;&quot;" />
+            <marker date="1512743795199" expanded="true" signature="1874:2853" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer/preparedata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+>>>>>>> finetune_person
           <folding>
             <element signature="e#0#38#0" expanded="true" />
             <marker date="1512744262642" expanded="true" signature="495:14066" ph="..." />
@@ -1271,24 +1473,64 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/evaluator/eval_params.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/evaluate_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="41" lean-forward="false" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+>>>>>>> finetune_person
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/train_model.py">
+    <entry file="file://$PROJECT_DIR$/tf_extended/bboxes.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        <state relative-caret-position="424">
+          <caret line="374" column="64" lean-forward="true" selection-start-line="374" selection-start-column="64" selection-end-line="374" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trainer/postprocessingdata.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1687">
+          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="32" selection-end-line="61" selection-end-column="32" />
           <folding>
+<<<<<<< HEAD
             <element signature="e#0#33#0" expanded="true" />
 >>>>>>> ssd512_voc0712
+=======
+            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1512743795199" expanded="true" signature="144:5615" ph="..." />
+            <marker date="1512743795199" expanded="true" signature="2106:4562" ph="..." />
+            <marker date="1512743795199" expanded="true" signature="2635:3758" ph="..." />
+            <marker date="1512743795199" expanded="true" signature="3772:4562" ph="..." />
+            <marker date="1512743795199" expanded="true" signature="4615:5615" ph="..." />
+            <marker date="1512743795199" expanded="true" signature="4812:4984" ph="..." />
+            <marker date="1512743795199" expanded="true" signature="4911:4984" ph="..." />
+            <marker date="1512743795199" expanded="true" signature="5080:5473" ph="..." />
+            <marker date="1512743795199" expanded="true" signature="5211:5344" ph="..." />
+            <marker date="1512743795199" expanded="true" signature="5378:5473" ph="..." />
+>>>>>>> finetune_person
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/evaluate_model.py">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -1300,10 +1542,20 @@
 >>>>>>> ssd512_voc0712
           <folding>
             <element signature="e#0#33#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/new_demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" column="22" lean-forward="false" selection-start-line="48" selection-start-column="22" selection-end-line="48" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <marker date="1512743795199" expanded="true" signature="2715:3208" ph="..." />
+>>>>>>> finetune_person
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1311,6 +1563,15 @@
           <caret line="237" column="57" lean-forward="true" selection-start-line="237" selection-start-column="57" selection-end-line="237" selection-end-column="57" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/utils/visualization.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="973">
+          <caret line="142" column="42" lean-forward="false" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
+          <folding>
+            <marker date="1512743795203" expanded="true" signature="3634:5825" ph="..." />
+            <marker date="1512743795203" expanded="true" signature="5582:5825" ph="..." />
+>>>>>>> finetune_person
           </folding>
 =======
     <entry file="file://$PROJECT_DIR$/experiments/ssd512_voc0712.py">
@@ -1318,6 +1579,21 @@
         <state relative-caret-position="913">
           <caret line="203" column="74" lean-forward="false" selection-start-line="203" selection-start-column="74" selection-end-line="203" selection-end-column="74" />
 >>>>>>> ssd512_voc0712
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiments/finetune_person.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="36" column="93" lean-forward="false" selection-start-line="36" selection-start-column="93" selection-end-line="36" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -74,7 +74,7 @@ class Evaluator:
         if self.is_training:
             gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.01)
         else:
-            gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.8)
+            gpu_options = tf.GPUOptions(per_process_gpu_memory_fraction=0.85)
 
         if self.eval_train_dataset:
             image, _, glabels, gbboxes, gdifficults, _, _, _ = \
