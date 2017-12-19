@@ -5,7 +5,7 @@ from trainer.postprocessingdata import PostProcessingData
 from experiments import mobilenet_sdd
 
 if __name__ == '__main__':
-    params = mobilenet_sdd.train1_1
+    params = mobilenet_sdd.train2_4
 
     feature_extractor = params.feature_extractor
     model_name = params.model_name

@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fcc7057b-9533-4ff7-84cd-4195e2a365b7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/.idea/workspace.xml" afterPath="$USER_HOME$/SSD/modular_SSD_tensorflow/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluate_model.py" afterPath="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluate_model.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/evaluator.py" afterPath="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/evaluator.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/mobilenet_sdd.py" afterPath="$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/mobilenet_sdd.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/preparedata.py" afterPath="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/preparedata.py" />
-      <change type="MODIFICATION" beforePath="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py" afterPath="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evaluate_model.py" afterPath="$PROJECT_DIR$/evaluate_model.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiments/mobilenet_sdd.py" afterPath="$PROJECT_DIR$/experiments/mobilenet_sdd.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train_model.py" afterPath="$PROJECT_DIR$/train_model.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,64 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="140" column="70" lean-forward="true" selection-start-line="140" selection-start-column="70" selection-end-line="140" selection-end-column="72" />
-              <folding>
-                <element signature="e#0#38#0" expanded="true" />
-                <marker date="1512997442005" expanded="false" signature="6289:6884" ph="&quot;&quot;&quot;Function that takes a gradient step and specifies whether to stop....&quot;&quot;&quot;" />
-                <marker date="1512997442005" expanded="false" signature="8704:8833" ph="&quot;&quot;&quot;Returns a list of variables to train....&quot;&quot;&quot;" />
-                <marker date="1512997442005" expanded="false" signature="9330:9639" ph="&quot;&quot;&quot;Configures the learning rate....&quot;&quot;&quot;" />
-                <marker date="1512997442005" expanded="false" signature="11088:11362" ph="&quot;&quot;&quot;Configures the optimizer used for training....&quot;&quot;&quot;" />
-                <marker date="1512997442005" expanded="false" signature="14059:14328" ph="&quot;&quot;&quot;Returns a function run by the chief worker to warm-start the training....&quot;&quot;&quot;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="preparedata.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/preparedata.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="24" column="55" lean-forward="false" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ssd_vgg_preprocessing.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/preprocessing/ssd_vgg_preprocessing.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-280">
-              <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-              <folding>
-                <element signature="e#7161#8519#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mobilenet_sdd.py" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/mobilenet_sdd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="train_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/train_model.py">
+        <entry file="file://$PROJECT_DIR$/train_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="133">
+              <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -83,11 +28,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/evaluator.py">
+      <file leaf-file-name="trainer.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="80" column="48" lean-forward="false" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
+            <state relative-caret-position="361">
+              <caret line="237" column="57" lean-forward="true" selection-start-line="237" selection-start-column="57" selection-end-line="237" selection-end-column="57" />
+              <folding>
+                <element signature="e#0#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobilenet_sdd.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/experiments/mobilenet_sdd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2148">
+              <caret line="175" column="62" lean-forward="false" selection-start-line="175" selection-start-column="62" selection-end-line="175" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="evaluator.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="817">
+              <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -96,10 +65,10 @@
         </entry>
       </file>
       <file leaf-file-name="evaluate_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluate_model.py">
+        <entry file="file://$PROJECT_DIR$/evaluate_model.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
@@ -161,11 +130,10 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$/SSD/modular_SSD_tensorflow" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$USER_HOME$" value="master" />
-        <entry key="$USER_HOME$/SSD/modular_SSD_tensorflow" value="master" />
         <entry key="$USER_HOME$/modular_SSD_tensorflow" value="evaluator" />
       </map>
     </option>
@@ -176,15 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/modular_SSD_tensorflow/eval_model.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/evaluate_model.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/evaluator/eval_params.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/.gitignore" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/evaluator/evaluator.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/trainer/preparedata.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/trainer/train_params.py" />
-        <option value="$USER_HOME$/modular_SSD_tensorflow/nets/nets_factory.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/nets/resnet_v1.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/new_demo.py" />
         <option value="$USER_HOME$/modular_SSD_tensorflow/preprocessing/tf_image.py" />
@@ -210,23 +169,32 @@
         <option value="$USER_HOME$/train_model.py" />
         <option value="$USER_HOME$/experiments/ssd512_voc0712.py" />
         <option value="$USER_HOME$/trainer/trainer.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/ssd512_voc0712.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/datasets/person_dataset.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/datasets/pascalvoc_datasets.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/utils/visualization.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/finetune_person.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/.gitignore" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/new_demo.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/README.md" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/eval_params.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/mobilenet_11-12-2017.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/train_model.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/preprocessing/ssd_vgg_preprocessing.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/evaluator.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/preparedata.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/evaluate_model.py" />
-        <option value="$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/mobilenet_sdd.py" />
+        <option value="$USER_HOME$/experiments/ssd512_voc0712.py" />
+        <option value="$USER_HOME$/datasets/person_dataset.py" />
+        <option value="$USER_HOME$/datasets/pascalvoc_datasets.py" />
+        <option value="$USER_HOME$/utils/visualization.py" />
+        <option value="$USER_HOME$/experiments/finetune_person.py" />
+        <option value="$USER_HOME$/.gitignore" />
+        <option value="$USER_HOME$/new_demo.py" />
+        <option value="$USER_HOME$/README.md" />
+        <option value="$USER_HOME$/evaluator/eval_params.py" />
+        <option value="$USER_HOME$/experiments/mobilenet_11-12-2017.py" />
+        <option value="$USER_HOME$/train_model.py" />
+        <option value="$USER_HOME$/preprocessing/ssd_vgg_preprocessing.py" />
+        <option value="$USER_HOME$/trainer/trainer.py" />
+        <option value="$USER_HOME$/evaluator/evaluator.py" />
+        <option value="$USER_HOME$/trainer/preparedata.py" />
+        <option value="$USER_HOME$/evaluate_model.py" />
+        <option value="$USER_HOME$/experiments/mobilenet_sdd.py" />
+        <option value="$PROJECT_DIR$/../evaluate_model.py" />
+        <option value="$PROJECT_DIR$/../train_model.py" />
+        <option value="$PROJECT_DIR$/../trainer/trainer.py" />
+        <option value="$PROJECT_DIR$/../experiments/mobilenet_sdd.py" />
+        <option value="$PROJECT_DIR$/evaluate_model.py" />
+        <option value="$PROJECT_DIR$/train_model.py" />
+        <option value="$PROJECT_DIR$/evaluator/evaluator.py" />
+        <option value="$PROJECT_DIR$/experiments/mobilenet_sdd.py" />
+        <option value="$PROJECT_DIR$/trainer/trainer.py" />
       </list>
     </option>
   </component>
@@ -273,7 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -294,30 +261,21 @@
             <path>
               <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
-              <item name="preprocessing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
               <item name="trainer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="modular_SSD_tensorflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="modular_SSD_tensorflow" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$USER_HOME$/SSD/SSD-Tensorflow/train_ssd_network.py" />
+    <property name="last_opened_file_path" value="$USER_HOME$/SSD-Tensorflow/train_ssd_network.py" />
     <property name="add_unversioned_files" value="true" />
-    <property name="two.files.diff.last.used.file" value="$USER_HOME$/SSD/SSD-Tensorflow/train_ssd_network.py" />
+    <property name="two.files.diff.last.used.file" value="$USER_HOME$/SSD-Tensorflow/train_ssd_network.py" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -344,12 +302,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/SSD/modular_SSD_tensorflow" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="modular_SSD_tensorflow" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/SSD/modular_SSD_tensorflow/new_demo.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/new_demo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -361,12 +319,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$USER_HOME$/SSD/modular_SSD_tensorflow" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="modular_SSD_tensorflow" />
-      <option name="SCRIPT_NAME" value="$USER_HOME$/SSD/modular_SSD_tensorflow/train_model.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/train_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -673,7 +631,14 @@
       <option name="project" value="LOCAL" />
       <updated>1512996137257</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Add log for first 30k steps">
+      <created>1513073085612</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1513073085612</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TodoView">
@@ -691,7 +656,6 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.4980968" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28051" sideWeight="0.5051659" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29143897" sideWeight="0.49483415" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22222222" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -708,6 +672,7 @@
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32969034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
@@ -729,7 +694,6 @@
     <ignored-roots>
       <path value="$USER_HOME$/modular_SSD_tensorflow/models" />
     </ignored-roots>
-    <MESSAGE value="Redefined method to pass parameters to trainer." />
     <MESSAGE value="Did some debugging. Problem: arg_scope may need to be redefined for feature_extractor." />
     <MESSAGE value="Did some debugging. Problem 1: arg_scope may need to be redefined for feature_extractor. Problem 2: feature shape may change depending on feature extractor." />
     <MESSAGE value="fixed feature shapes do not match bug." />
@@ -754,7 +718,8 @@
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Merge train and eval parameters definition into class definition files&#10;&#10;- for simpler structure and clearer oversight&#10;- for every experiment use a dedicated file to define parameters, preferably in a new directory 'experiments'" />
     <MESSAGE value="Configuration for training mobilenet_ssd512" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configuration for training mobilenet_ssd512" />
+    <MESSAGE value="Add log for first 30k steps" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add log for first 30k steps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -778,17 +743,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/ssd/ssdmodel.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/ssd/ssd_blocks.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/preparedata.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/evaluate_model.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/trainer.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/evaluator/eval_params.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/evaluator/evaluator.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/.gitignore" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/trainer/train_params.py" />
-    <entry file="file://$USER_HOME$/modular_SSD_tensorflow/evaluate_model.py" />
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/train_model.py" />
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/preprocessing/ssd_vgg_preprocessing.py" />
     <entry file="file://$USER_HOME$/modular_SSD_tensorflow/eval_model.py" />
@@ -807,201 +761,80 @@
     <entry file="file://$USER_HOME$/train_model.py" />
     <entry file="file://$USER_HOME$/experiments/ssd512_voc0712.py" />
     <entry file="file://$USER_HOME$/trainer/trainer.py" />
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/datasets/person_dataset.py" />
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/ssd512_voc0712.py">
+    <entry file="file://$USER_HOME$/datasets/person_dataset.py" />
+    <entry file="file://$USER_HOME$/experiments/ssd512_voc0712.py" />
+    <entry file="file://$USER_HOME$/datasets/pascalvoc_datasets.py" />
+    <entry file="file://$USER_HOME$/tf_extended/bboxes.py" />
+    <entry file="file://$USER_HOME$/trainer/postprocessingdata.py" />
+    <entry file="file://$USER_HOME$/utils/visualization.py" />
+    <entry file="file://$USER_HOME$/experiments/finetune_person.py" />
+    <entry file="file://$USER_HOME$/.gitignore" />
+    <entry file="file://$USER_HOME$/utils/np_methods.py" />
+    <entry file="file://$USER_HOME$/new_demo.py" />
+    <entry file="file://$USER_HOME$/README.md" />
+    <entry file="file://$USER_HOME$/trainer/train_params.py" />
+    <entry file="file://$USER_HOME$/evaluator/eval_params.py" />
+    <entry file="file://$USER_HOME$/experiments/mobilenet_11-12-2017.py" />
+    <entry file="file://$USER_HOME$/SSD-Tensorflow/train_ssd_network.py" />
+    <entry file="file://$USER_HOME$/train_model.py" />
+    <entry file="file://$USER_HOME$/trainer/preparedata.py" />
+    <entry file="file://$USER_HOME$/evaluator/evaluator.py" />
+    <entry file="file://$USER_HOME$/evaluate_model.py" />
+    <entry file="file://$USER_HOME$/trainer/trainer.py" />
+    <entry file="file://$USER_HOME$/experiments/mobilenet_sdd.py" />
+    <entry file="file://$USER_HOME$/preprocessing/ssd_vgg_preprocessing.py" />
+    <entry file="file://$PROJECT_DIR$/../evaluate_model.py" />
+    <entry file="file://$PROJECT_DIR$/../datasets/pascalvoc_datasets.py" />
+    <entry file="file://$PROJECT_DIR$/../trainer/preparedata.py" />
+    <entry file="file://$PROJECT_DIR$/../trainer/trainer.py" />
+    <entry file="file://$PROJECT_DIR$/../train_model.py" />
+    <entry file="file://$PROJECT_DIR$/../experiments/mobilenet_sdd.py" />
+    <entry file="file://$PROJECT_DIR$/train_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="913">
-          <caret line="203" column="32" lean-forward="true" selection-start-line="203" selection-start-column="32" selection-end-line="203" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/datasets/pascalvoc_datasets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <marker date="1512989187950" expanded="true" signature="1043:1137" ph="..." />
-            <marker date="1512989187950" expanded="true" signature="1205:3961" ph="..." />
-            <marker date="1512989187950" expanded="false" signature="1210:1659" ph="&quot;&quot;&quot;Gets a dataset tuple with instructions for reading Pascal VOC dataset....&quot;&quot;&quot;" />
-            <marker date="1512989187950" expanded="true" signature="1846:2825" ph="..." />
-            <marker date="1512989187950" expanded="true" signature="2852:3527" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/tf_extended/bboxes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5358">
-          <caret line="374" column="64" lean-forward="false" selection-start-line="374" selection-start-column="64" selection-end-line="374" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/postprocessingdata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1687">
-          <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/utils/visualization.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2185">
-          <caret line="120" column="42" lean-forward="false" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
-          <folding>
-            <marker date="1512989187954" expanded="true" signature="3634:5366" ph="..." />
-            <marker date="1512989187954" expanded="true" signature="5123:5366" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/finetune_person.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="36" column="93" lean-forward="false" selection-start-line="36" selection-start-column="93" selection-end-line="36" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="12" lean-forward="false" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/utils/np_methods.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3971">
-          <caret line="228" column="4" lean-forward="false" selection-start-line="228" selection-start-column="4" selection-end-line="228" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/new_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="47" column="62" lean-forward="false" selection-start-line="47" selection-start-column="62" selection-end-line="47" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="765">
-            <caret line="57" column="44" lean-forward="false" selection-start-line="57" selection-start-column="44" selection-end-line="57" selection-end-column="44" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/train_params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="269" column="0" lean-forward="false" selection-start-line="269" selection-start-column="0" selection-end-line="292" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/eval_params.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="913">
-          <caret line="63" column="1" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="63" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/mobilenet_11-12-2017.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/SSD-Tensorflow/train_ssd_network.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="256" column="30" lean-forward="false" selection-start-line="256" selection-start-column="30" selection-end-line="256" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/train_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="133">
+          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/preprocessing/ssd_vgg_preprocessing.py">
+    <entry file="file://$PROJECT_DIR$/evaluator/evaluator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="184" column="0" lean-forward="false" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding>
-            <element signature="e#7161#8519#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/trainer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="140" column="70" lean-forward="true" selection-start-line="140" selection-start-column="70" selection-end-line="140" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-            <marker date="1512997442005" expanded="false" signature="6289:6884" ph="&quot;&quot;&quot;Function that takes a gradient step and specifies whether to stop....&quot;&quot;&quot;" />
-            <marker date="1512997442005" expanded="false" signature="8704:8833" ph="&quot;&quot;&quot;Returns a list of variables to train....&quot;&quot;&quot;" />
-            <marker date="1512997442005" expanded="false" signature="9330:9639" ph="&quot;&quot;&quot;Configures the learning rate....&quot;&quot;&quot;" />
-            <marker date="1512997442005" expanded="false" signature="11088:11362" ph="&quot;&quot;&quot;Configures the optimizer used for training....&quot;&quot;&quot;" />
-            <marker date="1512997442005" expanded="false" signature="14059:14328" ph="&quot;&quot;&quot;Returns a function run by the chief worker to warm-start the training....&quot;&quot;&quot;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/trainer/preparedata.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="24" column="55" lean-forward="false" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluator/evaluator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="80" column="48" lean-forward="false" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
+        <state relative-caret-position="817">
+          <caret line="43" column="57" lean-forward="false" selection-start-line="43" selection-start-column="57" selection-end-line="43" selection-end-column="57" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/evaluate_model.py">
+    <entry file="file://$PROJECT_DIR$/experiments/mobilenet_sdd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2148">
+          <caret line="175" column="62" lean-forward="false" selection-start-line="175" selection-start-column="62" selection-end-line="175" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluate_model.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/SSD/modular_SSD_tensorflow/experiments/mobilenet_sdd.py">
+    <entry file="file://$PROJECT_DIR$/trainer/trainer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="361">
+          <caret line="237" column="57" lean-forward="true" selection-start-line="237" selection-start-column="57" selection-end-line="237" selection-end-column="57" />
           <folding>
-            <element signature="e#0#47#0" expanded="true" />
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

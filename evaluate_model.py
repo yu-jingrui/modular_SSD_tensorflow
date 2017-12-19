@@ -7,7 +7,7 @@ from experiments import mobilenet_sdd
 
 if __name__ == '__main__':
     model_params = mobilenet_sdd.train1_1
-    params = mobilenet_sdd.eval_train
+    params = mobilenet_sdd.eval_test_f
 
     feature_extractor = model_params.feature_extractor
     model_name = model_params.model_name
