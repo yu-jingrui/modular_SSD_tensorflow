@@ -1,8 +1,8 @@
 # Continue experiment step 3
 
 
-from trainer.train_params import TrainerParams
-from evaluator.eval_params import EvaluatorParams
+from trainer.trainer import TrainerParams
+from evaluator.evaluator import EvaluatorParams
 
 
 # Fine tune from 184587 steps.

@@ -4,8 +4,8 @@
 # 3. Step: fine tune on voc07 person + HDA + PIROPO with vertical flipping and rotation
 # 4. Step: validate on HDA + PIROPO
 
-from trainer.train_params import TrainerParams
-from evaluator.eval_params import EvaluatorParams
+from trainer.trainer import TrainerParams
+from evaluator.evaluator import EvaluatorParams
 
 # -------------------------------------------------------- #
 # Train VGG16-SSD512 on VOC0712 Trainval
